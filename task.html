@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>偏好任务</title>
+    <link href="http://page.joinlinking.com//dayuwang/page/stylepc/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://page.joinlinking.com//dayuwang/page/stylepc/css/style.css" rel="stylesheet">
+    <link href="http://page.joinlinking.com//dayuwang/page/stylepc/css/wgfly.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/preferencetask.css"/>
+</head>
+<body>
+<div class="wrap-preferenceTask">
+    <div class="preferenceTask-title">
+        任务偏好设置
+    </div>
+    <div class="preferenceTask-content">
+        <div class="preferenceTask-type">
+            <div class="type-title">任务类型</div>
+            <ul class="type-list" id="type-list">
+                <li class="item">
+                    <label class="item-label" onclick="selectLabel(this);"> 规划设计
+                        <input type="radio" value="" name="type" /></label>
+                </li>
+                <li class="item">
+                    <label class="item-label" onclick="selectLabel(this);"> 建筑设计<input type="radio" value="" name="type"/></label>
+                </li>
+                <li class="item">
+                    <label class="item-label active-label" onclick="selectLabel(this);"> 室内设计<input type="radio" value="" name="type"/></label>
+                </li>
+                <li class="item">
+                    <label class="item-label" onclick="selectLabel(this);"> 景观设计<input type="radio" value="" name="type"/></label>
+                </li>
+                <li class="item">
+                    <label class="item-label" onclick="selectLabel(this);"> 前期策划<input type="radio" value="" name="type"/></label>
+                </li>
+                <li class="item">
+                    <label class="item-label" onclick="selectLabel(this);"> 效果图设计<input type="radio" value="" name="type"/></label>
+                </li>
+                <li class="item">
+                    <label class="item-label" onclick="selectLabel(this);"> 平面排版<input type="radio" checked="checked" value="" name="type"/></label>
+                </li>
+            </ul>
+        </div>
+        <div class="preferenceTask-price">
+            <div class="type-title">任务价格</div>
+            <ul class="type-list" >
+                <li class="item">
+                    <label class="item-label" onclick="selectLabel(this);"> 5000元以下<input type="radio" value=""
+                                                                                          name="price-type" /></label>
+                </li>
+                <li class="item">
+                    <label class="item-label" onclick="selectLabel(this);"> 5000元-1万元<input type="radio" value="" name="price-type"/></label>
+                </li>
+                <li class="item">
+                    <label class="item-label active-label" onclick="selectLabel(this);"> 1万-5万<input type="radio" value="" name="price-type"/></label>
+                </li>
+                <li class="item">
+                    <label class="item-label" onclick="selectLabel(this);"> 5万以上<input type="radio" value="" name="price-type"/></label>
+                </li>
+            </ul>
+        </div>
+        <div class="preferenceTask-operate">
+            <button type="submit">保存</button>
+            <button type="button">取消</button>
+        </div>
+    </div>
+</div>
+
+<script src="http://page.joinlinking.com/dayuwang/breeze/lib/js/jquery.js"></script>
+<script>
+    function selectLabel(obj){
+        $(obj).addClass("active-label").parent(".item").siblings().children().removeClass("active-label");
+    }
+    $(function(){
+        var input=$(".preferenceTask-content").find("input");
+        input.each(function(){
+            if($(this).prop("checked")==true){
+                $(this).parent().addClass("active-label");
+            }
+        })
+    })
+</script>
+</body>
+</html>
