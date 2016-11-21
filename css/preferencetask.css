@@ -1,0 +1,99 @@
+.wrap-preferenceTask{
+    background-color:#fff;
+}
+.preferenceTask-title{
+    height: 70px;
+    padding-left: 25px;
+    font-size: 23px;
+    color: #555555;
+    line-height: 70px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #e1e1e1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.preferenceTask-content{
+    width:785px;
+    padding:60px 0 70px 35px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.preferenceTask-content .preferenceTask-type,.preferenceTask-content .preferenceTask-price{
+    overflow:hidden;
+}
+.preferenceTask-content .preferenceTask-type .type-title,.preferenceTask-content .preferenceTask-price .type-title{
+    float:left;
+    height:24px;
+    width:125px;
+    line-height:24px;
+    color:#777;
+    font-size:20px;
+
+}
+.preferenceTask-content .preferenceTask-type .type-list,.preferenceTask-content .preferenceTask-price .type-list{
+    overflow:hidden;
+}
+ .preferenceTask-type .type-list .item{
+    padding-bottom:40px;
+    float:left;
+    margin-right:10px;
+     width:145px;
+}
+ .type-list .item .item-label{
+     position:relative;
+     height:24px;
+     line-height:24px;
+     padding-left:40px;
+     margin:0;
+     color:#333;
+     font-size:18px;
+     font-weight:normal;
+     background:url(../images/icon-no-select.png) no-repeat left center;
+     background-size:24px 24px;
+}
+.type-list .item .active-label{
+    background:url(../images/icon-selected.png) no-repeat left center;
+    background-size:24px 24px;
+}
+.type-list .item .item-label input{
+    position:absolute;
+    left:0;
+    width:0;
+    height:0;
+}
+.preferenceTask-content .preferenceTask-price{
+    padding-top:10px;
+    padding-bottom:60px;
+}
+.preferenceTask-price .type-list .item{
+    float:left;
+    margin-right:30px;
+}
+.preferenceTask-price .type-list .item:last-child{
+    margin-right:0;
+}
+.preferenceTask-content .preferenceTask-operate{
+    text-align:right
+}
+.preferenceTask-content .preferenceTask-operate button{
+    margin-right: 30px;
+    height: 60px;
+    width: 220px;
+    text-align: center;
+    line-height: 60px;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 2px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline:none;
+}
+.preferenceTask-content .preferenceTask-operate button[type="submit"]{
+    background: #4f638f;
+}
+.preferenceTask-content .preferenceTask-operate button[type="button"]{
+    background: #ccc;
+}
