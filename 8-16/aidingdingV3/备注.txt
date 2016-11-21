@@ -1,0 +1,13 @@
+首页	frontcms/index.html
+消息列表1_通知	frontcms/news_notice.html
+消息列表2_消息	frontcms/news_news.html
+消息列表3_赞	frontcms/news_like.html
+消息列表4_评论	frontcms/news_comment.html
+消息列表5_回复	frontcms/news_reply.html
+搜索	frontcms/search.html
+设计师列表	frontcms/designerList.html
+设计师详情	frontcms/designerDetail.html
+粉丝和关注	frontcms/fansFollow.html
+作品列表	frontcms/worksList.html
+作品详情	frontcms/worksDetail.html
+商品列表	product/productList.html

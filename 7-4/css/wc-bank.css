@@ -1,0 +1,227 @@
+@media only screen and (min-width:540px),only screen and (min-device-width:540px){html{font-size:100px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){html{font-size:64px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){html{font-size:55px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){html{font-size:53px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){html{font-size:50px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){html{font-size:48px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){html{font-size:42px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){html{font-size:32px}}
+body{
+    margin:0 auto;
+    font-family: "Microsoft YaHei" !important;
+    font-size:.28rem;
+    line-height:1.2;
+    background-color:#f4f6f5;
+}
+a:hover{
+    text-decoration: none;
+}
+.mobile-personal-header{
+    position:relative;
+    height:.8rem;
+    background-color:#42ab42;
+}
+.mobile-personal-header h1{
+    padding-left:1.3rem;
+    line-height:.8rem;
+    color:#fff;
+    font-size:.34rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.mobile-personal-header .turn-back{
+    position:absolute;
+    display:inline-block;
+    left:.4rem;
+    top:.2rem;
+    width:.36rem;
+    height:.38rem;
+    background:url(../images/turn-back.png) no-repeat center center;
+    background-size:.34rem .36rem;
+}
+.mobile-personal-header .add-bank{
+    position:absolute;
+    right:.25rem;
+    top:.18rem;
+    display:inline-block;
+    height:.45rem;
+    width:.45rem;
+    background:url(../images/add_bank.png) no-repeat center center;
+    background-size:.45rem .45rem;
+}
+/***/
+.mobile-bank-main{
+    background-color:#fff;
+}
+.mobile-bank-main .mobile-no-bank{
+    position:absolute;
+    left:50%;
+    top:3rem;
+    width:100%;
+    text-align:center;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.mobile-bank-main .mobile-no-bank .no-bank-pic{
+    width:2.44rem;
+    height:1.79rem;
+}
+.mobile-bank-main .mobile-no-bank .tip{
+    padding-top:.6rem;
+    color:#c2c2c2;
+    font-size:.32rem;
+}
+/**ап╠М**/
+.mobile-bank-list .bank-ul{
+    overflow:hidden;
+}
+.mobile-bank-list .bank-ul .bank-item{
+    padding:.2rem .25rem .2rem .3rem;
+    overflow:hidden;
+    border-top:1px solid #f1f3f2;
+}
+.bank-ul .bank-item .item-left{
+    float:left;
+}
+.bank-ul .bank-item .item-left h5{
+    color:#252525;
+    padding-bottom:.12rem;
+}
+.bank-ul .bank-item .item-left p{
+    color:#aeaeae;
+    font-size:.26rem;
+}
+.bank-ul .bank-item  .item-right{
+    padding-top:.2rem;
+    float:right;
+    font-size:.26rem;
+}
+.bank-ul .bank-item  .item-right .item-remove{
+    padding-right:.2rem;
+    color:#666;
+}
+.bank-ul .bank-item  .item-right .item-edit{
+    color:#1ea78d;
+}
+.bank-ul .add-bank-item .item-left{
+    padding-top:.2rem;
+}
+.bank-ul .bank-item  .item-right .item-add{
+    display:inline-block;
+    width:.4rem;
+    height:.3rem;
+    background:url(../images/public_jiantou.png) no-repeat right center;
+    background-size:.14rem .27rem;
+}
+/***/
+.mobile-bank-edit .bank-edit-tab .tab-list{
+    margin:0 auto;
+    padding:.2rem 0;
+    width:70%;
+    overflow:hidden;
+}
+.bank-edit-tab .tab-list .tab-item{
+    float:left;
+    width:50%;
+    font-size:.26rem;
+    text-align:center;
+}
+.bank-edit-tab .tab-list .tab-item a{
+    display:inline-block;
+    width:2.4rem;
+    height:.65rem;
+    line-height:.65rem;
+    color:#6b6b6b;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    border-radius: .3rem;
+}
+.bank-edit-tab .tab-list .active-item a{
+    color:#fff;
+    background-color:#42ab42;
+}
+.bank-edit-input .bank-edit-list .bank-edit-tip{
+    padding:0 .3rem .2rem;
+    line-height:1.4;
+    border-bottom:1px solid #f5f6f6;
+}
+.bank-edit-input .bank-edit-list .bank-edit-item{
+    padding:.3rem;
+    border-bottom:1px solid #f5f6f6;
+    overflow:hidden;
+}
+.bank-edit-list .bank-edit-item .item-label{
+    float:left;
+    display:inline-block;
+    margin-bottom:0;
+    width:1.7rem;
+    color:#6b6b6b;
+    font-weight:normal;
+
+}
+.bank-edit-list .bank-edit-item .wrap-input{
+    overflow:hidden;
+}
+.bank-edit-list .bank-edit-item .wrap-input input{
+    margin-top:-3px;
+    width:100%;
+    border:none;
+    outline:none;
+}
+.bank-edit-list .bank-edit-item .wrap-input input::-webkit-input-placeholder{
+    color:#cacaca;
+    font-size:.26rem;
+}
+.bank-edit-list .bank-edit-item .wrap-input input:-ms-input-placeholder{
+    color:#cacaca;
+    font-size:.26rem;
+}
+.bank-edit-list .bank-edit-item .wrap-select{
+    position:relative;
+    height:.35rem;
+}
+.bank-edit-list .bank-edit-item .wrap-select .down{
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:9;
+    display:inline-block;
+    width:100%;
+    height:.35rem;
+    background:url(../images/public_jiantou.png) no-repeat right center;
+    background-size:.14rem;
+}
+.bank-edit-list .bank-edit-item .wrap-select select{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    z-index: 10;
+    font-size:.26rem;
+    border:none;
+    outline:none;
+    opacity:0;
+}
+.mobile-bank-main .mobile-bank-sure{
+    width:100%;
+    padding:2rem .3rem .2rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color:#f4f6f5;
+}
+.mobile-bank-main .mobile-bank-sure button{
+    color:#fff;
+    width:100%;
+    height:.85rem;
+    border:none;
+    outline:none;
+    background-color:#42ab42;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    border-radius: .4rem;
+}

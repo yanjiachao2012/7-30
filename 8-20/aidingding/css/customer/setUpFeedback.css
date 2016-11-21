@@ -1,0 +1,107 @@
+@media only screen and (min-width:750px),only screen and (min-device-width:750px){html{font-size:100px}}
+@media only screen and (min-width:540px),only screen and (min-device-width:540px){html{font-size:72px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){html{font-size:64px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){html{font-size:55px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){html{font-size:53px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){html{font-size:50px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){html{font-size:48px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){html{font-size:42px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){html{font-size:32px}}
+html{
+    width:100%;height:100%;
+}
+body{
+    padding: 0;
+    margin:0 auto;
+    font-family: "Microsoft YaHei" !important;
+    font-size:.28rem;
+    line-height:1.2;
+    background-color:#f2f2f2;
+}
+
+/**头部**/
+.aiDD-header{
+    position:relative;
+    font-size:.38rem;
+    text-align:center;
+    background-color:#dc4935;
+}
+.aiDD-header h1{
+    height:1.02rem;
+    line-height:1.02rem;
+    color:#fff;
+}
+.aiDD-header .icon-back{
+    position:absolute;
+    left:.3rem;
+    top:.28rem;
+    display:inline-block;
+    width:.46rem;
+    height:.46rem;
+    background:url(../../images/back.png) no-repeat center center;
+    background-size:.44rem .44rem;
+}
+.aiDD-header .comment-submit{
+    position:absolute;
+    right:.3rem;
+    top:.36rem;
+    padding:0;
+    font-size:.3rem;
+    color:#fff;
+    border:none;
+    outline:none;
+    background:none;
+}
+.evaluate-list{
+    overflow:hidden;
+    background-color:#fff;
+}
+.evaluate-list .comment-content{
+    overflow:hidden;
+    padding:.3rem;
+    height:3.6rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.evaluate-list .comment-content textarea{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    resize: none;
+    border:none;
+    outline:none;
+    color:#626262;
+    line-height:1.4;
+}
+.evaluate-list .comment-content textarea::-webkit-input-placeholder{
+    color:#989898;
+
+}
+.evaluate-list .comment-content textarea:-ms-input-placeholder{
+    color:#989898;
+
+}
+.evaluate-list .comment-content textarea:-moz-placeholder{
+    color:#989898;
+
+}
+.dialog-feedback{
+    display:none;
+    position:fixed;
+    left:50%;
+    top:15%;
+    width: 4rem;
+    height:.98rem;
+    color:#fff;
+    line-height:.98rem;
+    background-color:rgba(0,0,0,0.6);
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    border-radius: .1rem;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}

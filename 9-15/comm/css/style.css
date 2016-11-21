@@ -1,0 +1,259 @@
+@charset "utf-8";
+/*头部*/
+.comWidth{
+		width:1200px; 
+		margin:0 auto;
+	}
+.nav{
+		height:110px;
+		font-size:16px;
+		border-bottom:1px solid #eee;
+		background:#fff;
+	}
+.nav:hover{
+	background:#ccc;
+	opacity: 0.9;
+	}
+.logo {
+		height:110px;
+		margin-right:160px;
+		float:left;
+		
+	}
+.logo a{
+	display:block;
+	height:110px;
+	padding-top:17px;
+	padding-bottom:17px;
+	}
+.nav_list{
+		height:110px;
+		float:left;
+	}
+.nav_list li{
+	float:left;
+	margin-right:30px;
+	height:110px;
+	line-height:110px;
+	}
+li.last {
+    margin-right: 0;
+}
+.nav_list li a{
+	color:#000;
+	text-decoration:none;
+	padding:10px;
+	}
+.nav_list li a.active{
+	color:#611d6f;
+	border-bottom: 1px solid #611d6f;
+	}
+/*底部*/
+.footer{
+	width: 1903px;
+	height:403px;
+	background:#efe8f0;
+	font-family:微软雅黑;
+	}
+.footer_nav{
+	padding-top: 35px;
+	}
+.footer_nav ul{
+	height: 58px;
+	padding-left:70px;
+	}
+.footer_nav ul li{
+	margin-right: 75px;
+	float:left;
+	}
+.footer_nav ul li a{
+	color:#000;
+	font-size:16px;
+	text-decoration:none;
+	}
+.footer_nav ul li a:hover{
+	color:#611d6f;
+	}
+.footer_nav ul li img{
+	vertical-align: middle;
+	margin-right:20px;
+	}
+.footer_nav ul li.last{
+	margin-right:0;
+	}
+.hr{
+	height:1px;
+	border:none;
+	margin:0;
+	border-top:1px solid #c9b3cf;
+	margin-top:25px;
+    }
+.footer_content {
+    height: 150px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.footer_content ul li{
+	float:left;
+	margin-right:40px;
+	}
+.footer_content ul li.last{
+	margin-right:20px;
+	font-size:14px;
+	}
+.footer_content ul li.last img{
+	margin-bottom:10px;
+	}
+.footer_content ul li.second{
+    border-left:1px solid #c9b3cf;
+	border-right:1px solid #c9b3cf;
+	padding-left: 45px;
+	    padding-right: 45px;
+	margin-right:60px;
+	    height: auto;
+	}
+.footer_content ul li.second dl{
+	float:left;
+	margin-right:40px;
+	}
+.footer_content ul li.second dl dt{
+	font-size:16px;
+	margin-bottom:20px;
+	font-weight:normal;
+}
+.footer_content ul li.second dl dt a{
+	color:#000;
+	text-decoration:none;
+}
+.footer_content ul li.second dl dd{
+	font-size:14px;
+	margin-bottom:5px;
+	}
+.footer_content ul li.second dl dd a{
+	color:#666;
+	text-decoration:none;
+	}
+.footer_content ul li dl dd.first{
+	font-size:24px;
+	color:#6f2e82;
+	font-weight:bold;
+	}
+.footer_content ul li dl dd.second{
+	font-size:16px;
+	color:#acabac;
+	margin-top:10px;
+	}
+.footer_content ul li dl dd.last {
+	font-size:14px;
+	margin-top:15px;
+	}
+.footer_content ul li dl dd.last a{
+	color:#000;
+	text-decoration:none;
+	}
+.footer_content ul li dl dd.last img{
+	vertical-align:middle;
+	margin-right:5px;
+	}
+.banquan{
+	text-align:center;
+	font-size:14px;
+	margin-top:20px;
+	}
+/*加入珠玑汇弹框*/
+#myModal .modal-dialog{
+	width:541px;
+	margin:13% auto;
+	}
+#myModal .modal-content {
+    width: 541px;
+    height: 423px;
+	background: url(../images/bg_5.jpg) no-repeat center;
+}
+#myModal .modal-header{
+	border-bottom:none;
+	}
+	
+#myModal .modal-body{
+	text-align:center;
+	}
+#myModal .close{
+	color:#5d2767;
+	opacity: 1;
+	font-size: 30px;
+	 outline: none;
+	}
+#myModal h2{
+	font-weight:bold;
+	margin-bottom:65px;
+	}
+#myModal p{
+	font-size:20.05px;
+	margin-top:25px;
+	}
+/*参加众筹弹框*/
+#myModal2 .modal-dialog{
+	width:540px;
+	margin:13% auto;
+	}
+#myModal2 .modal-content {
+    width: 540px;
+    height: 422px;
+	background: url(../images/bg_6.png) no-repeat center;
+}
+#myModal2 .modal-header{
+	border-bottom:none;
+	}
+	
+#myModal2 .modal-body{
+	text-align:center;
+	}
+#myModal2 .close{
+	color:#5d2767;
+	opacity: 1;
+	font-size: 30px;
+	 outline: none;
+	}
+#myModal2 h2{
+	font-weight:bold;
+	margin-bottom:47px;
+	    margin-top: 0;
+    font-family: 微软雅黑;
+	}
+#myModal2 p{
+	font-size:18px;
+	margin-top:18px;
+	color:#631c79;
+	}
+/*侧边栏*/
+.sidebar{
+	position: fixed;
+	right:42px;
+	top:50%;
+	}
+.sidebar ul li{
+	width:50px;
+	}
+.sidebar ul li a{
+	outline: none;
+}
+.sidebar ul li img{
+	background:#fff;
+	border-bottom:1px solid #eee;
+	}
+.sidebar ul li img.active:hover{
+	background:#dea426;
+	}
+.hover{
+	width:152px;
+	height:50px;
+	position:fixed;
+	top:55.4%;
+	right:42px;
+	background:#dea426;
+	display:none;
+	}
+.hover span{
+	font-size:14px;
+	color:#fff;
+	}

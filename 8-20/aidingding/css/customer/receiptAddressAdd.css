@@ -1,0 +1,36 @@
+﻿@media only screen and (min-width:750px),only screen and (min-device-width:750px){html{font-size:100px}}
+@media only screen and (min-width:540px),only screen and (min-device-width:540px){html{font-size:72px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){html{font-size:64px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){html{font-size:55px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){html{font-size:53px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){html{font-size:50px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){html{font-size:48px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){html{font-size:42px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){html{font-size:32px}}
+
+*{ padding:0; margin:0;}
+html{width:100%; height:100%;}
+body{padding:0; margin:0 auto; font-family:"Microsoft YaHei"; font-size:.3rem; line-height:1;background-color:#f2f2f2; }
+ul{list-style:none;}
+a{text-decoration:none; cursor:pointer;}
+a img{width: 100%; height: auto;}
+.clear:after{content:"200B";display:block;font-size:0;height:0;clear:both;}
+/*IE6/7*/
+.clear{*zoom:1;}
+
+.wrapper{ background-color:#f2f2f2; margin:0 auto;}
+header{ height:1rem; padding:.32rem 0; width:100%; background-color:#dc4935; font-size:.38rem; color:#fff; text-align:center; position:relative;}
+header a{ display:inline-block; width:.44rem; padding:.28rem 0; position:absolute; left:.30rem; top:0;}
+header .keep-btn{ border:none; position:absolute; right:.3rem; top:0; height:1rem; line-height:1rem; font-size:.28rem; background-color:#dc4935; padding:0;}
+
+.main-cont{ margin-top:.2rem; background-color:#fff;border-top:1px solid #E0E0E0;border-bottom:1px solid #E0E0E0;}
+.main-cont .item{ border-bottom:1px solid #E0E0E0; line-height:1rem;}
+.main-cont .item label{ color:#323232; margin-left:.3rem; margin-bottom:0; font-weight:normal;}
+.main-cont .item input{ width:6.10rem; border:none; margin-left:.4rem; color:#989898; outline:none;}
+.main-cont .rec-address{ line-height:1rem; border:none; position:relative; }
+.main-cont .rec-address a{ display:block; width:.4rem; height:.54rem; position:absolute; right:.3rem; top:0;}
+.main-cont .rec-address input{ width:6.10rem; border-bottom:1px solid #E0E0E0 ;}
+.main-cont .input-details { padding-left:1.36rem; color:#989898;}
+.main-cont .input-details input{
+    margin-left:0;
+}

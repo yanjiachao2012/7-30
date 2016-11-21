@@ -1,0 +1,48 @@
+首页	frontcms/index.html
+消息列表1_通知	frontcms/news_notice.html
+消息列表2_消息	frontcms/news_news.html
+消息列表3_赞	frontcms/news_like.html
+消息列表4_评论	frontcms/news_comment.html
+消息列表5_回复	frontcms/news_reply.html
+搜索	frontcms/search.html
+设计师列表	frontcms/designerList.html
+设计师详情	frontcms/designerDetail.html
+粉丝和关注	frontcms/fansFollow.html
+作品列表	frontcms/worksList.html
+作品详情	frontcms/worksDetail.html
+商品列表	product/productList.html
+
+
+购物车	shoppingCart/shoppingCart.html
+确认订单	shoppingCart/confirmOrder.html
+登录	customer/login.html
+等级	customer/grading.html
+叮叮币（跟签到记录一样）	customer/jinglingCoin.html
+订单列表	customer/orderList.html
+订单详情	customer/orderDetail.html
+个人中心首页	customer/userCenter.html
+评价列表	customer/evaluateList.html
+评价列表-发表评价	customer/evaluatePublish.html
+签到	customer/signIn.html
+签到记录	customer/signInList.html
+设置	customer/setUp.html
+设置-关于爱叮叮	customer/setUpAbout.html
+设置-关于爱叮叮-服务条款	customer/setUpAboutServiceProvision.html
+设置-修改密码	customer/setUpModifyPassword.html
+设置-意见反馈	customer/setUpFeedback.html
+收货地址列表	customer/receiptAddressList.html
+收货地址列表-添加收货地址	customer/receiptAddressAdd.html
+修改手机号	customer/modifyMobile.html
+优惠券	customer/coupon.html
+优惠券-详情	customer/couponDetail.html
+优惠券-已失效	customer/couponHasFailed.html
+找回密码	customer/getPassword.html
+找回密码-设置密码	customer/getPasswordSetUp.html
+注册	customer/register.html
+
+
+个人信息	customer/personalInformation.html
+个人信息-签名	customer/personalInformationAutograph.html
+个人信息-修改昵称	customer/personalInformationNickName.html
+个人信息-修改性别	customer/personalInformationSex.html
+我的收藏	customer/myCollection.html

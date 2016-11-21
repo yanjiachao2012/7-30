@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>修改密码</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/wgfly.css" rel="stylesheet">
+    <link href="css/changepw.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="erpHeader">
+    <a href="" class="icon-back"></a>
+    修改密码
+</div>
+<div class="changePw-content">
+    <div class="item-title">
+        <i class="title-icon"></i>
+        <p>修改密码</p>
+    </div>
+    <div class="content-list">
+        <div class="list-item">
+            <label for="old-pw">旧密码</label>
+            <div class="item-flex">
+                <input type="password" id="old-pw" value="" placeholder="请输入旧密码"/>
+                <span class="error-tip">输入密码错误</span>
+            </div>
+        </div>
+        <div class="list-item">
+            <label for="new-pw">新密码</label>
+            <div class="item-flex">
+                <input type="password" id="new-pw" value="" placeholder="密码不能小于6位"/>
+                <span class="error-tip">密码不能小于6位</span>
+            </div>
+        </div>
+        <div class="list-item">
+            <label for="sure-pw">确认密码</label>
+            <div class="item-flex">
+                <input type="password" id="sure-pw" value="" placeholder="再次输入新密码"/>
+                <span class="error-tip">与输入密码不符</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="changePw-submit">
+    <button type="submit">保存</button>
+</div>
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script>
+    $(function(){
+        var newPw=$("#new-pw"),surePw=$("#sure-pw"),oldPw=$("#old-pw");
+        oldPw.on("blur",function(){
+            if(oldPw.val()){
+
+            }else{
+
+            }
+        });
+        newPw.on("blur",function(){
+            if(newPw.val().length<6){
+                $(this).next().css("display","inline-block");
+                return false;
+            }else{
+                $(this).next().css("display","none");
+            }
+        });
+        newPw.on("focus",function(){
+            $(this).next().css("display","none");
+        });
+        surePw.on("blur",function(){
+            if(newPw.val()!=surePw.val()){
+                $(this).next().css("display","inline-block");
+                return false;
+            }else{
+                $(this).next().css("display","none");
+            }
+        });
+        surePw.on("focus",function(){
+            $(this).next().css("display","none");
+        });
+
+    })
+</script>
+</body>
+</html>

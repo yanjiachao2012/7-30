@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>任务详情</title>
+    <link href="http://page.joinlinking.com//dayuwang/page/stylepc/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://page.joinlinking.com//dayuwang/page/stylepc/css/style.css" rel="stylesheet">
+    <link href="http://page.joinlinking.com//dayuwang/page/stylepc/css/wgfly.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/underWayProtect.css"/>
+    <style>
+        .dragActive { border:1px dotted red; }
+        .dropHover { border:1px dotted red; }
+        .aLabel{
+            background-color: white;
+            padding: 0.4em;
+            font: 12px sans-serif;
+            color: #444;
+            z-index: 21;
+            border: 1px dotted gray;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrap-underWayProject">
+    <div class="underWayProject-part">
+         <div class="part-item">
+             <span class="item-left">项目名称</span>
+             <div class="item-details">深圳万科九期</div>
+         </div>
+        <div class="part-item">
+            <span class="item-left">项目时间</span>
+            <div class="item-details">2016-06-07至2016-08-21</div>
+        </div>
+        <div class="part-item">
+            <span class="item-left">项目描述</span>
+            <div class="item-details">整个项目分三个部分来完成，第一分部分做整体规划，出风格，出平面图，建模；完成后在进行
+                第二部分渲染出图，做演示；第三部分待定稿后出纸模，附件内为本期项目的参考资料和部分甲
+                方提供的源文件。</div>
+        </div>
+        <div class="file-list">
+            <div class="list-total">
+                <a class="file-download" href="javascript:">全部下载</a>
+                <span class="number">附件
+                    <strong>(3个)</strong><i class="tip" onclick="showFile()"></i>
+                </span></div>
+            <div class="wrap-file-content" id="wrap-file-content">
+                <div class="file-content-ul">
+                    <div class="file-content-title">
+                        <div class="file-name">文件</div>
+                        <div class="file-size">大小</div>
+                        <div class="file-time">最好修改时间</div>
+                        <div class="file-operate"></div></div>
+                    <div class="file-content-item active-item" onclick="selectOperate(this)">
+                        <div class="file-name"><img src="images/iconfont-file-4.png"/><em>万科九期参考设计稿</em></div>
+                        <div class="file-size">6.1k</div>
+                        <div class="file-time">2小时前</div>
+                        <div class="file-operate">
+                            <a href="">下载</a>
+                            <a href="">移动</a>
+                            <a href="">移除</a>
+                        </div></div>
+                    <div class="file-content-item"  onclick="selectOperate(this)">
+                        <div class="file-name">
+                            <img src="images/iconfont-file-7.png"><em>参考资料</em>
+                        </div>
+                        <div class="file-size">3.20m</div>
+                        <div class="file-time">2小时前</div>
+                        <div class="file-operate">
+                            <a href="">下载</a>
+                            <a href="">移动</a>
+                            <a href="">移除</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="underWayProject-part project-process" id="canvas">
+        <ul class="process-list">
+            <li class="process-item process-item-title">
+                <div class="first"></div>
+                <div class="item">6月7日</div>
+                <div class="item">6月26日</div>
+                <div class="item">7月1日</div>
+                <div class="item">7月29日</div>
+                <div class="item">8月15日</div>
+                <div class="item">8月29日</div>
+            </li>
+            <li class="process-item process-item-content">
+                <div class="first">事务所a</div>
+                <div class="item item-finished" onclick="addNode(this);" id="state1">
+                    <span class="item-content">
+                        <i>1</i>
+                        <span>策划文案</span>
+                        <span>06/01-06/07</span>
+                    </span>
+                </div>
+                <div class="item item-finished" onclick="addNode(this);" id="state2">
+                    <span class="item-short-content">
+                        <i>2</i>
+                    </span>
+                    <span class="item-short-content">
+                        <i>3</i>
+                    </span>
+                    <div class="show-short-content">
+                        <i class="turn-left"></i>
+                        <div class="short-part finished"><i>2</i><p><span>绘制平面图</span><span>06-02/08-24</span></p></div>
+                        <div class="short-part finished"><i>3</i><p><span>绘制平面图</span><span>06-02/08-24</span></p></div>
+                    </div>
+                </div>
+                <div class="item" onclick="addNode(this);" id="state3">
+                </div>
+                <div class="item" onclick="addNode(this);" id="state4">
+                    <div class="three-content-column">
+                        <div class="finished"><i>7</i></div>
+                        <div class="finishing"><i>7</i></div>
+                        <div class="doing"><i>7</i></div>
+                        <div class="not-do"><i>7</i></div>
+                        <div class="finishing"><i>7</i></div>
+                        <div class="doing"><i>7</i></div>
+                    </div>
+                    <div class="show-short-content">
+                        <i class="turn-left"></i>
+                        <div class="short-part finishing"><i>2</i><p><span>绘制平面图</span><span>06-02/08-24</span></p></div>
+                        <div class="short-part finished"><i>3</i><p><span>绘制平面图</span><span>06-02/08-24</span></p></div>
+                        <div class="short-part doing"><i>2</i><p><span>绘制平面图</span><span>06-02/08-24</span></p></div>
+                        <div class="short-part not-do"><i>3</i><p><span>绘制平面图</span><span>06-02/08-24</span></p></div>
+                        <div class="short-part finished"><i>2</i><p><span>绘制平面图</span><span>06-02/08-24</span></p></div>
+                        <div class="short-part finishing"><i>3</i><p><span>绘制平面图</span><span>06-02/08-24</span></p></div>
+                    </div>
+                </div>
+                <div class="item" onclick="addNode(this);" id="state5"></div>
+                <div class="item" onclick="addNode(this);" id="state6"></div>
+            </li>
+            <li class="process-item process-item-content">
+                <div class="first">事务所b</div>
+                <div class="item" onclick="addNode(this);" id="state7"></div>
+                <div class="item" onclick="addNode(this);" id="state8"></div>
+                <div class="item item-finishing" onclick="addNode(this);" id="state9">
+                     <span class="item-content">
+                        <i>4</i>
+                        <span>渲染出图</span>
+                        <span>06/01-06/07</span>
+                    </span>
+                </div>
+                <div class="item" onclick="addNode(this);" id="state10"></div>
+                <div class="item item-doing" onclick="addNode(this);" id="state11">
+                     <span class="item-content">
+                        <i>6</i>
+                        <span>渲染出图</span>
+                        <span>06/01-06/07</span>
+                    </span>
+                </div>
+                <div class="item" onclick="addNode(this);" id="state12"></div>
+            </li>
+            <li class="process-item process-item-content">
+                <div class="first">设计师a</div>
+                <div class="item" onclick="addNode(this);" id="state13"></div>
+                <div class="item" onclick="addNode(this);" id="state14"></div>
+                <div class="item" onclick="addNode(this);" id="state15"></div>
+                <div class="item item-doing" onclick="addNode(this);" id="state16">
+                     <span class="item-content">
+                        <i>5</i>
+                        <span>策划文案</span>
+                        <span>06/01-06/07</span>
+                    </span>
+                </div>
+                <div class="item" onclick="addNode(this);" id="state17"></div>
+                <div class="item " id="state18">
+
+                </div>
+
+            </li>
+            <li class="process-item process-item-content">
+                <div class="first">设计师B</div>
+                <div class="item" onclick="addNode(this);" id="state19"></div>
+                <div class="item" onclick="addNode(this);" id="state20"></div>
+                <div class="item" onclick="addNode(this);" id="state21">
+
+                </div>
+                <div class="item" onclick="addNode(this);" id="state22"></div>
+                <div class="item" onclick="addNode(this);" id="state23"></div>
+                <div class="item item-not-do" onclick="addNode(this);" id="state24">
+                     <span class="item-content">
+                        <i>7</i>
+                        <span>策划文案</span>
+                        <span>06/01-06/07</span>
+                    </span>
+                </div>
+            </li>
+        </ul>
+        <div class="project-process-operate">
+            <div class="operate-left">
+                <a href="javascript:" class="build-task">创建新的任务</a>
+                <a href="javascript:" class="build-relative">创建新的关联</a>
+            </div>
+            <div class="operate-right">
+               <span class="type finished"><i></i>已交付</span>
+                <span class="type finishing"><i></i>进行中</span>
+                <span class="type doing"><i></i>已接受呆开始</span>
+                <span class="type not-do"><i></i>未接受</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://page.joinlinking.com/dayuwang/breeze/lib/js/jquery.js"></script>
+<script src="js/jquery-ui-1.9.2-min.js"></script>
+<script src="js/jsPlumb-2.1.4-min.js"></script>
+
+<script>
+    function showFile(){
+        var wrapFileContent=$("#wrap-file-content");
+        if(wrapFileContent.css("display")=="block"){
+            wrapFileContent.hide("300")
+        }else{
+            wrapFileContent.show("300");
+        }
+    }
+    function selectOperate(obj){
+        if($(obj).hasClass("active-item")){
+            $(obj).removeClass("active-item")
+        }else{
+            $(obj).addClass("active-item")
+        }
+
+    }
+    function addNode(obj){
+        //显示详情弹框
+        if($(obj).find(".show-short-content").css("display")=="block"){
+            $(obj).find(".show-short-content").css("display","none")
+        }else{
+            $(obj).find(".show-short-content").css("display","block")
+        }
+        //显示创建弹框
+        if($(obj).children().hasClass("white-space")){
+            $(obj).children().remove()
+        }else if($(obj).children().length>0){
+             return false
+        }else{
+            var str='<div class="white-space"> <span class="dot"></span> <a class="build" href="javascript:"> <i class="turn-left"></i>创建新任务</a></div>';
+            $(obj).append(str);
+        }
+
+    }
+
+</script>
+<script>
+    jsPlumb.ready(function () {
+
+        var instance = window.jsp = jsPlumb.getInstance({
+            // default drag options
+            DragOptions: { cursor: 'pointer', zIndex: 2000 },
+            // the overlays to decorate each connection with.  note that the label overlay uses a function to generate the label text; in this
+            // case it returns the 'labelText' member that we set on each connection in the 'init' method below.
+            ConnectionOverlays: [
+                [ "Arrow", {
+                    location: 1,
+                    visible:true,
+                    id:"ARROW",
+                    events:{
+                        click:function() { alert("你点击了这条连接")}
+                    }
+                } ],
+                [ "Label", {
+                    location: 0.1,
+                    id: "label",
+                    cssClass: "aLabel",
+                    events:{
+                        tap:function() { alert("hey"); }
+                    }
+                }]
+            ],
+            Container: "canvas"
+        });
+
+        var basicType = {
+            connector: "StateMachine",
+            paintStyle: { strokeStyle: "red", lineWidth: 4 },
+            hoverPaintStyle: { strokeStyle: "blue" },
+            overlays: [
+                "Arrow"
+            ]
+        };
+        instance.registerConnectionType("basic", basicType);
+
+        // this is the paint style for the connecting lines..
+        var connectorPaintStyle = {
+                    lineWidth: 4,
+                    strokeStyle: "#8895b3",
+                    joinstyle: "round",
+                    outlineWidth: 2,
+                    dashstyle:"4 1"
+                },
+        // .. and this is the hover style.
+                connectorHoverStyle = {
+                    lineWidth: 4,
+                    strokeStyle: "#216477",
+                    outlineWidth: 2
+                },
+                endpointHoverStyle = {
+                    fillStyle: "#216477",
+                    strokeStyle: "#216477"
+                },
+        // the definition of source endpoints (the small blue ones)
+                sourceEndpoint = {
+                    endpoint: "Dot",
+                    paintStyle: {
+                        strokeStyle: "#8895b3",
+                        fillStyle: "transparent",
+                        radius: 7,
+                        lineWidth: 3
+                    },
+                    isSource: true,
+                    connector : [ "Flowchart", { stub: [0, 25], gap: 0, cornerRadius: 5, alwaysRespectStubs: true }],
+                    connectorStyle: connectorPaintStyle,
+                    hoverPaintStyle: endpointHoverStyle,
+                    connectorHoverStyle: connectorHoverStyle,
+                    maxConnections: -1,
+                    dragOptions: {},
+                    overlays: [
+                        [ "Label", {
+                            location: [0.5, 1.5],
+                            label: "Drag",
+                            cssClass: "endpointSourceLabel",
+                            visible:false
+                        } ]
+                    ]
+                },
+        // the definition of target endpoints (will appear when the user drags a connection)
+                targetEndpoint = {
+                    endpoint: "Dot",
+                    paintStyle: { fillStyle: "#8895b3", radius: 9 },
+                    hoverPaintStyle: endpointHoverStyle,
+                    maxConnections: -1,
+                    dropOptions: { hoverClass: "hover", activeClass: "active" },
+                    isTarget: true,
+                    overlays: [
+                        [ "Label", { location: [0.5, -0.5], label: "Drop", cssClass: "endpointTargetLabel", visible:false } ]
+                    ]
+                },
+        init = function (connection) {
+            connection.getOverlay("label").setLabel(connection.sourceId.substring(5) + "-" +
+                    connection.targetId.substring(5));
+        };
+
+        var _addEndpoints = function (toId, sourceAnchors, targetAnchors) {
+            for (var i = 0; i < sourceAnchors.length; i++) {
+                var sourceUUID = toId + sourceAnchors[i];
+                instance.addEndpoint("state" + toId, sourceEndpoint, {
+                    anchor: sourceAnchors[i], uuid: sourceUUID
+                });
+            }
+            for (var j = 0; j < targetAnchors.length; j++) {
+                var targetUUID = toId + targetAnchors[j];
+                instance.addEndpoint("state" + toId, targetEndpoint, { anchor: targetAnchors[j], uuid: targetUUID });
+            }
+        };
+
+        // suspend drawing and initialise.
+        //可支持写法TopCenter BottomCenter LeftMiddle RightMiddle
+        instance.batch(function () {
+            _addEndpoints("1", ["LeftMiddle"], ["BottomCenter"]);//左边为对应的id 中间为起点 右边为终点
+            _addEndpoints("2", ["LeftMiddle"], ["BottomCenter"]);
+            _addEndpoints("4", ["LeftMiddle"], ["BottomCenter"]);
+            _addEndpoints("9", ["LeftMiddle"], ["BottomCenter"]);
+            _addEndpoints("11",["LeftMiddle"], ["BottomCenter"]);
+            _addEndpoints("16",["LeftMiddle"], ["BottomCenter"]);
+            _addEndpoints("24",["LeftMiddle"], ["BottomCenter"]);
+
+            instance.bind("connection", function (connInfo, originalEvent) {
+                init(connInfo.connection);
+            });
+            instance.bind("click", function (conn, originalEvent) {
+                // if (confirm("Delete connection from " + conn.sourceId + " to " + conn.targetId + "?"))
+                //   instance.detach(conn);
+                conn.toggleType("basic");
+            });
+
+
+        });
+
+        jsPlumb.fire("jsPlumbDemoLoaded");
+
+    });
+</script>
+</body>
+</html>

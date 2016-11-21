@@ -1,0 +1,183 @@
+@media only screen and (min-width:750px),only screen and (min-device-width:750px){html{font-size:100px}}
+@media only screen and (min-width:540px),only screen and (min-device-width:540px){html{font-size:72px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){html{font-size:64px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){html{font-size:55px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){html{font-size:53px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){html{font-size:50px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){html{font-size:48px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){html{font-size:42px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){html{font-size:32px}}
+html{
+    width:100%;height:100%;
+}
+body{
+    width:100%;
+    height:100%;
+    padding: 0;
+    margin:0 auto;
+    font-family: "Microsoft YaHei" !important;
+    font-size:.28rem;
+    line-height:1.2;
+    background-color:#f8f8f8;
+}
+.operate-overflow{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:1.2rem;
+    overflow-y:auto;
+}
+.erpHeader{
+    height:.88rem;
+    text-align:center;
+    font-size:.34rem;
+    color:#fff;
+    line-height:.88rem;
+    background-color:#09d6e8;
+}
+.index-content{
+    padding:0 0.5rem 1.4rem;
+}
+.index-content .content-list{
+    overflow:hidden;
+}
+.index-content .content-list .content-item{
+    float:left;
+    padding-top:1.3rem;
+    width:50%;
+    text-align:center;
+}
+.content-list .content-item .chufang-logo{
+    background:url(../images/icon-chufang-no.png) no-repeat center center;
+
+}
+.content-list .select-item .chufang-logo{
+    background:url(../images/icon-chufang.png) no-repeat center center;
+}
+.content-list .content-item .shouyin-logo{
+    background:url(../images/icon-money-no.png) no-repeat center center;
+
+}
+.content-list .select-item .shouyin-logo{
+    background:url(../images/icon-money.png) no-repeat center center;
+}
+.content-list .content-item .bingli-logo{
+    background:url(../images/icon-bingli-no.png) no-repeat center center;
+
+}
+.content-list .select-item .bingli-logo{
+    background:url(../images/icon-bingli.png) no-repeat center center;
+}
+.content-list .content-item .account-logo{
+    background:url(../images/icon-table-no.png) no-repeat center center;
+
+}
+.content-list .select-item .account-logo{
+    background:url(../images/icon-table.png) no-repeat center center;
+}
+.content-list .content-item .ruku-logo{
+    background:url(../images/icon-ruku-no.png) no-repeat center center;
+
+}
+.content-list .select-item .ruku-logo{
+    background:url(../images/icon-ruku.png) no-repeat center center;
+}
+.content-list .content-item .jixiao-logo{
+    background:url(../images/icon-chart-no.png) no-repeat center center;
+
+}
+.content-list .select-item .jixiao-logo{
+    background:url(../images/icon-chart.png) no-repeat center center;
+}
+
+.content-list .content-item .item-logo{
+    display:inline-block;
+    width:1.5rem;
+    height:1.5rem;
+    background-size:1.48rem;
+}
+.content-list .content-item .item-detail{
+    padding-top:.18rem;
+    color:#2d2d2d;
+}
+.content-list .select-item .item-detail{
+    color:#09d6e8;
+}
+.index-footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index:10;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-webkit-flex;
+    display:flex;
+    width:100%;
+    padding:.15rem 0 .1rem 0;
+    background-color:#f7f7f8;
+    border-top:1px solid #929292;
+}
+.index-footer .footer-item{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+    text-align:center;
+
+}
+.index-footer .footer-item .item-title{
+    font-size:.2rem;
+    color:#929292;
+}
+.index-footer .active-item .item-title{
+    color:#00c0ff;
+}
+.index-footer .footer-item .item-home{
+    background:url(../images/icon-index-no.png) no-repeat center center;
+    background-size:.5rem .5rem;
+}
+.index-footer .active-item .item-home{
+    background:url(../images/icon-index.png) no-repeat center center;
+    background-size:.5rem .5rem;
+}
+.index-footer .footer-item .item-huanzhe{
+    background:url(../images/icon-intro-no.png) no-repeat center center;
+    background-size:.48rem .48rem;
+
+}
+.index-footer .active-item .item-huanzhe{
+    background:url(../images/icon-nav-intro.png) no-repeat center center;
+    background-size:.48rem .48rem;
+
+}
+.index-footer .footer-item .item-tuiguang{
+    background:url(../images/icon-sale-no.png) no-repeat center center;
+    background-size:.51rem .47rem;
+}
+.index-footer .active-item .item-tuiguang{
+    background:url(../images/icon-nav-sale.png) no-repeat center center;
+    background-size:.51rem .47rem;
+}
+.index-footer .footer-item .item-caiwu{
+    background:url(../images/icon-caiwu-no.png) no-repeat center center;
+    background-size:.58rem .5rem;
+}
+.index-footer .active-item .item-caiwu{
+    background:url(../images/icon-caiwu.png) no-repeat center center;
+    background-size:.58rem .5rem;
+}
+.index-footer .footer-item .item-owner{
+    background:url(../images/icon-owner-no.png) no-repeat center center;
+    background-size:.48rem .5rem;
+}
+.index-footer .active-item .item-owner{
+    background:url(../images/icon-nav-owner.png) no-repeat center center;
+    background-size:.48rem .5rem;
+}
+.index-footer .footer-item .item-icon{
+    margin-bottom:0.02rem;
+    display:inline-block;
+    width:100%;
+    height:.52rem;
+}

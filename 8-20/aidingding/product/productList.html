@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>商品列表</title>
+    <meta name="description" content="Draggabble Widget Boxes &amp; Containers"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- 公共样式 start -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" href="../images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/wgfly.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="${B}page/stylepc/dist/js/ie8-responsive-file-warning.js"></script>
+    <![endif]-->
+    <script src="../dist/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="${B}page/stylepc/dist/js/html5shiv.min.js"></script>
+    <script src="${B}page/stylepc/dist/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- 公共样式 end -->
+
+    <!-- 自定义样式 -->
+    <link href="../css/product/productList.css" rel="stylesheet" media="screen">
+
+</head>
+
+<body>
+
+<!-- 切图位置s -->
+
+<!--下载提示-->
+<div class="wrap-download" id="wrap-download" style="display:none;">
+    <div class="download-left">
+        <img class="pic-logo" src="../images/icon_logo_app@2x.png" alt=""/>
+
+        <div class="logo-details">
+            <i class="logo-name"></i>
+
+            <p class="sub-title">趣玩订制<em>.</em>创意生活</p>
+        </div>
+    </div>
+    <div class="download-right">
+        <a href="" class="download-btn">
+            <img src="../images/icon_down@2x.png"/>
+        </a>
+        <i class="icon-close" onclick="closeDown(this)"></i>
+    </div>
+</div>
+<!--搜索-->
+<div class="search-wrap" id="search-wrap">
+    <div class="search-header-left">
+        <a href=""><img class="pic" src="../images/tpuxiiang_80_80@2x.png" alt=""/></a>
+    </div>
+    <div class="search-header-main">
+        <i class="search-icon"></i>
+        <input class="search-input" type="text" placeholder="请输入搜索内容"/>
+    </div>
+    <div class="search-header-right">
+        <a href="">
+            <img class="user-pic" src="../images/icon_designer_h@2x.png">
+        </a>
+    </div>
+</div>
+<div class="product-list">
+    <div class="product-tab" id="product-tab">
+        <div class="product-tab-title" id="product-tab-title">
+            <div class="title-item active-tab"><span id="current1">精选商品</span><i class="icon-angle"></i></div>
+            <div class="title-item"><span id="current2">全部商品</span><i class="icon-angle"></i></div>
+        </div>
+        <div class="product-tab-content" id="product-tab-content">
+            <div class="content-item">
+                <ul>
+                    <li class="item active-item" onclick="selectItem(this,'1')">精选商品</li>
+                    <li class="item" onclick="selectItem(this,'1')">今日推荐</li>
+                </ul>
+            </div>
+            <div class="content-item">
+                <ul>
+                    <li class="item  active-item" onclick="selectItem(this)">全部商品</li>
+                    <li class="item" onclick="selectItem(this,'2')">服装</li>
+                    <li class="item" onclick="selectItem(this,'2')">包包</li>
+                    <li class="item" onclick="selectItem(this,'2')">手机壳</li>
+                    <li class="item" onclick="selectItem(this,'2')">家居</li>
+                    <li class="item" onclick="selectItem(this,'2')">其他</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="operate-overflow" id="operate-overflow">
+        <div class="tuijian-list">
+            <ul class="tuijian-ul">
+                <li class="tuijian-item">
+                    <a href="" class="wrap-info">
+                        <div class="wrap-img">
+                            <img class="pic" src="../images/example3.jpg"/>
+                            <span class="price">￥78.00</span>
+                        </div>
+                        <div class="user-intro">
+                            <h4>设计师名字</h4>
+
+                            <p>商品名字商品名字</p>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="tuijian-item">
+                    <a href="" class="wrap-info">
+                        <div class="wrap-img">
+                            <img class="pic" src="../images/exmple.jpg"/>
+                            <span class="price">￥78.00</span>
+                        </div>
+                        <div class="user-intro">
+                            <h4>设计师名字</h4>
+
+                            <p>商品名字商品名字</p>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="tuijian-item">
+                    <a href="" class="wrap-info">
+                        <div class="wrap-img">
+                            <img class="pic" src="../images/exmple2.png"/>
+                            <span class="price">￥78.00</span>
+                        </div>
+                        <div class="user-intro">
+                            <h4>设计师名字</h4>
+
+                            <p>商品名字商品名字</p>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="tuijian-item">
+                    <a href="" class="wrap-info">
+                        <div class="wrap-img">
+                            <img class="pic" src="../images/exmple4.png"/>
+                            <span class="price">￥78.00</span>
+                        </div>
+                        <div class="user-intro">
+                            <h4>设计师名字</h4>
+
+                            <p>商品名字商品名字</p>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="tuijian-item">
+                    <a href="" class="wrap-info">
+                        <div class="wrap-img">
+                            <img class="pic" src="../images/example3.jpg"/>
+                            <span class="price">￥78.00</span>
+                        </div>
+                        <div class="user-intro">
+                            <h4>设计师名字</h4>
+
+                            <p>商品名字商品名字</p>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="tuijian-item">
+                    <a href="" class="wrap-info">
+                        <div class="wrap-img">
+                            <img class="pic" src="../images/example3.jpg"/>
+                            <span class="price">￥78.00</span>
+                        </div>
+                        <div class="user-intro">
+                            <h4>设计师名字</h4>
+
+                            <p>商品名字商品名字</p>
+                        </div>
+
+                    </a>
+                </li>
+            </ul>
+            <div class="wrap-up-more"><i class="up-more">上拉加载更多数据...</i></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="product-dimmer"></div>
+<div class="index-footer">
+    <div class="footer-item">
+        <a href="">
+            <i class="item-icon footer-home"></i>
+
+            <p>首页</p>
+        </a>
+
+    </div>
+    <div class="footer-item active-item">
+        <a href="">
+            <i class="item-icon footer-product"></i>
+
+            <p>商城</p>
+        </a>
+
+    </div>
+    <div class="footer-item">
+        <a href="">
+            <i class="item-icon footer-shopping"></i>
+
+            <p>购物车</p>
+        </a>
+
+    </div>
+    <div class="footer-item">
+        <a href="">
+            <i class="item-icon footer-user"></i>
+
+            <p>我的</p>
+        </a>
+
+    </div>
+</div>
+<!-- 切图位置e -->
+
+<!-- 公共js start -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../js/jquery.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script>
+    var wrapDownload;
+    var searchWrap;
+    var productTab;
+    $(function () {
+        wrapDownload=parseInt($("#wrap-download").innerHeight());
+        searchWrap=parseInt($("#search-wrap").innerHeight());
+        productTab=parseInt($("#product-tab").innerHeight());
+        var productTabTitleLi = $("#product-tab-title").find("div.title-item"),
+                productTabContentLi = $("#product-tab-content").find("div.content-item");
+        productTabTitleLi.on("click", function () {
+            var _index = $(this).index();
+            $(this).addClass("active-tab").siblings().removeClass("active-tab");
+            productTabContentLi.css("display", "none");
+            productTabContentLi.eq(_index).css("display", "block");
+            $(".product-dimmer").fadeIn();
+        });
+        $(".product-dimmer").on("click", function () {
+            $(this).fadeOut();
+            productTabContentLi.css("display", "none");
+        });
+        var timer;
+
+        timer = setTimeout(function () {
+            $("#wrap-download").slideDown(400);
+            changeHeight();
+        }, 5000);
+
+
+        defaultHeight();
+    });
+
+    function closeDown(obj) {
+        $(obj).parents(".wrap-download").slideUp(400);
+        defaultHeight()
+    }
+    //初始化固定定位
+    function defaultHeight(){
+        $("#search-wrap").css("top","0");
+        $("#product-tab").css("top",searchWrap);
+        $("#operate-overflow").css("top",(productTab+searchWrap));
+    }
+    //出现下载框后
+    function changeHeight(){
+        $("#search-wrap").css("top",wrapDownload);
+        $("#product-tab").css("top",(wrapDownload+searchWrap));
+        $("#operate-overflow").css("top",(wrapDownload+searchWrap+productTab));
+    }
+
+    //检测屏幕变化
+    addEventListener("resize",function(){
+        setTimeout(function(){
+            var _wrapDownload=$("#wrap-download");
+            wrapDownload=parseInt(_wrapDownload.innerHeight());
+            searchWrap=parseInt($("#search-wrap").innerHeight());
+            productTab=parseInt($("#product-tab").innerHeight());
+            if(_wrapDownload.css('display')=="block"){
+                changeHeight()
+            }else{
+                defaultHeight();
+            }
+        },400);
+    },false);
+    function selectItem(obj, current) {
+        $(obj).addClass("active-item").siblings().removeClass("active-item");
+        $(".product-dimmer").fadeOut();
+        $(obj).parents(".content-item").css("display", "none");
+        if (current == '1') {
+            $("#current1").text($(obj).text())
+        } else if (current == '2') {
+            $("#current2").text($(obj).text())
+        }
+    }
+</script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../dist/js/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+<!-- 公共js end -->
+
+<!--  -->
+
+</body>
+
+</html>

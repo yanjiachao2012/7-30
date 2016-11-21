@@ -1,0 +1,92 @@
+﻿@media only screen and (min-width:750px),only screen and (min-device-width:750px){html{font-size:100px}}
+@media only screen and (min-width:540px),only screen and (min-device-width:540px){html{font-size:72px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){html{font-size:64px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){html{font-size:55px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){html{font-size:53px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){html{font-size:50px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){html{font-size:48px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){html{font-size:42px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){html{font-size:32px}}
+
+body{font-family: Microsoft YaHei;padding:1rem 0 1.2rem 0}
+.userHeader{position: fixed;width: 100%;text-align: center;height: 1rem;line-height: 1rem;background: #dc4935;font-size: .42rem;color: #fff;top: 0}
+.userHeader .sixin{position: absolute;display: block;width: .44rem;height: .44rem;left: .3rem;top: .28rem;background: url(../../images/icon_sixin@2x.png);background-size: cover;}
+.icon_shezhi{position: absolute;display: block;width: .46rem;height: .44rem;right: .3rem;top: .28rem;background: url(../../images/icon_shezhi@2x.png);background-size: cover;}
+
+.noLogin p{padding-left:.3rem;background: #faeaaa;height: 1.2rem;line-height: 1.2rem;font-size: .3rem;color: #2d2d2d;}
+.noLogin p .user-pic{
+    margin-right:.2rem;
+    display:inline-block;
+    vertical-align: middle;
+    width:.66rem;
+    height:.8rem;
+    background:url(../../images/icon-user.png) no-repeat center center;
+    background-size:.64rem .64rem;
+}
+.noLogin-details{
+    padding:.1rem .3rem;
+    overflow:hidden;
+}
+.noLogin-details .details-icon{
+    margin-top:.6rem;
+    float:right;
+    display:inline-block;
+    width:.22rem;
+    height:.38rem;
+    background:url(../../images/icon_nex@2x.png) no-repeat;
+    background-size:.2rem .36rem;
+}
+.noLogin-details .details-left{
+    float:left;
+}
+.userNav{height: 4rem;}
+.userNav .user-blur{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: -1;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(30px);
+    background:url(../../images/pic_5.png) no-repeat center center;
+    background-size:cover;
+}
+.userCenter{height: 2.62rem;}
+.userMes{padding: .34rem 0;text-align: center;background:rgba(201,196,191,0.4);color: #626262;font-size: .24rem;}
+.userMes .fl{border-right: 1px solid #989898;}
+.userMes>div{width: 50%;height: .7rem;}
+
+.userCenter{position: relative;padding: .5rem .3rem .5rem 2.1rem;}
+.userCenter h4{font-size: .4rem;color: #2d2d2d;margin-top: .32rem;}
+.userCenter h5{font-size: .24rem;color: #626262;margin-top: .3rem;}
+.userLogo{display: block;width: 1.6rem;height: 1.6rem;position: absolute;left: .3rem;top: .5rem;border-radius: 50%;overflow: hidden;}
+.userLogo img{width: 100%;}
+.user_go{position: absolute;display: block;width: .2rem;height: .36rem;background: url(../../images/icon_nex@2x.png);background-size: cover;right: .3rem;top: 1.12rem;}
+
+.userMain{border-top: 1px solid #e0e0e0;font-size: .28rem;color: #2d2d2d;}
+.userMain ul li{float: left;width: 33.33%;border-right: 1px solid #e0e0e0;border-bottom: 1px solid #e0e0e0;text-align: center;padding: .4rem 0;}
+.userMain ul li:nth-child(3n){border-right: 0;}
+.userMain ul li a{display: block;}
+.userMain ul li span{display: block;width: 1.2rem;height:1.2rem;margin: 0 auto;background-size: cover;margin-bottom: .2rem}
+.us1{background-image: url(../../images/icon_dingdan@2x.png);}
+.us2{background-image: url(../../images/icon_gouwuche@2x.png);}
+.us3{background-image: url(../../images/icon_wode-shoucang@2x.png);}
+.us4{background-image: url(../../images/icon_fs_gz@2x.png);}
+.us5{background-image: url(../../images/icon_qiandao@2x.png);}
+.us6{background-image: url(../../images/icon_gerenxinxi@2x.png);}
+
+.userFooter{position: fixed;bottom: 0;left: 0;width: 100%;background: #fff;border-top: 1px solid #e0e0e0;padding: .16rem 0;font-size: .2rem;color: #989898;}
+.userFooter ul li{float: left;width: 25%;text-align: center;}
+.userFooter ul li p{margin-top: .08rem;}
+.userFooter ul li a{display: block;height: 100%;color: #989898;}
+.userFooter ul .active a{color: #dc4935;}
+.userFooter ul li span{display: block;width: .58rem;height: .52rem;margin: 0 auto;background-size: cover;}
+
+.uf1{background-image: url(../../images/nor_home_h@2x.png);}
+.uf2{background-image: url(../../images/nor_store_h@2x.png);}
+.uf3{background-image: url(../../images/nor_shopping_cart_h@2x.png);}
+.uf4{background-image: url(../../images/nor_me_h@2x.png);}
+.userFooter ul .active .uf4{background-image: url(../../images/on_me_h@2x.png);}

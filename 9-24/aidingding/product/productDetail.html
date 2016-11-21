@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>商品列表</title>
+		<meta name="description" content="Draggabble Widget Boxes &amp; Containers" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- 公共样式 start -->
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<link rel="icon" href="../images/favicon.ico">
+
+		<!-- Bootstrap core CSS -->
+		<link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="../css/style.css" rel="stylesheet">
+		<link href="../css/wgfly.css" rel="stylesheet">
+
+		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+		<!--[if lt IE 9]>
+			<script src="${B}page/stylepc/dist/js/ie8-responsive-file-warning.js"></script>
+		<![endif]-->
+		<script src="../dist/js/ie-emulation-modes-warning.js"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="${B}page/stylepc/dist/js/html5shiv.min.js"></script>
+			<script src="${B}page/stylepc/dist/js/respond.min.js"></script>
+		<![endif]-->
+		<!-- 公共样式 end -->
+        <link rel="stylesheet" href="../css/frontcms/swiper.min.css"/>
+        <!-- 自定义样式 -->
+        <link href="../css/product/test.css" rel="stylesheet" media="screen">
+        <link href="../css/product/productList.css" rel="stylesheet" media="screen">
+        <!--改变html字体大小，需提前加载-->
+        <script src="../js/fontSize.js"></script>
+
+	</head>
+
+	<body>
+	
+	<!-- 切图位置s -->
+	
+	<div class="wrap">
+		<div class="header">
+			<a href="javascript:history.back(0);"><img class="icon-back" src="../images/back@2x.png" alt=""/></a>
+			<span class="PUBLIC-CENTER-SPAN">商品详情</span>
+			<a href=""><img class="icon-wode" src="../images/nor_fenxiang@2x.png" alt="" /></a>
+		</div>
+		<div class="top">
+		<div class="lunbo" id="myCarousel">
+			<div class="wrap-share">
+				<a href="javascript:history.back(0);" class="back-left"><img class="icon-back"
+																		   src="../images/back@2x.png" alt=""/></a>
+				<a href="" class="share-right"> <img class="icon-wode" src="../images/nor_fenxiang@2x.png" alt="" /></a>
+			</div>
+
+			<div class="lunbo-imgs">
+				<div class="swiper-container swiper-container-horizontal">
+					<div class="swiper-wrapper banner-list" id="banner-list">
+						<div class="swiper-slide">
+							<a href="">
+								<img src="../images/bg.png" class="item img-active" alt="" />
+							</a>
+                             <span class="loading" ></span>
+						</div>
+						<div class="swiper-slide">
+							<a href="">
+								<img src="../images/bg2.png" class="item" alt="" />
+							</a>
+                            <span class="loading" ></span>
+
+						</div>
+						<div class="swiper-slide">
+							<a href="">
+								<img src="../images/lunbo.png"  class="item active" alt="" />
+							</a>
+                            <span class="loading" ></span>
+						</div>
+						</div>
+					</div>
+				<div class="swiper-pagination">
+					 <span class="banner-dot" id="banner-dot">
+						<a href="javascript:void(0);" class="dot-item active-dot"></a>
+						<a href="javascript:void(0);" class="dot-item"></a>
+						<a href="javascript:void(0);" class="dot-item"></a>
+					</span>
+				</div>
+			</div>
+			<div class="mask" style="display: none;"></div>
+		</div>
+		<div class="details-wrap" style="display: block;">
+		<div class="price-infos">
+			<span class="price ">￥ 78</span>
+			<img class="produceSave PUBLIC-CENTER-V" src="../images/nor_shoucang@2x.png" alt="" />
+			<img class="like PUBLIC-CENTER-V" src="../images/nor_zan@2x.png" alt="" />
+		</div>
+		<div class="word-desc">
+			<h1>情侣装</h1>
+			<p>文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</p>
+		</div>
+			<a href="">
+				<div class="shop-infos">
+					<img class="shop-pic PUBLIC-CENTER-V" src="../images/List3.jpg"/>
+					<span class="shop-name PUBLIC-CENTER-V-SPAN">爱吃牛肉的兔子</span>
+					<img class="shop-next PUBLIC-CENTER-V" src="../images/icon_nex@2x.png" alt="" />
+				</div>
+			</a>
+
+		<div class="bg-gray"></div>
+		<div class="product-infos">
+			<span class="size-left">请选择尺码,数量</span>
+			<img class="shop-next size-choose-link size-right" src="../images/icon_nex@2x.png" alt="" />
+		</div>
+		<div class="bg-gray"></div>
+		<div class="details-infos">
+			<div class="details-title">
+				<div class="clearFloat"></div>
+				<div class="details-title-left title ">
+					<span class="wordImg-intro border-active PUBLIC-CENTER-SPAN">图文介绍</span>
+				</div>
+				<div class="details-title-right title" >
+					<span class="product-comment PUBLIC-CENTER-SPAN">评价(256)</span>
+				</div>
+			</div>
+			<!--图文介绍-->
+			<div class="details-content details-left-content">
+				<div class="details-con">
+					<p>商品名称:  花都开很大</p>
+					<p>商品编号:  iDD205</p>
+					<p>商品颜色:  白色</p>
+					<p>商品款式:  情侣</p>
+					<p>商品风格:  艺术-插花</p>
+				</div>
+				<div class="details-table">
+					<table border="1" cellspacing="10" cellpadding="10" align="center">
+						<tr><th>尺码</th><th>肩宽</th><th>胸围</th><th>衣长</th><th>袖长</th></tr>
+						<tr><td>S</td><td>44</td><td>98</td><td>66</td><td>19</td></tr>
+						<tr><td>S</td><td>44</td><td>98</td><td>66</td><td>19</td></tr>
+						<tr><td>S</td><td>44</td><td>98</td><td>66</td><td>19</td></tr>
+						<tr><td>S</td><td>44</td><td>98</td><td>66</td><td>19</td></tr>
+						<tr><td>S</td><td>44</td><td>98</td><td>66</td><td>19</td></tr>
+					</table>
+				</div>
+				<div class="details-pics">
+					<div class="details-pic">
+						<img src="../images/bg2.png"/>
+					</div>
+					<div class="details-pic">
+						<img src="../images/bg.png"/>
+					</div>
+					<div class="details-pic">
+						<img src="../images/bg3.png"/>
+					</div>
+					<div class="details-pic">
+						<img src="../images/last.png"/>
+					</div>
+				</div>
+			
+				</div>
+			</div>
+			<!--评论-->
+			<div class="details-content details-right-content" style="display: none;">
+				<div class="comment-content">
+					<div>
+
+							<a href=""><img class="shop-pic" src="../images/List3.jpg"/></a>
+
+
+					</div>
+					<div class="comment-content-desc">
+						<h1>BANG BANG</h1>
+						<span>穿着好舒服穿着好舒服穿着好舒服穿着好舒服穿着好舒服穿着好舒服穿着好舒服</span>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div>
+							<a href=""><img class="shop-pic" src="../images/List3.jpg"/></a>
+
+					</div>
+					<div class="comment-content-desc">
+						<h1>BANG BANG</h1>
+						<span>穿着好舒服穿着好舒服穿着好舒服穿着好舒服穿着好舒服穿着好舒服穿着好舒服</span>
+					</div>
+				</div>
+				<!--没有评论时显示-->
+				<div class="no-comment">
+					<div class="comment-show">现在的人真懒,什么也不留下</div>
+					<div class="comment-write">
+						<textarea name="" rows="1">我要评论
+						</textarea>
+						<button>发送</button>
+						<span class="write-angel angel-left "></span>
+						<span class="write-angel angel-right"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!--  尺寸选择框 -->
+		<div class="size-choose" style="display: none;">
+			<div class="pro-pic">
+				<div class="pro-img">
+					<img src="../images/lunbo.png">
+				</div>
+				<img class="pro-close PUBLIC-CENTER-V" src="../images/icon_quxiao@2x.png">
+			</div>
+			<div class="pro-size">
+				<h1>尺码</h1>
+				<div>
+					<button class="pro-size-btn size-active">S</button>
+					<button class="pro-size-btn">L</button>
+					<button class="pro-size-btn">M</button>
+					<button class="pro-size-btn">XL</button>
+					<button class="pro-size-btn">XXL</button>
+					<button class="pro-size-btn">XXXL</button>
+				</div>
+			</div>
+			<div class="pro-nums">
+				<span class="PUBLIC-CENTER-V">购买数量</span>
+				<div class="pro-nums-change PUBLIC-CENTER-V">
+					<button class="pro-size-btn left">-</button>
+					<button class="pro-size-btn middle value="2">2</button>
+					<button class="pro-size-btn right">+</button>
+				</div>
+			</div>
+		</div>
+		<div style="height:5.2rem;"></div>
+		<div class="wrap-footer">
+
+				<div class="footer-waiter">
+                   <a href="">
+					<img class="PUBLIC-CENTER-L" src="../images/icon_kefu-@2x.png"/>
+					<span class="PUBLIC-CENTER-L">客服</span>
+				   </a>
+				</div>
+
+
+				<div class="footer-shopBus">
+					<a href="">
+					<img class="PUBLIC-CENTER-L" src="../images/icon_gouwuchea@2x.png"/>
+					<span class="PUBLIC-CENTER-L">购物车</span>
+					</a>
+				</div>
+
+
+				<div class="footer-middle"><a href="">去定制</a></div>
+				<div class="footer-right"><a href="">加入购物车</a> </div>
+
+		</div>
+	</div>
+	
+	<!-- 切图位置e -->
+	
+	<!-- 公共js start -->
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="../js/jquery.js"></script>
+	<script src="../dist/js/bootstrap.min.js"></script>
+	<script src="../js/swiper-3.3.1.min.js"></script>
+
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="../dist/js/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+	<script src="../js/comm.js" type="text/javascript"></script>
+	<!-- 公共js end -->
+	
+	<!--  -->
+	<script src="../js/product.js" type="text/javascript"></script>
+	
+	</body>
+
+</html>

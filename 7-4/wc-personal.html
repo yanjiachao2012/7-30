@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <title>wc个人资料</title>
+    <!--bootstrap样式-->
+    <link href="http://page.joinlinking.com/mlinsbrokerV2/page/styleapp/dist/css/bootstrap.css" rel="stylesheet" media="screen">
+    <!--公共样式-->
+    <link href="http://page.joinlinking.com/mlinsbrokerV2/page/styleapp/css/wgfly-app.css" rel="stylesheet" media="screen">
+    <!--基本样式-->
+    <link href="http://page.joinlinking.com/mlinsbrokerV2/page/styleapp/css/style.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/wc-personal.css"/>
+</head>
+
+<body>
+<header class="mobile-personal-header">
+    <a class="turn-back"></a>
+    <h1>GameOver</h1>
+</header>
+<section class="mobile-personal-main">
+    <ul class="personal-list first-list" >
+        <li class="personal-item photo-item">
+            <span class="item-left">头像</span>
+            <span class="item-right" id="edit-photo">
+                <img src="images/wc_public_3.png"/>
+                <i class="turn-right"></i>
+                <input type="file" class="upload"/>
+            </span>
+
+        </li>
+        <li class="personal-item">
+            <span class="item-left">账号名称</span>
+            <span class="item-right" id="edit-username">
+                <strong class="username">gameover</strong>
+                <i class="turn-right"></i>
+            </span>
+        </li>
+        <li class="personal-item">
+            <span class="item-left">绑定手机号</span>
+            <span class="item-right">
+                13753929534
+            </span>
+        </li>
+        <li class="personal-item">
+            <a href="" class="wrap-item-content">
+                <span class="item-left">收件地址</span>
+                <span class="item-right">
+                    <i class="turn-right"></i>
+                </span>
+            </a>
+        </li>
+    </ul>
+    <ul class="personal-list">
+        <li class="personal-item">
+            <a href="" class="wrap-item-content">
+                <span class="item-left">银行卡</span>
+                    <span class="item-right">
+                        <i class="turn-right"></i>
+                    </span>
+            </a>
+
+        </li>
+    </ul>
+    <div style="height:1.5rem"></div>
+    <div class="personal-logout">
+        <a href="">退出登录</a>
+    </div>
+    <!---修改编辑-->
+    <div class="wrap-dialog-edit" id="wrap-dialog-edit">
+        <div class="dialog-edit">
+            <h4>修改昵称</h4>
+            <div class="wrap-input">
+                <input type="text" value="" name=""/>
+            </div>
+            <div class="dialog-operate">
+                <a href="" class="cancel">取消</a>
+                <a href="" class="sure">确认</a>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script>
+  $(function(){
+      $("#edit-username").on("click",function(){
+          $("#wrap-dialog-edit").css("display","block");
+      });
+  })
+</script>
+</body>
+</html>

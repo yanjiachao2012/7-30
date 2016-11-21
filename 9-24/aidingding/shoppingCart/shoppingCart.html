@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>购物车</title>
+    <meta name="description" content="Draggabble Widget Boxes &amp; Containers"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- 公共样式 start -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" href="../images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/wgfly.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="${B}page/stylepc/dist/js/ie8-responsive-file-warning.js"></script>
+    <![endif]-->
+    <script src="../dist/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="${B}page/stylepc/dist/js/html5shiv.min.js"></script>
+    <script src="${B}page/stylepc/dist/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- 公共样式 end -->
+    <!-- 自定义样式 -->
+    <link href="../css/shoppingCart/shoppingCart.css" rel="stylesheet" media="screen">
+
+</head>
+
+<body>
+
+<!-- 切图位置s -->
+<header class="aiDD-header">
+
+    <h1>购物车</h1>
+</header>
+<section>
+    <div class="wrap-evaluate-content">
+        <ul class="evaluate-list">
+            <li class="evaluate-item">
+                <div class="item-right">
+                    <span class="select-btn" onclick="selectChecked(this)"></span>
+                </div>
+                <div class="item-left">
+                    <div class="wrap-img">
+                        <a href="">
+                            <img src="../images/pic_1.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="left-details">
+                        <h3>商品名称</h3>
+                        <p class="details">
+                            <span class="price">￥30.00</span>
+                            <em class="num-size">x1</em>
+                            <em class="num-size">M</em>
+                        </p>
+                    </div>
+
+                </div>
+            </li>
+            <li class="evaluate-item">
+                <div class="item-right">
+                    <span class="select-btn icon-selected" onclick="selectChecked(this)"></span>
+                </div>
+                <div class="item-left">
+                    <div class="wrap-img">
+                        <a href="">
+                            <img src="../images/exmple2-1.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="left-details">
+                        <h3>圆领T</h3>
+                        <p class="details">
+                            <span class="price">￥30.00</span>
+                            <em class="num-size">x1</em>
+                            <em class="num-size">M</em>
+                        </p>
+                    </div>
+
+                </div>
+            </li>
+            <li class="evaluate-item">
+                <div class="item-right">
+                    <span class="select-btn" onclick="selectChecked(this)"></span>
+                </div>
+                <div class="item-left">
+                    <div class="wrap-img">
+                        <a href="">
+                            <img src="../images/exmple2-1.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="left-details">
+                        <h3>商品名称</h3>
+                        <p class="details">
+                            <span class="price">￥30.00</span>
+                            <em class="num-size">x1</em>
+                            <em class="num-size">M</em>
+                        </p>
+                    </div>
+
+                </div>
+            </li>
+            <li class="evaluate-item">
+                <div class="item-right">
+                    <span class="select-btn" onclick="selectChecked(this)"></span>
+                </div>
+                <div class="item-left">
+                    <div class="wrap-img">
+                        <a href="">
+                            <img src="../images/pic_1.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="left-details">
+                        <h3>商品名称</h3>
+                        <p class="details">
+                            <span class="price">￥30.00</span>
+                            <em class="num-size">x1</em>
+                            <em class="num-size">M</em>
+                        </p>
+                    </div>
+
+                </div>
+            </li>
+
+        </ul>
+        <div class="wrap-up-more"><i class="up-more">上拉加载更多数据...</i> </div>
+    </div>
+</section>
+<div class="order-all-select">
+    <label onclick="allSelect(this)" id="allSelect">全选</label>
+    <a href="" class="remove">去结账</a>
+    <div class="order-details">
+        <h6>合计：<span class="price">￥230.00</span></h6>
+        <p>(优惠：￥0.00，免运费)</p>
+    </div>
+
+</div>
+<div class="index-footer">
+    <div class="footer-item">
+        <a href="">
+            <i class="item-icon footer-home"></i>
+            <p>首页</p>
+        </a>
+
+    </div>
+    <div class="footer-item ">
+        <a href="">
+            <i class="item-icon footer-product"></i>
+            <p>商品</p>
+        </a>
+
+    </div>
+    <div class="footer-item shopping-item  active-item">
+        <a href="">
+            <i class="item-icon footer-shopping"><span class="tip">1</span></i>
+            <p>购物车</p>
+
+        </a>
+
+    </div>
+    <div class="footer-item">
+        <a href="">
+            <i class="item-icon footer-user"></i>
+            <p>我的</p>
+        </a>
+
+    </div>
+</div>
+
+
+<!-- 切图位置e -->
+
+<!-- 公共js start -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../js/jquery.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $(window).on("scroll",function() {
+            if ($(document).scrollTop() >= $(document).height() - $(window).height()) {
+                $(".up-more").html("正在加载...")
+            }
+        });
+    });
+    function selectChecked(obj){
+        if($(obj).hasClass("icon-selected")){
+            $(obj).removeClass("icon-selected");
+            $("#allSelect").removeClass("icon-selected");
+        }else{
+            $(obj).addClass("icon-selected");
+        }
+    }
+    var flag=0;
+    function allSelect(obj) {
+        if (flag == "0") {
+            $(".select-btn").addClass("icon-selected");
+            $(obj).addClass("icon-selected");
+            flag = 1;
+        } else {
+            $(".select-btn").removeClass("icon-selected");
+            $(obj).removeClass("icon-selected");
+            flag=0;
+        }
+    }
+
+</script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../dist/js/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+<script src="../js/comm.js" type="text/javascript"></script>
+<!-- 公共js end -->
+
+<!--  -->
+
+</body>
+
+</html>

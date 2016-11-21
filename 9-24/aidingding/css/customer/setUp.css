@@ -1,0 +1,140 @@
+﻿@media only screen and (min-width:750px),
+only screen and (min-device-width:750px) {
+    html {
+        font-size: 100px
+    }
+}
+
+@media only screen and (min-width:540px),
+only screen and (min-device-width:540px) {
+    html {
+        font-size: 72px
+    }
+}
+
+@media only screen and (max-width:480px),
+only screen and (max-device-width:480px) {
+    html {
+        font-size: 64px
+    }
+}
+
+@media only screen and (max-width:414px),
+only screen and (max-device-width:414px) {
+    html {
+        font-size: 55px
+    }
+}
+
+@media only screen and (max-width:400px),
+only screen and (max-device-width:400px) {
+    html {
+        font-size: 53px
+    }
+}
+
+@media only screen and (max-width:375px),
+only screen and (max-device-width:375px) {
+    html {
+        font-size: 50px
+    }
+}
+
+@media only screen and (max-width:360px),
+only screen and (max-device-width:360px) {
+    html {
+        font-size: 48px
+    }
+}
+
+@media only screen and (max-width:320px),
+only screen and (max-device-width:320px) {
+    html {
+        font-size: 42px
+    }
+}
+
+@media only screen and (max-width:240px),
+only screen and (max-device-width:240px) {
+    html {
+        font-size: 32px
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body.has-head {
+    padding-top: 0.96rem;
+    font-family: '微软雅黑'
+}
+
+body.f2 {
+    background: #f2f2f2;
+}
+
+.head {
+    position: fixed;
+    height: 0.96rem;
+    line-height: 1rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: #dc4935;
+    text-align: center;
+    font-size: 0.44rem;
+    letter-spacing: 2px;
+    z-index: 1000;
+}
+
+.head a.back {
+    width: 0.96rem;
+    height: 0.96rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    text-align: center;
+    line-height: 0.96rem;
+}
+
+.head a.back img {
+    width: 22px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.set-list {
+    margin-top: 0.2rem;
+    background: #fff;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.set-list a {
+    display: block;
+    line-height: 1rem;
+    padding-left: 0.3rem;
+    font-size: 0.28rem;
+    color: #000;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.set-list a:last-child {
+    border: none;
+}
+
+.set-list a img {
+    float: right;
+    width: 10px;
+    margin: 0.32rem 0.3rem 0 0;
+}
+
+.set-list a.cen {
+    text-align: center;
+    padding: 0;
+}

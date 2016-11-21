@@ -1,0 +1,203 @@
+body{
+    font-family: "microsoft yahei";
+    font-size:14px;
+    background-color:#f7f9fa;
+}
+.wrap-benefit-header{
+    background-color:#fefefe;
+    border-bottom:1px solid #e8e9ea;
+}
+.wrap-benefit-header .benefit-header{
+    margin:0 auto;
+    width:1150px;
+    height:80px;
+    line-height:80px;
+    overflow:hidden;
+}
+.wrap-benefit-header .benefit-header .header-left{
+    float:left;
+}
+.benefit-header .header-left .wrap-logo{
+    float:left;
+    margin-right:40px;
+}
+.benefit-header .header-left .left-ul{
+    float:left;
+}
+.header-left .left-ul .left-item{
+    float:left;
+    margin-right:50px;
+}
+.left-ul .left-item a{
+    font-size:18px;
+    color:#666;
+}
+.wrap-benefit-header .benefit-header .header-right{
+    float:right;
+}
+.benefit-header .header-right .public-item{
+    display:inline-block;
+    margin-right:20px;
+    width:100px;
+    height:40px;
+    font-size:17px;
+    color:#666;
+    line-height:40px;
+    text-align:center;
+    vertical-align: middle;
+    border:1px solid #d7d7d7;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.benefit-header .header-right .userPic{
+    width:53px;
+    height:53px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.benefit-header .header-right .drop{
+    display:inline-block;
+    vertical-align: middle;
+    width:30px;
+    height:40px;
+    background:url(../images/public_down.png) no-repeat center center;
+    background-size:13px 7px;
+}
+/*****/
+.wrap-personal-main .personal-main{
+    padding-bottom:100px;
+    margin:0 auto;
+    width:780px;
+}
+.wrap-personal-main .personal-main h2{
+    margin:0;
+    padding:45px 0;
+    text-align:center;
+    font-size:28px;
+}
+.personal-main .personal-content{
+    overflow:hidden;
+}
+.personal-main .personal-content .personal-list{
+    overflow:hidden;
+}
+.personal-content .personal-list .personal-item{
+    float:left;
+    margin-right:30px;
+    font-size:17px;
+}
+.personal-content .personal-list .personal-item a{
+    display:inline-block;
+    padding-bottom:10px;
+    color:#666;
+    border-bottom:1px solid transparent;
+}
+.personal-content .personal-list .active-item a{
+    position:relative;
+    z-index:2;
+    color:#42ab42;
+    border-bottom-color:#42ab42;
+}
+.personal-content .wrap-info {
+    position:relative;
+    top:-1px;
+    padding-top:35px;
+    border-top: 1px solid #e6e8e8;
+}
+.personal-content .wrap-info .item{
+    padding-bottom:30px;
+    overflow:hidden;
+}
+.wrap-info .info-item  .item-label{
+    float:left;
+    display:inline-block;
+    margin-bottom:0;
+    width:150px;
+    font-size:18px;
+    color:#666;
+    font-weight:normal;
+}
+.wrap-info .info-item  .item-input{
+    overflow:hidden;
+}
+
+.info-item .item-photo .wrap-pic{
+    position:relative;
+    width:121px;
+    height:121px;
+    overflow:hidden;
+}
+.info-item .item-photo .wrap-pic img{
+    width:100%;
+}
+.info-item .item-photo .wrap-pic .item-input{
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index: 10;
+    cursor: pointer;
+    width:100%;
+    height:30px;
+    opacity: 0;
+    filter:alpha(opacity=0);
+
+}
+.info-item .item-photo .wrap-pic .change{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:30px;
+    line-height:30px;
+    color:#fff;
+    text-align:center;
+    background-color:rgba(0,0,0,0.5);
+}
+.info-item .item-username .item-label{
+    height:45px;
+    line-height:45px;
+}
+ .info-item .item-username .item-input{
+     padding:5px 10px;
+     height:45px;
+     width:590px;
+     outline:none;
+     font-size:16px;
+     border:1px solid #e6e8e8;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+.info-item  .item-tel .item-label{
+    height:24px;
+    line-height:24px;
+}
+.info-item  .item-tel .item-input{
+    font-size:18px;
+    outline:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background:none;
+}
+.wrap-info .info-item  .item-save{
+    padding-left:150px;
+}
+.wrap-info .info-item  .item-save button{
+    width:140px;
+    height:42px;
+    font-size:18px;
+    color:#fff;
+    border:none;
+    outline:none;
+    background-color:#1ea78d;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+}

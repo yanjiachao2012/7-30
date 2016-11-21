@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <title>wc银行编辑</title>
+    <!--bootstrap样式-->
+    <link href="http://page.joinlinking.com/mlinsbrokerV2/page/styleapp/dist/css/bootstrap.css" rel="stylesheet" media="screen">
+    <!--公共样式-->
+    <link href="http://page.joinlinking.com/mlinsbrokerV2/page/styleapp/css/wgfly-app.css" rel="stylesheet" media="screen">
+    <!--基本样式-->
+    <link href="http://page.joinlinking.com/mlinsbrokerV2/page/styleapp/css/style.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/wc-bank.css"/>
+</head>
+
+<body>
+<header class="mobile-personal-header">
+    <a class="turn-back" href="javascript:operateHref();" id="turnBack"></a>
+    <h1>银行卡</h1>
+    <a href="" class="add-bank" style="display:none;"></a>
+</header>
+<section class="mobile-bank-main">
+    <!---没有添加银行卡的显示--->
+    <div class="mobile-no-bank" style="display:none;">
+        <img class="no-bank-pic" src="images/no-bank3.png" width="244"  height="179"/>
+        <p class="tip">您还没有添加银行卡</p>
+    </div>
+    <!--银行卡列表-->
+    <div class="mobile-bank-list" id="mobile-bank-list">
+        <ul class="bank-ul">
+            <li class="bank-item">
+                <div class="item-right">
+                    <a href="javascript:void(0)" class="item-remove" onclick="removeBank(this);">删除</a>
+                    <a href="javascript:void(0)" onclick="editBank();" class="item-edit">编辑</a>
+                </div>
+                <div class="item-left">
+                    <h5>工商银行</h5>
+                    <p>尾号1111</p>
+                </div>
+
+            </li>
+            <li class="bank-item">
+                <div class="item-right">
+                    <a href="javascript:void(0);" onclick="removeBank(this);" class="item-remove">删除</a>
+                    <a href="javascript:editBank();" class="item-edit">编辑</a>
+                </div>
+                <div class="item-left">
+                    <h5>工商银行</h5>
+                    <p>尾号1111</p>
+                </div>
+
+            </li>
+            <li class="bank-item add-bank-item" onclick="editBank();" >
+                <div class="item-right">
+                    <a href="" class="item-add"></a>
+                </div>
+                <div class="item-left">
+                    <h5>添加新银行卡</h5>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+    <!--银行卡编辑-->
+    <div  style="display:none;"  class="mobile-bank-edit"  id="mobile-bank-edit">
+        <div class="bank-edit-tab">
+            <ul class="tab-list" id="tab-list">
+                <li class="tab-item active-item">
+                    <a href="javascript:void(0);">个人银行卡</a>
+                </li>
+                <li class="tab-item"><a href="javascript:void(0);">对公银行卡</a> </li>
+            </ul>
+        </div>
+        <div class="bank-edit-input" id="bank-edit-input">
+            <ul class="bank-edit-list">
+                <li class="bank-edit-tip">
+                    <p>绑卡须知：平台只支持储蓄卡提现，请勿绑定信用卡、存折等以免影响提现。</p>
+                </li>
+                <li class="bank-edit-item">
+                    <label class="item-label">开户姓名</label>
+                    <div class="wrap-input">
+                        <input type="text" value="" placeholder="填写开户人姓名" name=""/>
+                    </div>
+
+                </li>
+                <li class="bank-edit-item">
+                    <label class="item-label">银行卡号</label>
+                    <div class="wrap-input">
+                        <input type="text" value="" placeholder="填写银行卡号" name=""/>
+                    </div>
+                </li>
+                <li class="bank-edit-item">
+                    <label class="item-label">开户银行</label>
+                    <div class="wrap-input wrap-select">
+                        <span class="down" id="obtain1">工商银行</span>
+                        <select id="select1" onchange="selectObtain(1,this)">
+                            <option value="">工商银行</option>
+                            <option value="1">建设银行</option>
+                            <option value="1">招商银行</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+            <ul class="bank-edit-list" style="display:none;">
+                <li class="bank-edit-item">
+                    <label class="item-label">开户单位</label>
+                    <div class="wrap-input">
+                        <input type="text" value="" placeholder="填写开户人姓名" name=""/>
+                    </div>
+
+                </li>
+                <li class="bank-edit-item">
+                    <label class="item-label">银行卡号</label>
+                    <div class="wrap-input">
+                        <input type="text" value="" placeholder="填写银行卡号" name=""/>
+                    </div>
+                </li>
+                <li class="bank-edit-item">
+                    <label class="item-label">开户银行</label>
+                    <div class="wrap-input wrap-select">
+                        <span class="down" id="obtain2">工商银行</span>
+                        <select onchange="selectObtain(2,this)">
+                            <option value="">工商银行</option>
+                            <option value="1">建设银行</option>
+                            <option value="1">招商银行</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-bank-sure">
+            <button type="submit">确定</button>
+        </div>
+    </div>
+</section>
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script>
+    function editBank(){
+        $("#mobile-bank-list").css("display","none");
+        $("#mobile-bank-edit").css("display","block");
+    }
+    function removeBank(obj){
+        $(obj).parents(".bank-item").css("display","none");
+    }
+
+    function operateHref(){
+        if($("#mobile-bank-edit").css("display")=="block"){
+            $("#mobile-bank-edit").css("display","none");
+            $("#mobile-bank-list").css("display","block");
+        }else{
+            if(window.history.length>1){
+               window.history.back();
+            }else{
+                window.location.href="/"
+            }
+
+        }
+    }
+
+    function selectObtain(obj,arg){
+        $("#obtain"+obj).text($(arg).find("option:selected").text());
+    }
+    $(function(){
+        var TabListLi=$("#tab-list").find(".tab-item");
+        var BankEditInputList=$("#bank-edit-input").find(".bank-edit-list");
+        TabListLi.on("click",function(){
+            var _index=$(this).index();
+            TabListLi.removeClass("active-item");
+            $(this).addClass("active-item");
+            BankEditInputList.css("display","none");
+            BankEditInputList.eq(_index).css("display","block");
+        })
+    })
+</script>
+</body>
+</html>

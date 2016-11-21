@@ -1,0 +1,112 @@
+﻿body {margin: 0;padding: 0;}
+
+.PUBLIC-CENTER{
+	/* display:inline-block; */
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	position: relative;
+	top: 50%;
+	left: 50%;
+}
+.PUBLIC-CENTER-V{
+	 transform: translate(0%, -50%);
+	 /* -webkit-transform: translate(0%, -50%); */
+	 -moz-transform: translate(0%, -50%);
+	 position: relative;
+	 top: 50%;
+}
+
+.PUBLIC-CENTER-L{
+	transform: translate(-50%, 0%);
+	-webkit-transform: translate(-50%, 0%);
+	-moz-transform: translate(-50%, 0%);
+	position: relative;
+	left: 50%;
+}
+
+.PUBLIC-CENTER-SPAN{
+	display:inline-block;
+	float: left;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	position: relative;
+	top: 50%;
+	left: 50%;
+	max-width: 100%;
+	white-space:nowrap;
+	/*overflow:hidden;*/
+	text-overflow:ellipsis;
+}
+.PUBLIC-CENTER-V-SPAN{
+	float: left;
+	/*display:inline-block;*/
+	transform: translate(0%, -50%);
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	position: relative;
+	top: 50%;
+	
+}
+.PUBLIC-CENTER-L-SPAN{
+	/*display:inline-block;*/
+	float: left;
+	transform: translate(-50%, 0%);
+	-webkit-transform: translate(-50%, 0%);
+	-moz-transform: translate(-50%, 0%);
+	position: relative;
+	left: 50%;
+}
+/*公共样式*/
+.wrap {
+  width: 750px;
+  height: auto;
+  background-color: #fff2;
+}
+.wrap .lunbo {
+  position: relative;
+  width: 100%;
+  height: 724px;
+}
+.wrap .lunbo .icon-back {
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  width: 44px;
+  height: 44px;
+}
+.wrap .lunbo .icon-wode {
+  position: absolute;
+  top: 26px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+}
+.wrap .lunbo .lunbo-dot {
+  position: absolute;
+  bottom: 30px;
+  left: 338px;
+  
+}
+.wrap .lunbo .dot{
+	width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  float: left;
+  margin-left: 14px;
+  background-color: #E0E0E0;
+}
+.wrap .price-infos{
+	width: 100%;
+	height: 110px;
+	border-bottom: 1px solid #989898;
+	line-height: 110px;
+}
+.wrap .price{
+	width: 16px;
+	height: 30px;
+	color: #FE7700;
+	display: inline-block;
+}
+/*# sourceMappingURL=test.css.map */

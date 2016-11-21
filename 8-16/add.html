@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>首页</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/wgfly.css" rel="stylesheet">
+    <link href="css/mobiscroll.css" rel="stylesheet"/>
+    <link href="css/add.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="wrap-add-header">
+        <div class="erpHeader">
+            <i class="icon-back"></i>
+            新增人员
+        </div>
+        <div class="header-add-content">
+            <div class="wrap-pic">
+                <a href="">
+                    <img src="images/add-default.png"/>
+                </a>
+            </div>
+        </div>
+</div>
+<div class="changePw-content">
+    <div class="item-title">
+        <i class="title-icon"></i>
+        <p>修改密码<span class="turn-down" onclick="toggleShow();"></span></p>
+    </div>
+    <div class="content-list" id="content-list">
+        <div class="list-item item-name">
+            <label class="item-label" for="user-name">姓名</label>
+            <div class="item-flex">
+                <input type="text" id="user-name" value="" placeholder="必填"/>
+            </div>
+        </div>
+        <div class="list-item item-sex">
+            <label class="item-label">性别</label>
+            <div class="item-flex">
+                <label class="for-sex" onclick="selectLabel(this);">男<input type="radio" name="sex"/> </label>
+                <label class="for-sex" onclick="selectLabel(this);">女<input type="radio" name="sex"/> </label>
+            </div>
+        </div>
+        <div class="list-item item-tel">
+            <label class="item-label" for="user-tel">手机</label>
+            <div class="item-flex">
+                <input type="password" id="user-tel" value="" placeholder="必填"/>
+            </div>
+        </div>
+        <div class="list-item item-job">
+            <label class="item-label">岗位</label>
+            <div class="item-flex">
+                <label class="for-job" onclick="selectLabel(this);">医生<input type="radio" name="job"/> </label>
+                <label class="for-job" onclick="selectLabel(this);">护士<input type="radio" name="job"/> </label>
+            </div>
+        </div>
+        <div class="list-item item-zhicheng">
+            <label  class="item-label"for="user-zhicheng">职称</label>
+            <div class="item-flex">
+                <input type="password" id="user-zhicheng" value="" placeholder="如副主任"/>
+            </div>
+        </div>
+        <div class="list-item item-zili">
+            <label class="item-label" for="user-zili">资历</label>
+            <div class="item-flex">
+                <input type="password" id="user-zili" value="" placeholder="如十年临床"/>
+            </div>
+        </div>
+        <div class="list-item item-good">
+            <label  class="item-label" for="user-zili">擅长领域</label>
+
+        </div>
+        <div class="good-details">
+            <textarea rows="3" placeholder="如:擅长急性上呼吸道感染、急慢性支气管炎、肺炎、胃食管反流病急慢性胃炎、消化性溃疡、功能性消化不良、病毒性胃炎、水痘一带状疱疹"></textarea>
+        </div>
+    </div>
+</div>
+<div class="changePw-content add-people-content2">
+    <div class="item-title">
+        <i class="title-icon"></i>
+        <p>排班信息</p>
+    </div>
+    <div class="weekend-details">
+        <div class="details-list">
+            <div class="details-item details-title">
+                <div class="item first"></div>
+                <div class="item">周一</div>
+                <div class="item">周二</div>
+                <div class="item">周三</div>
+                <div class="item">周四</div>
+                <div class="item">周五</div>
+                <div class="item">周六</div>
+                <div class="item">周日</div>
+            </div>
+            <div class="details-item middle-item">
+                <div class="item first">早班</div>
+                <div class="item">
+                    <label for="first-1" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" id="first-1"/>
+                </div>
+                <div class="item">
+                    <label for="first-2" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" id="first-2"/>
+                </div>
+                <div class="item">
+                    <label for="first-3" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" checked="checked" id="first-3"/>
+                </div>
+                <div class="item">
+                    <label for="first-4" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" id="first-4"/>
+                </div>
+                <div class="item">
+                    <label for="first-5" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" checked="checked" id="first-5"/>
+                </div>
+                <div class="item">
+                    <label for="first-6" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" id="first-6"/>
+                </div>
+                <div class="item">
+                    <label for="first-7" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" id="first-7"/>
+                </div>
+            </div>
+            <div class="details-item">
+                <div class="item first">早班</div>
+                <div class="item">
+                    <label for="second-1" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" id="second-1"/>
+                </div>
+                <div class="item">
+                    <label for="second-2" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" id="second-2"/>
+                </div>
+                <div class="item">
+                    <label for="second-3" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" id="second-3"/>
+                </div>
+                <div class="item">
+                    <label for="second-4" class="item-label" onclick="selectChecked(this)"></label>
+                    <input type="checkbox" id="second-4"/>
+                </div>
+                <div class="item">
+                    <label for="second-5" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" id="second-5"/>
+                </div>
+                <div class="item">
+                    <label for="second-6" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" id="second-6"/>
+                </div>
+                <div class="item">
+                    <label for="second-7" class="item-label" onclick="selectChecked(this)">
+                    </label>
+                    <input type="checkbox" checked="checked" id="second-7"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="weekend-time">
+        <div class="time-item">
+            <div class="left">
+            </div>
+            <div class="item-flex ">
+                <span>早班时间</span>
+                <input type="text" value="08:00" readonly id="morning-start-time">-
+                <input type="text" value="15:00" readonly id="morning-end-time">
+            </div>
+        </div>
+        <div class="time-item">
+            <div class="left night">
+            </div>
+            <div class="item-flex ">
+                <span>晚班时间</span>
+                <input type="text" value="08:00" readonly id="night-start-time">-
+                <input type="text" value="15:00" readonly id="night-end-time">
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="changePw-content add-people-content3">
+    <div class="item-title">
+        <i class="title-icon"></i>
+        <p>绩效信息 <a href="" class="icon-more"></a></p>
+    </div>
+    <div class="weekend-time">
+        <div class="time-item today-item">
+            <div class="left ">
+            </div>
+            <div class="item-flex ">
+                <h5>今天绩效</h5>
+                <p>接诊患者数<span>26</span></p>
+                <p>设备检测数<span>8</span></p>
+                <p>药品销售量<span class="count">￥1500.00</span></p>
+            </div>
+        </div>
+        <div class="time-item month-item">
+            <div class="left ">
+            </div>
+            <div class="item-flex ">
+                <h5>本月绩效</h5>
+            </div>
+        </div>
+    </div>
+    <div class="changePw-submit">
+        <button type="submit">保存</button>
+    </div>
+</div>
+
+<script src="http://page.joinlinking.com/dayuwang/breeze/lib/js/jquery.js"></script>
+<script src="js/mobiscroll_date.js"></script>
+<script src="js/mobiscroll.js"></script>
+<script>
+
+    /****/
+    function toggleShow(){
+        $("#content-list").slideToggle();
+    }
+
+    /**复选框的操作*/
+    function selectLabel(obj){
+        $(obj).addClass("active-label").siblings().removeClass("active-label");
+    }
+
+    /**操作选择时间*/
+    function selectChecked(obj){
+        if($(obj).hasClass("selected")){
+            $(obj).removeClass("selected");
+        }else{
+            $(obj).addClass("selected");
+        }
+    }
+    $(function(){
+        var input=$(".details-item .item").find("input");
+        input.each(function(){
+            if($(this).prop("checked")==true){
+                $(this).prev().addClass("selected");
+            }
+        });
+
+        //时间
+        var currYear = (new Date()).getFullYear();
+        var opt={};
+        opt.date = {preset : 'date'};
+        opt.datetime = {preset : 'datetime'};
+        opt.time = {preset : 'time'};
+        opt.default = {
+            height:30,
+            width:40,
+            theme: 'android-ics light', //皮肤样式
+            display: 'bottom', //显示方式
+            mode: 'scroller', //日期选择模式
+            dateFormat: 'yyyy-mm-dd',
+            rows:3,
+            lang: 'zh',
+            showNow: false,
+          /*  nowText: "今天",*/
+            startYear: currYear , //开始年份
+            endYear: currYear  //结束年份
+        };
+
+        var optTime = $.extend(opt['time'], opt['default']);
+        $("#morning-start-time").mobiscroll(optTime).time(optTime);
+        $("#morning-end-time").mobiscroll(optTime).time(optTime);
+        $("#night-start-time").mobiscroll(optTime).time(optTime);
+        $("#night-end-time").mobiscroll(optTime).time(optTime);
+    });
+</script>
+</body>
+</html>

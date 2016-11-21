@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>信息</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/wgfly.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/LArea.min.css"/>
+    <link href="css/info.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="erpHeader">
+    <a href="" class="icon-back"></a>
+    诊所信息
+</div>
+<div class="info-content">
+    <div class="item-title">
+        <i class="title-icon"></i>
+
+        <p>诊所信息</p>
+    </div>
+    <div class="info-item  photo-item">
+        <label>头像</label>
+
+        <div class="item-flex">
+            <span class="add-photo" onclick="ObtainPicture();"></span>
+
+            <span class="photo-tip">请拍摄诊所门头照片</span>
+        </div>
+    </div>
+    <div class="info-item">
+        <label for="info-name">名称</label>
+
+        <div class="item-flex">
+            <input id="info-name" type="text" placeholder="请填写诊所名称"/>
+        </div>
+    </div>
+    <div class="info-item">
+        <label for="info-people">法人</label>
+
+        <div class="item-flex">
+            <input id="info-people" type="text" placeholder="请输入诊所负责人"/>
+        </div>
+    </div>
+    <div class="info-item">
+        <label>地址</label>
+
+        <div class="item-flex address-flex">
+            <span class="obtain-address">
+
+            </span>
+            <input id="showAddress" type="text" readonly="" placeholder="选择地区"  value=""/>
+            <input id="obtainAddress" type="hidden" value=""/>
+
+        </div>
+    </div>
+    <div class="info-item">
+        <label for="info-tel">手机</label>
+
+        <div class="item-flex">
+            <input id="info-tel" type="text" placeholder="13800138000"/>
+        </div>
+    </div>
+    <div class="info-item">
+        <label for="info-main">主营</label>
+
+        <div class="item-flex">
+            <input id="info-main" type="text" placeholder="请输入诊所诊疗科目"/>
+        </div>
+    </div>
+    <div class="info-item">
+        <label for="info-money">挂号</label>
+
+        <div class="item-flex">
+            <input id="info-money" type="text" placeholder="请输入诊所挂号费"/>
+        </div>
+    </div>
+    <div class="info-item">
+        <label for="info-money2">诊金</label>
+
+        <div class="item-flex">
+            <input id="info-money2" type="text" placeholder="请输入诊所诊金费用"/>
+        </div>
+    </div>
+</div>
+<div class="info-content info-content2">
+    <div class="item-title item-title2">
+        <i class="title-icon"></i>
+
+        <p>诊所资质</p>
+    </div>
+    <div class="content2-item">
+        <div class="item-up"><label>营业执照</label></div>
+
+        <div class="item-flex">
+            <div class="wrap-img">
+            </div>
+            <span class="wrap-up" onclick="ObtainPicture();">
+            </span>
+        </div>
+    </div>
+    <div class="content2-item item-textarea">
+        <label for="info-money2">简介</label>
+
+        <div class="item-flex">
+            <textarea rows="2" placeholder="简介  始建于2004年，至今已10余年。由深圳名医、主任医师陈旭主诊位于深圳龙岗区上李朗社区，面积330余"></textarea>
+        </div>
+    </div>
+    <div class="content2-item">
+        <div class="item-up"><label>诊所实景</label></div>
+
+        <div class="item-flex">
+            <div class="wrap-img">请拍摄诊所实景</div>
+            <span class="wrap-up" onclick="ObtainPicture();">
+            </span>
+        </div>
+    </div>
+    <div class="submit-info">
+        <button type="submit">保存</button>
+    </div>
+</div>
+<div class="upLoad-photo" id="upLoad-photo">
+    <h3>上传营业执照相片</h3>
+    <div class="upLoad-select" id="upLoad-select">
+        <span>拍照上传<input type="file" accept="image/*;capture=camera"/> </span>
+        <span>本地相册<input type="file" accept="image/*"> </span>
+    </div>
+</div>
+<script src="http://page.joinlinking.com/yhg/breeze/lib/js/jquery.js"></script>
+<script src="js/LAreaData1.js"></script>
+<script src="js/LAreaData2.js"></script>
+<script src="js/LArea.min.js"></script>
+<script>
+    function selectObtain(arg){
+        $("#obtainAddress").text($(arg).find("option:selected").text());
+    }
+
+    /**照片操作*/
+    function ObtainPicture(){
+        $("#upLoad-photo").show();
+    }
+    $(function(){
+        $("#upLoad-photo").on("click",function(){
+            $(this).fadeOut();
+        });
+        $("#upLoad-select").on("click",function(e){
+            e.stopPropagation();
+        })
+    });
+    var area1 = new LArea();
+    area1.init({
+        'trigger': '#showAddress', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+        'valueTo': '#obtainAddress', //选择完毕后id属性输出到该位置
+        'keys': {
+            id: 'id',
+            name: 'name'
+        }, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+        'type': 1, //数据源类型
+        'data': LAreaData //数据源
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿@charset "UTF-8";
+/*css Document*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{display: block;}
+ol, ul{list-style: none;}
+blockquote, q{quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after{content: '';content: none;}
+table{border-collapse: collapse;border-spacing: 0;}
+body{font-style: normal;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:rgba(0,0,0,0);
+    font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+    font-size: 65.2%;}
+img{border: none;vertical-align: middle;}
+input,select,textarea{outline: none; border: none;background: none;}
+input[type="button"], input[type="submit"], input[type="reset"], input[type="text"] {-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+textarea{resize: none;}
+a{text-decoration: none; color: #656565;}
+*,:after,:before {-webkit-box-sizing:  border-box;-moz-box-sizing:  border-box;box-sizing:  border-box;}
+a, img {-webkit-touch-callout: none;}
+html, body {-webkit-user-select: none; height: 100%}
+/*清除浮动*/
+.clearfix:after{content: ""; display: block;clear: both;}
+.clearfix{zoom: 1;clear: both;}
+.fl{float: left;}
+.fr{float:right;}
+/*header*/
+.baseIcon{width:.2rem;height:.3rem;display:inline-block;background:url(../../images/back@2x.png);}
+.xq-header{position:fixed;top: 0;left: 0; width: 100%; height:1.33rem;line-height:1.33rem;font-size:0.5rem;text-align:center;color: #fff; background-color:#dc4935;z-index: 99;}
+.iconBack{position:absolute;top:0.37rem;left:0.4rem;width:0.58rem;height:.58rem;background-size: cover;}
+.xq-head{position: absolute;left: 0.4rem;top: 0.3rem; display: inline-block; width: 1.2rem;height: 1.2rem;overflow: hidden;border-radius: 100px;}
+.xq-head img,.commentTx img{width: 100%;height: 100%;-webkit-box-sizing:  border-box;-moz-box-sizing:  border-box;box-sizing:  border-box;}
+
+/*聊天内容*/
+.chatmain{padding: 1.33rem 0.26rem 2rem 0.26rem;}
+.chatmain ul li{width: 100%;position: relative;}
+.chatmain ul li:after{content: ""; display: block;clear: both;}
+.chatmain ul li .time{padding-top: 0.53rem;padding-bottom: 0.26rem;font-size: 0.32rem;color: #989898;text-align: center;}
+.chatmain ul li .userimg{width: 1rem;height: 1rem;display: block;border-radius: 100%;overflow: hidden;}
+.chatmain ul li .userimg img{width: 100%;height: 100%;border-radius: 100%;}
+.chatmain ul li .chattext{padding: 0.26rem 0.34rem;border-radius: 5px;font-size: 0.37rem;max-width: 6.02rem;}
+.chatmain ul li .trian{display: block;  width: 0; height: 0;  position: absolute;  }
+.chatmain ul li .trian em{
+    width: 0;
+    height: 0;
+    border-top: 0.13rem solid transparent;
+    border-right: 0.15rem solid #ffffff;
+    border-bottom: 0.13rem solid transparent;
+    top: -0.12rem;
+    left: 0.013rem;
+    display: block;
+    position: absolute;
+}
+.chatmain ul li.chetleft .userimg{float: left;}
+.chatmain ul li.chetleft .chattext{float: left;border: 1px solid #e0e0e0;background-color: #ffffff;margin-left: 0.26rem;}
+.chatmain ul li.chetleft .trian{left: 1.15rem;border-right: 0.13rem solid #e0e0e0;
+    border-top: 0.15rem solid transparent;
+    border-bottom: 0.15rem solid transparent; top: 1.55rem;}
+.chatmain ul li.chetright{margin-top: 0.4rem;}
+.chatmain ul li.chetright .userimg{float: right;}
+.chatmain ul li.chetright .chattext{float: right;background-color: #e0e0e0;margin-right: 0.26rem;}
+.chatmain ul li.chetright .trian{right: 1.15rem;top:0.45rem;;
+    border-top: 0.15rem solid transparent;
+    border-left: 0.13rem solid #e0e0e0;
+    border-bottom: 0.15rem solid transparent;
+}
+
+/*消息回复*/
+.chatfoot{border-top: 1px solid #e0e0e0;background-color: #ffffff;padding: 0.26rem;position: fixed;bottom: 0;width: 100%;}
+.chatfoot .cf-box{width: 7.86rem;border: 1px solid #2d2d2d;float: left;height:0.93rem;}
+.chatfoot .cf-box input{width: 7.86rem;height:0.8rem;background-color: #ffffff;padding-left: 0.22rem;font-size: 0.4rem;color: #989898;margin-top: -1px;margin-left: -1px;}
+.chatfoot .sendbtn{float: right;width: 1.33rem;height: 0.93rem;background-color: #e0e0e0;border-radius: 5px;text-align: center;display: block;font-size: 0.4rem;line-height: 0.93rem;color: #2d2d2d;}

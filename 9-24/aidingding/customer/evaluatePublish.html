@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>发表评价</title>
+    <meta name="description" content="Draggabble Widget Boxes &amp; Containers"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- 公共样式 start -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" href="../images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/wgfly.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="${B}page/stylepc/dist/js/ie8-responsive-file-warning.js"></script>
+    <![endif]-->
+    <script src="../dist/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="${B}page/stylepc/dist/js/html5shiv.min.js"></script>
+    <script src="${B}page/stylepc/dist/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- 公共样式 end -->
+    <!-- 自定义样式 -->
+    <link href="../css/customer/evaluatePublish.css" rel="stylesheet" media="screen">
+
+</head>
+
+<body>
+
+<!-- 切图位置s -->
+<header class="aiDD-header">
+    <a href="" class="icon-back" onclick="history.back(0);">
+    </a>
+    <h1>发表评价</h1>
+    <button type="submit" class="comment-submit" id="comment-submit">提交</button>
+</header>
+<section>
+    <div class="evaluate-list">
+        <div class="evaluate-item">
+            <div class="item-left">
+                <div class="wrap-img">
+                    <a href="">
+                        <img src="../images/pic_1.png" alt=""/>
+                    </a>
+                </div>
+                <div class="left-details">
+                    <h3>商品名称</h3>
+                    <p class="details">
+                        <span class="price">￥30.00</span>
+                        <em class="num-size">x1</em>
+                        <em class="num-size">M</em>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="comment-content">
+            <textarea id="comment-content" placeholder="说说买到商品的心情吧，喜欢就要说出来呦..."></textarea>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- 切图位置e -->
+
+<!-- 公共js start -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../js/jquery.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $("#comment-content").on("change",function(){
+            $(this).val($(this).val().replace(/\s+/g,''));
+        });
+        $("#comment-submit").on("click",function(){
+            if($("#comment-content").val()==""){
+                alert("评论内容不能为空")
+            }
+        })
+    })
+</script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../dist/js/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+<script src="../js/comm.js" type="text/javascript"></script>
+<!-- 公共js end -->
+
+<!--  -->
+
+</body>
+
+</html>

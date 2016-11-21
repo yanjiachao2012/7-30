@@ -1,0 +1,284 @@
+﻿/**初始化样式 **/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Arial, "微软雅黑";
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+body,
+p,
+form,
+input,
+button,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: hidden
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+input,
+textarea {
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    -webkit-appearance: none;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+a {
+    outline: 0;
+    cursor: pointer;
+    *star: expression(this.onbanner=this.blur());
+}
+
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    -webkit-touch-callout: none;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+li,
+ol {
+    list-style: none;
+}
+
+html {
+    font-size: 100px
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+body {
+    margin: 0 auto;
+    color: #555;
+    font-size: 0.22rem;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    padding-bottom: 8%;
+    background: #e7e7e9;
+    height: 100%;
+}
+
+header {
+    background-color: #dc4935;
+    color: #fff;
+    width: 100%;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center;
+    font-size: 0.34rem;
+    font-weight: normal;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+header>a>img{
+	 position: absolute;
+    left: .31rem;
+    top: .2rem;
+    width: .4rem;
+
+}
+header>a>span{
+	font-size: .33rem;
+    color:#fff;
+
+}
+header>a>.active{
+	color:#ccc;
+}
+.notice-box{
+	padding: .1rem 0;
+	position: relative;
+	margin-top:.88rem;
+	background-color: #fff;
+}
+.notice-box>section{
+	padding: .1rem 0 .1rem .12rem;
+}
+.notice-box>section:after{
+	content: ''; 
+	display: block;
+	 clear: both;
+}
+.notice-box>section:last-child>.nb-content{
+	border-bottom: 0px;
+}
+.nb-left{
+	width:17%;
+	float: left;
+	text-align: center;
+}
+.nb-content{
+   
+    position: relative;
+    width: 83%;
+    top: 0;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    padding-bottom: .12rem;
+    padding-right: .1rem;
+}
+.nb-content>p{
+	font-size: .28rem;
+	color:#989898;
+	line-height: .4rem;
+}
+.nb-content>h4{
+	font-size: .3rem;
+	line-height: .64rem;
+}
+.nb-content>h4>span{
+	position: absolute;
+	right: .36rem;
+	top:.0rem;
+	color:#989898;
+	font-size: .28rem;
+}
+.nb-img{
+	width:.85rem;
+	vertical-align: top;
+        border-radius: 1rem;
+}
+
+.nn-title{
+	margin-top: 0.15rem;
+}
+.nb-num{
+    position: absolute;
+    background-color: #dc4935;
+    width: .4rem;
+    height: .4rem;
+    font-size: .18rem;
+    border-radius: .4rem;
+    line-height: .4rem;
+    display: inline-block;
+    color: #fff;
+    padding-top: .02rem;
+    margin-left: -.4rem;
+}
+.wrap-up-more{
+    clear:both;
+    padding:.38rem 0 .38rem;
+    font-size:.28rem;
+    color:#989898;
+    text-align:center;
+}
+.wrap-up-more .up-more{
+    padding-left:.4rem;
+    display:inline-block;
+    font-style:normal;
+    background:url(../../images/icon_shangla_h@2x.png) no-repeat left center;
+    background-size:.26rem .3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

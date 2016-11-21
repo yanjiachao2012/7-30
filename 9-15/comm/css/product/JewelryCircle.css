@@ -1,0 +1,138 @@
+*{
+    padding:0;margin:0;
+    font-family: '微软雅黑';
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+.pro-content{
+    min-width: 1200px; overflow: hidden; position: relative;
+    padding-bottom:90px;
+}
+.div1920{
+    width:1920px; left:50%; margin-left:-960px; position: relative;
+}
+.div1920>img{
+    display: block; margin:0 auto;
+}
+.w1200{
+    width:1200px; margin:auto;position: absolute;top:0; left:0;right:0; bottom:0;
+}
+.c-title{
+    padding:70px 0 90px 0;
+}
+.c-bannerText{
+    color:#fff; width:435px; height:350px; position: absolute;top:0; bottom:0; right:0;margin:auto;
+     letter-spacing: 1px;
+}
+.c-bannerText .p1{
+font-size: 48px; font-weight: bold;
+}
+.c-bannerText .p2{
+font-size:24px; padding:10px 0 20px 0;
+}
+.c-bannerText .p3{
+font-size:16px;line-height: 30px;
+}
+.c-bannerText .p4{
+    padding-top:44px;
+}
+.c-bannerText .p4 a{
+    display: inline-block; height:40px; width:120px; text-align: center; border-radius: 2px;
+    border:1px solid #dee004; color:#dee004; font-size: 18px;
+    line-height: 38px; cursor: pointer; position: relative;text-decoration: none;
+}
+.c-bannerText .p4 a+a{
+margin-left:55px;
+}
+.c-bannerText img{
+    position: absolute;
+        bottom: 40px;
+    left: -20px;
+    right: 0; margin:auto;
+transition: all 300ms ease 0s;
+-webkit-transition: all 300ms ease 0s;
+transform: scale(0);
+-webkit-transform: scale(0);
+}
+.c-bannerText .s2:hover img{
+transform: scale(1);
+-webkit-transform: scale(1);
+}
+.c-text{
+    position: absolute; top:0; bottom:0; left:0; margin:auto;
+}
+.c-textl{
+    height:450px; width:560px; text-align: left;
+}
+.c-textl .p1{
+font-size: 48px; font-weight: bold;
+}
+.c-textl .p2{
+font-size:18px; padding:30px 0 40px 0;
+line-height: 30px;
+}
+.c-textl .p3 a{
+    display: inline-block; line-height:40px; width:160px; text-align: center; 
+font-size: 14px; color:#222222;
+}
+.c-textl .p3 a+a
+{
+    margin-left:50px;
+}
+.c-textr{
+    height:335px; width:560px; text-align: left;
+    color:#222222; left:auto; right:0;
+}
+.c-textr .p1{
+font-size: 30px; font-weight: bold;
+}
+.c-textr .p2{
+font-size:18px; padding:20px 0 20px 0;
+line-height: 30px;
+}
+.c-textr .p4 a{
+ color:#611d6f; border-color:#611d6f;
+}
+.cinformation{
+    width:1200px; height:432px; margin:0 auto;
+}
+.cinformation .info-l{
+width:580px; height:432px; float: left; margin-right:35px;
+}
+.cinformation .info-r{
+    float: right; width:585px;
+}
+.cinformation .info-r a{
+    color:#222; text-decoration: none;
+}
+.cinformation .info-r li{
+    width:630px; margin:9px 0;margin-left:-45px; position: relative;
+    padding:10px 15px 10px 45px;
+}
+.cinformation .info-r li .p1{
+font-size: 18px; color:#222;
+}
+.cinformation .info-r li .p2{
+font-size: 14px; color:#666;
+line-height: 23px; padding-top:7px;
+}
+.cinformation .info-r li::after{
+content: '';
+display: block; position: absolute; 
+top:0; bottom:0; left:-40px;
+border:20px solid transparent;
+border-right-color:#06a5d3;
+width:0; height:0; margin:auto;
+display: none;
+}
+.cinformation .info-r li:hover{
+    background: #06a5d3; color:#fff;
+}
+.cinformation .info-r li:hover::after{
+    display: block;
+}
+.cinformation .info-r li:hover a,.cinformation .info-r li:hover .p1,.cinformation .info-r li:hover .p2{
+    color:#fff;
+}

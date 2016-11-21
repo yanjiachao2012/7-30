@@ -1,0 +1,18 @@
+﻿@media only screen and (min-width:750px),only screen and (min-device-width:750px){html{font-size:100px}}
+@media only screen and (min-width:540px),only screen and (min-device-width:540px){html{font-size:72px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){html{font-size:64px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){html{font-size:55px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){html{font-size:53px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){html{font-size:50px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){html{font-size:48px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){html{font-size:42px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){html{font-size:32px}}
+
+
+body{font-family: Microsoft Yahei;padding-top: 1.4rem;}
+.userHeader{position: fixed;width: 100%;text-align: center;height: 1rem;line-height: 1rem;background: #dc4935;font-size: .42rem;color: #fff;top: 0;z-index: 8000;}
+.userHeader .sixin{position: absolute;display: block;width: .44rem;height: .44rem;left: .3rem;top: .28rem;background: url(../../images/back@2x.png);background-size: cover;}
+.saveSend{position: absolute;right: .3rem;color: #fff;font-size: .32rem;top: 0;}
+.autoContent{border-top: 1px solid #e0e0e0;border-bottom: 1px solid #e0e0e0;padding: .3rem;}
+input:focus{border: 0 none;}
+.autoContent input{font-size: .28rem;color: #2d2d2d;height: .4rem;line-height: .4rem;border: 0 none;outline: none;}

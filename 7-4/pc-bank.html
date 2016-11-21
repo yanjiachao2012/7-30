@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <title>添加银行卡</title>
+    <!--bootstrap样式-->
+    <link href="http://page.joinlinking.com/sunCrowdfunding/page/stylepc/dist/css/bootstrap.css" rel="stylesheet"
+          media="screen">
+    <!--公共样式-->
+    <link href="http://page.joinlinking.com/sunCrowdfunding/page/stylepc/css/wgfly.css" rel="stylesheet" media="screen">
+    <!--基本样式-->
+    <link href="http://page.joinlinking.com/sunCrowdfunding/page/stylepc/css/style.css" rel="stylesheet" media="screen">
+
+
+    <link rel="stylesheet" href="css/pc-bank.css"/>
+</head>
+<body>
+<div class="wrap-benefit-header">
+    <div class="benefit-header">
+        <div class="header-left">
+            <div class="wrap-logo">
+                <a href="">
+                    <img src="images/benefit_head_logo.png"/>
+                </a>
+            </div>
+            <ul class="left-ul">
+                <li class="left-item"><a href="">浏览项目</a></li>
+                <li class="left-item"><a href="">发布项目</a></li>
+                <li class="left-item"><a href="">帮助中心</a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <a href="" class="public-item">发布项目</a>
+            <img class="userPic" src="images/public_user.png"/>
+            <a href="" class="drop"></a>
+        </div>
+    </div>
+</div>
+<div class="wrap-personal-main">
+    <div class="personal-main">
+        <h2>添加银行卡</h2>
+
+        <div class="personal-content">
+            <ul class="personal-list">
+                <li class="personal-item"><a href="">个人资料</a></li>
+                <li class="personal-item" id="personal-item1">
+                    <a href="javascript:void(0)" onclick="showBank('2','1')">银行卡列表</a>
+                </li>
+                <li class="personal-item active-item" id="personal-item2">
+                    <a href="javascript:void(0)" onclick="showBank('1','2')">银行卡编辑</a>
+                </li>
+            </ul>
+            <div class="wrap-info">
+                <!--银行卡列表--->
+                <div class="info-item bank-list" id="info-item1" style="display:none;">
+                    <ul class="bank-list-ul">
+                        <li class="bank-list-li">
+                            <div class="bank-li-right">
+                                <a href="javascript:void(0);" onclick="removeBank(this)" class="bank-remove">删除</a>
+                                <a href="javascript:editBank();" class="bank-edit">编辑</a>
+                            </div>
+                            <div class="bank-li-left">
+                                <h5>工商银行<span class="tip">默认</span></h5>
+
+                                <p>尾号9999</p>
+                            </div>
+                        </li>
+                        <li class="bank-list-li">
+                            <div class="bank-li-right">
+                                <a href="javascript:void(0);" onclick="removeBank(this)" class="bank-remove">删除</a>
+                                <a href="javascript:editBank();" class="bank-edit">编辑</a>
+                            </div>
+                            <div class="bank-li-left">
+                                <h5>工商银行</h5>
+
+                                <p>尾号9999</p>
+                            </div>
+                        </li>
+                        <li class="bank-list-li">
+                            <div class="bank-li-right">
+                                <a href="javascript:void(0);" onclick="removeBank(this)" class="bank-remove">删除</a>
+                                <a href="javascript:editBank();" class="bank-edit">编辑</a>
+                            </div>
+                            <div class="bank-li-left">
+                                <h5>工商银行</h5>
+
+                                <p>尾号9999</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="add-bank">
+                        <a href="javascript:editBank();">增加新的银行卡</a>
+                    </div>
+                </div>
+                <!--银行卡编辑-->
+                <div class="info-item" id="info-item2">
+                    <ul class="item-tab-ul" id="edit-input-tab">
+                        <li class="tab-li active-tab">
+                            <a href="javascript:void(0);">个人银行卡</a>
+                        </li>
+                        <li class="tab-li">
+                            <a href="javascript:void(0);">对公银行卡</a>
+                        </li>
+                    </ul>
+                    <ul id="edit-input-content">
+                        <li class="content-li">
+                            <p class="bank-tip">
+                                绑卡须知：平台只支持储蓄卡提现，请勿绑定信用卡、存折等以免影响提现。
+                            </p>
+
+                            <div class="item-bank">
+                                <label class="item-label">开户姓名</label>
+                                <input class="item-input" placeholder="请输入开户人姓名" type="text"/>
+                            </div>
+                            <div class=" item-bank">
+                                <label class="item-label">银行卡号</label>
+                                <input class="item-input" placeholder="请输入银行卡号" type="text"/>
+                            </div>
+                            <div class="item-bank">
+                                <label class="item-label">开户银行</label>
+                                <input class="item-input" placeholder="请选择" id="selectBank1"
+                                       onclick="selectBank('1');" type="text"
+                                       readonly/>
+                                <span class="turn-down"></span>
+                                <ul class="bank-dropdown-list" id="bank-dropdown-list1">
+                                    <li class="dropdown-li">
+                                        请选择
+                                    </li>
+                                    <li class="dropdown-li">
+                                        中国银行
+                                    </li>
+                                    <li class="dropdown-li">
+                                        建设银行
+                                    </li>
+                                    <li class="dropdown-li">
+                                        工商银行
+                                    </li>
+                                    <li class="dropdown-li">
+                                        农业银行
+                                    </li>
+                                    <li class="dropdown-li">
+                                        交通银行
+                                    </li>
+                                    <li class="dropdown-li">
+                                        华夏银行
+                                    </li>
+                                    <li class="dropdown-li">
+                                        招商银行
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="content-li" style="display:none;">
+                            <div class="item-bank">
+                                <label class="item-label">开户单位</label>
+                                <input class="item-input" placeholder="请输入开户人姓名" type="text"/>
+                            </div>
+                            <div class=" item-bank">
+                                <label class="item-label">银行卡号</label>
+                                <input class="item-input" placeholder="请输入银行卡号" type="text"/>
+                            </div>
+                            <div class="item-bank">
+                                <label class="item-label">开户银行</label>
+                                <input class="item-input" placeholder="请选择" id="selectBank2" onclick="selectBank('2')"
+                                       value="" type="text"
+                                       readonly/>
+                                <span class="turn-down"></span>
+                                <ul class="bank-dropdown-list" id="bank-dropdown-list2">
+                                    <li class="dropdown-li">
+                                        请选择
+                                    </li>
+                                    <li class="dropdown-li">
+                                        中国银行
+                                    </li>
+                                    <li class="dropdown-li">
+                                        建设银行
+                                    </li>
+                                    <li class="dropdown-li">
+                                        工商银行
+                                    </li>
+                                    <li class="dropdown-li">
+                                        农业银行
+                                    </li>
+                                    <li class="dropdown-li">
+                                        交通银行
+                                    </li>
+                                    <li class="dropdown-li">
+                                        华夏银行
+                                    </li>
+                                    <li class="dropdown-li">
+                                        招商银行
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <div class="item-save">
+                        <button>保存</button>
+                        <a href="javascript:history.go(-1);" class="back">返回</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dimmer"></div>
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script>
+    $(function () {
+        var editInputTab = $("#edit-input-tab");
+        var editInputTabLi = editInputTab.find(".tab-li");
+        var editInputContent = $("#edit-input-content");
+        var editInputContentLi = editInputContent.find(".content-li");
+        editInputTabLi.on("click", function () {
+            var _index = $(this).index();
+            editInputTabLi.removeClass("active-tab");
+            $(this).addClass("active-tab");
+            editInputContentLi.css("display", "none");
+            editInputContentLi.eq(_index).css("display", "block");
+
+        });
+        var bankDropDownList1Li = $("#bank-dropdown-list1").find(".dropdown-li");
+        var bankDropDownList2Li = $("#bank-dropdown-list2").find(".dropdown-li");
+        bankDropDownList1Li.on("click", function () {
+            $("#selectBank1").val($(this).text());
+            $(this).parent().css("display", "none");
+            $(".dimmer").css("display", "none");
+            console.log(typeof($("#selectBank1").val()))
+        });
+        bankDropDownList2Li.on("click", function () {
+            $("#selectBank2").val($(this).text());
+            $(this).parent().css("display", "none");
+            $(".dimmer").css("display", "none")
+        });
+        $(".dimmer").on("click", function () {
+            $(".dimmer").css("display", "none");
+            $("#bank-dropdown-list1").css("display", "none");
+            $("#bank-dropdown-list2").css("display", "none");
+        })
+    });
+    //下拉列表
+    function selectBank(obj) {
+        $("#bank-dropdown-list" + obj).css("display", "block");
+        $(".dimmer").css("display", "block")
+    }
+    //
+    function showBank(arg1, arg2) {
+        $("#info-item" + arg1).css("display", "none");
+        $("#personal-item" + arg1).removeClass("active-item");
+        $("#info-item" + arg2).css("display", "block");
+        $("#personal-item" + arg2).addClass("active-item");
+    }
+    //编辑
+    function editBank(){
+        $("#info-item2").css("display","block");
+        $("#info-item1").css("display","none");
+        $("#personal-item2").addClass("active-item");
+        $("#personal-item1").removeClass("active-item");
+    }
+    //删除
+    function removeBank(obj){
+        $(obj).parents(".bank-list-li").css("display","none");
+    }
+</script>
+</body>
+</html>

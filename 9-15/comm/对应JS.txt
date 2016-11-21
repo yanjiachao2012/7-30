@@ -1,0 +1,40 @@
+<script src="../js/jquery.min.js"></script> 
+<script src="../js/bootstrap.min.js"></script> 
+    <script>
+$(function(){
+    $(".zjhzx>ul>li").mouseover(function(){
+        $(this).children().css("color","#fff");
+        var index = $(".zjhzx ul li").index(this);
+        $(".pictures>img").eq(index).show() .siblings().hide();
+        })
+    $(".zjhzx>ul>li").mouseout(function(){
+        $(".zjhzx>ul>li>h4").css("color","#000")    
+        $(".zjhzx>ul>li>p").css("color","#666") 
+     });
+     
+     $(".qq").mouseover(function(){
+         $(".hover").show();
+             })
+        $(".hover").mouseout(function(){
+            $(this).hide();
+            })   
+
+        $("#back-to-top").hide();
+        $(window).scroll(function(){
+        if ($(window).scrollTop()>100){
+        $("#back-to-top").fadeIn(500);
+        }
+        else
+        {
+        $("#back-to-top").fadeOut(500);
+        }
+        });
+        
+        $("#back-to-top").click(function(){
+        $('body,html').animate({scrollTop:0},100);
+        return false;
+        });
+    
+        
+    })
+</script>

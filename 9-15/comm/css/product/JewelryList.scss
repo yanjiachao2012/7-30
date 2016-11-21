@@ -1,0 +1,202 @@
+/**初始化样式*/
+html { color: #000; background: #FFF; width: 100%; height: 100%; font-size:62.5%;}
+body { width: 100%; height: 100%; font-size:14px;line-height:1.2;color:#373737;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0 }
+table { border-collapse: collapse; border-spacing: 0 }
+fieldset, img { border: 0 }
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal }
+ol, ul { list-style: none }
+caption, th { text-align: left }
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal
+}
+a{text-decoration:none;}
+sup { vertical-align: text-top }
+sub { vertical-align: text-bottom }
+input, textarea, select { font-family: inherit; font-size: inherit; font-weight: inherit; *font-size: 100%
+}
+/***轮播图**/
+.jewelryList-main{
+
+		font-family:"microsoft yahei";
+	
+	.jewelryList-banner{
+	    overflow: hidden;
+	        .banner-ul{
+				position: relative;
+				overflow: hidden;
+				.banner-li{
+					display: none;
+					img{
+						width: 100%;
+						max-height:448px;
+						vertical-align: middle;
+					}
+				}
+				.banner-active{
+				display: block;
+			    }
+			}
+    }
+} 
+.jewelryList-content{
+	background:url(../../images/content-bg.png) center center;
+	background-size: 100% 100%;
+	.wrap-big-sort{
+           border-bottom:1px solid  rgb(228, 228, 228);
+           .big-sort-ul{
+		           	   padding-top:40px;
+		           	   text-align:center;
+           	   .big-sort-li{
+			           	   	position:relative;
+			           	   	display:inline-block;
+			           	   	margin-right:5px;
+			           	   	padding:0 15px 12px;
+			           	   	&:after{
+			           	   		position:absolute;
+			           	    	content:'';
+			           	    	width:0;
+			           	    	left:0;
+			           	    	bottom:-1px;
+			           	    	height:2px;
+			           	    	background-color:rgb(97, 29, 111);
+			           	    
+			           	   	}
+			           	   	&:hover:after{
+		                       
+			           	    	width:100%;
+			           	    
+			           	    	-webkit-transition:all .6s;
+			           	    	-moz-transition:all .6s;
+			           	    	-ms-transition:all .6s;
+			           	    	transition:all .6s;
+			           	   	}
+           	   }
+           	   a{
+           	   	color:#222;
+           	   	font-size:18px;
+
+           	   }
+           	   .active-sort-li {
+                   
+	           	   	a{
+	           	   	    color:rgb(97, 29, 111);
+	           	    }
+	           	    &:after{
+	           	    	position:absolute;
+	           	    	content:'';
+	           	    	width:100%;
+	           	    	left:0;
+	           	    	bottom:-1px;
+	           	    	height:2px;
+	           	    	background-color:rgb(97, 29, 111);
+	           	    	-webkit-transition:all .5s;
+	           	    	-moz-transition:all .5s;
+	           	    	-ms-transition:all .5s;
+	           	    	transition:all .5s;
+	           	    }
+
+           	   }
+
+           	  
+           }
+	}
+	.small-sort-ul{
+		padding:25px 0;
+		text-align:center;
+		.small-sort-li{
+			display:inline-block;
+			padding-right:40px;
+			font-size:16px;
+			a{
+				color:#666;
+			}
+
+		}
+	}
+	.wrap-jewelryList-item{
+		margin:0 auto;
+		width:1214px;
+		overflow:hidden;
+	}
+
+}
+.wrap-jewelryList-item{
+		.jewelryList-lists{
+			overflow:hidden;
+			.jewelryList-item{
+				padding:0 11px 22px;
+				float:left;
+				width:303px;
+				-moz-box-sizing:border-box;
+				-webkit-box-sizing:border-box;
+				box-sizing:border-box;
+			}
+
+		}
+		.wrap-pic{
+			height:290px;
+			overflow:hidden;
+			img{
+				width:100%;
+				height:100%;
+				-webkit-transform:scale(1.5);
+				-moz-transform:scale(1.5);
+				-ms-transform:scale(1.5);
+				transform:scale(1.5);
+			}
+		}
+		.item-details{
+			padding:12px;
+			text-align:center;
+			color:#fff;
+
+			background-color:#a8a5a9;
+			h3{
+				padding-bottom:5px;
+				font-size:22px;
+			}
+			p{
+				font-size:16px;
+			}
+		}
+		.active-details{
+			background-color:rgba(97,29,111,0.7);
+		}
+
+		.item-pagination{
+			padding:40px 0 100px 0;
+			text-align:center;
+			.pagination-item{
+				display:inline-block;
+				padding:8px 8px;
+				margin-right:15px;
+				font-size:18px;
+				color:#999999;
+				cursor:pointer;
+				min-width:40px;
+				background-color:#fff;
+				-webkit-border-radius:4px;
+				-moz-border-radius:4px;
+				border-radius:4px;
+				-webkit-box-sizing:border-box;
+				-moz-box-sizing:border-box;
+				box-sizing:border-box;
+			}
+			.prev-item,.next-item{
+                color:#666;
+			}
+			.out-item{
+				background-color:transparent;
+			}
+			.active-item{
+				background-color:#611d6f;
+				color:#fff;
+			}
+		}
+		
+}
+
+
+

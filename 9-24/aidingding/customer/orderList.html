@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>我的订单</title>
+    <meta name="description" content="Draggabble Widget Boxes &amp; Containers"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- 公共样式 start -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" href="../images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/wgfly.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="${B}page/stylepc/dist/js/ie8-responsive-file-warning.js"></script>
+    <![endif]-->
+    <script src="../dist/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="${B}page/stylepc/dist/js/html5shiv.min.js"></script>
+    <script src="${B}page/stylepc/dist/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- 公共样式 end -->
+    <!-- 自定义样式 -->
+    <link href="../css/customer/orderList.css" rel="stylesheet" media="screen">
+
+</head>
+
+<body>
+
+<!-- 切图位置s -->
+<header class="aiDD-header">
+    <a href="" class="icon-back" onclick="history.back(0);">
+    </a>
+    <h1>我的订单</h1>
+    <a href="javascript:removeShow();" class="icon-remove"></a>
+</header>
+<section>
+    <div class="wrap-evaluate-content">
+        <div class="order-sort" id="order-sort">
+            <div class="sort-item active-item" id="sort0"><span>全部订单</span> </div>
+            <div class="sort-item" id="sort1"><span>未支付</span> </div>
+            <div class="sort-item" id="sort2"><span>已支付</span> </div>
+            <div class="sort-item" id="sort3"><span>已发货</span> </div>
+        </div>
+        <div id="wrap-order-list">
+            <ul class="evaluate-list" id="evaluate-list0">
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">未支付</a>
+                            <a href="" class="pay-success">付款</a>
+                        </div>
+                        <div class="order-title-select icon-selected" onclick="selectChecked(this)"  style="display:none;">
+                        </div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">支付失败</a>
+                            <a href="" class="pay-success ">付款</a>
+                        </div>
+                        <div class="order-title-select" onclick="selectChecked(this)"  style="display:none;">
+                        </div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">交易超时</a>
+                            <a href="" class="pay-success ">付款</a>
+                        </div>
+                        <div class="order-title-select" onclick="selectChecked(this)"  style="display:none;"></div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">已支付</a>
+                            <a href="" class="pay-success pay-comment">评价</a>
+                        </div>
+                        <div class="order-title-select" onclick="selectChecked(this)"  style="display:none;"></div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">已发货</a>
+                            <a href="" class="pay-success pay-comment">评价</a>
+                        </div>
+                        <div class="order-title-select" onclick="selectChecked(this)"  style="display:none;"></div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+            </ul>
+            <ul class="evaluate-list" id="evaluate-list1" style="display:none;">
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">为支付</a>
+                            <a href="" class="pay-success">付款</a>
+                        </div>
+                        <div class="order-title-select icon-selected" onclick="selectChecked(this)"  style="display:none;">
+                        </div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">为支付</a>
+                            <a href="" class="pay-success">付款</a>
+                        </div>
+                        <div class="order-title-select" onclick="selectChecked(this)"  style="display:none;">
+                        </div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">为支付</a>
+                            <a href="" class="pay-success">付款</a>
+                        </div>
+                        <div class="order-title-select" onclick="selectChecked(this)"  style="display:none;"></div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+
+            </ul>
+            <ul class="evaluate-list" id="evaluate-list2" style="display:none;">
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">已支付</a>
+                            <a href="" class="pay-success pay-comment">评价</a>
+                        </div>
+                        <div class="order-title-select" onclick="selectChecked(this)"  style="display:none;">
+                        </div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">已支付</a>
+                            <a href="" class="pay-success pay-comment">评价</a>
+                        </div>
+                        <div class="order-title-select" onclick="selectChecked(this)"  style="display:none;"></div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">已支付</a>
+                            <a href="" class="pay-success pay-comment">评价</a>
+                        </div>
+                        <div class="order-title-select" onclick="selectChecked(this)"  style="display:none;"></div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+
+            </ul>
+            <ul class="evaluate-list" id="evaluate-list3" style="display:none;">
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">已发货</a>
+                            <a href="" class="pay-success pay-comment">评价</a>
+                        </div>
+                        <div class="order-title-select icon-selected" onclick="selectChecked(this)"  style="display:none;">
+                        </div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">已发货</a>
+                            <a href="" class="pay-success pay-comment">评价</a>
+                        </div>
+                        <div class="order-title-select" onclick="selectChecked(this)"  style="display:none;"></div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+                <li class="evaluate-item">
+                    <div class="order-title">
+                        <div class="order-title-right">
+                            <a href="" class="pay-fail">已发货</a>
+                            <a href="" class="pay-success pay-comment">评价</a>
+                        </div>
+                        <div class="order-title-select" onclick="selectChecked(this)"  style="display:none;"></div>
+                        <div class="order-title-left">
+                            <h5>订单号:<span>iDD-14122222</span></h5>
+                            <p>下单时间:<span>2015-9-24 15:00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="item-left">
+                        <div class="wrap-img">
+                            <a href="">
+                                <img src="../images/pic_1.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="left-details">
+                            <h3>商品名称</h3>
+                            <p class="details">
+                                <span class="price">￥30.00</span>
+                                <em class="num-size">x1</em>
+                                <em class="num-size">M</em>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="order-details">
+                        <span>共2件商品</span>
+                        <span>合计￥40.00</span>
+                        <em>
+                            (<span>含运费：￥10.00,</span>
+                            <span>3天内发货</span>)</em>
+
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="wrap-up-more"><i class="up-more">上拉加载更多数据...</i> </div>
+    </div>
+    <div class="order-all-select" style="display:none;">
+        <label onclick="allSelect(this)" id="addSelect">全选</label>
+        <a href="javascript:removeItem()" class="remove">删除</a>
+    </div>
+</section>
+
+
+
+<!-- 切图位置e -->
+
+<!-- 公共js start -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../js/jquery.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script>
+    var $indexItem=0;
+    var flagOrderShow=0;
+    $(function(){
+        var orderSortItem=$("#order-sort").find("div.sort-item");
+        var orderList=$("#wrap-order-list").find("ul.evaluate-list");
+            orderSortItem.on("click",function(){
+                if(flagOrderShow=='1'){
+                    alert("请先完成当前操作")
+                }else{
+                    $indexItem=$(this).index();
+                    $(this).addClass("active-item").siblings().removeClass("active-item");
+                    orderList.css("display","none");
+                    orderList.eq($indexItem).css("display","block");
+                }
+
+
+            });
+        $(window).on("scroll",function() {
+            if ($(document).scrollTop() >= $(document).height() - $(window).height()) {
+                $(".up-more").html("正在加载...")
+            }
+        });
+    });
+    function selectChecked(obj){
+        if($(obj).hasClass("icon-selected")){
+            $(obj).removeClass("icon-selected");
+            $("#allSelect").removeClass("icon-selected");
+        }else{
+            $(obj).addClass("icon-selected");
+        }
+    }
+    var flagOrder=0;
+    function allSelect(obj){
+        if(flagOrder=="0"){
+            $(".order-title-select").addClass("icon-selected");
+            $(obj).addClass("icon-selected");
+            flagOrder=1
+        }else{
+            $(".order-title-select").removeClass("icon-selected");
+            $(obj).removeClass("icon-selected");
+            flagOrder=0;
+        }
+
+
+    }
+    function removeItem(){
+        $(".icon-selected").parents(".evaluate-item").remove();
+    }
+
+    //点击删除图标操作
+    function removeShow(){
+        var orderAllSelect=$(".order-all-select");
+        $(".order-title-select").removeClass("icon-selected");
+        $("#addSelect").removeClass("icon-selected");
+        if($("#sort"+$indexItem).hasClass("active-item")){
+            var evaluateList=$("#evaluate-list"+$indexItem);
+            var orderTitleRight=evaluateList.find(".order-title-right");
+            var orderTitleSelect=evaluateList.find(".order-title-select");
+            if(flagOrderShow=='1'){
+                orderTitleRight.css("display","block");
+                orderTitleSelect.css("display","none");
+                orderAllSelect.fadeOut();
+                flagOrderShow=0;
+            }else{
+                orderTitleRight.css("display","none");
+                orderTitleSelect.css("display","block");
+                orderAllSelect.fadeIn();
+                flagOrderShow=1
+            }
+        }
+      /*  if($("#sort2").hasClass("active-item")){
+            var evaluateList2=$("#evaluate-list2");
+            var orderTitleRight2=evaluateList2.find(".order-title-right");
+            var orderTitleSelect2=evaluateList2.find(".order-title-select");
+            if(orderAllSelect.css("display")=="block"){
+                orderTitleRight2.css("display","block");
+                orderTitleSelect2.css("display","none");
+                orderAllSelect.fadeOut();
+            }else{
+                orderTitleRight2.css("display","none");
+                orderTitleSelect2.css("display","block");
+                orderAllSelect.fadeIn();
+            }
+        }
+        if($("#sort3").hasClass("active-item")){
+            var evaluateList3=$("#evaluate-list3");
+            var orderTitleRight3=evaluateList3.find(".order-title-right");
+            var orderTitleSelect3=evaluateList3.find(".order-title-select");
+            if(orderAllSelect.css("display")=="block"){
+                orderTitleRight3.css("display","block");
+                orderTitleSelect3.css("display","none");
+                orderAllSelect.fadeOut();
+            }else{
+                orderTitleRight3.css("display","none");
+                orderTitleSelect3.css("display","block");
+                orderAllSelect.fadeIn();
+            }
+        }
+        if($("#sort4").hasClass("active-item")){
+            var evaluateList4=$("#evaluate-list4");
+            var orderTitleRight4=evaluateList4.find(".order-title-right");
+            var orderTitleSelect4=evaluateList4.find(".order-title-select");
+            if(orderAllSelect.css("display")=="block"){
+                orderTitleRight4.css("display","block");
+                orderTitleSelect4.css("display","none");
+                orderAllSelect.fadeOut();
+            }else{
+                orderTitleRight4.css("display","none");
+                orderTitleSelect4.css("display","block");
+                orderAllSelect.fadeIn();
+            }
+        }*/
+
+    }
+</script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../dist/js/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+<script src="../js/comm.js" type="text/javascript"></script>
+<!-- 公共js end -->
+
+<!--  -->
+
+</body>
+
+</html>

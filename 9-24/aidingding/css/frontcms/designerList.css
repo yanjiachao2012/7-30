@@ -1,0 +1,188 @@
+﻿@media only screen and (min-width:750px),only screen and (min-device-width:750px){html{font-size:100px}}
+@media only screen and (min-width:540px),only screen and (min-device-width:540px){html{font-size:72px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){html{font-size:64px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){html{font-size:55px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){html{font-size:53px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){html{font-size:50px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){html{font-size:48px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){html{font-size:42px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){html{font-size:32px}}
+body {
+	margin: 0;
+	padding: 0; 
+	background:#eee; 
+	font-family:微软雅黑;
+	overflow-x: hidden;
+	font-size:0.38rem;
+	}
+html{
+    width:100%;height:100%;
+}
+/*头部*/
+header {
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 9;
+    height:  0.98rem;
+    background: #dc4935;
+}
+
+.fl {
+    float: left;
+    margin-top: 0.28rem;
+    margin-left: 0.3rem;
+}
+.fl img{width:0.44rem;}
+.fr img{width:0.44rem;}
+.top_titil {
+    color: #fff;
+    position: absolute;
+    top: 0.28rem;
+	left: 3rem;
+}
+.fr {
+    float: right;
+    margin-top: 0.28rem;
+    margin-right: 0.3rem;
+}
+nav {
+    position:fixed;
+    top:.98rem;
+    left:0;
+    right:0;
+    z-index: 9;
+    width: 100%;
+    height: 0.84rem;
+}
+nav ul li {
+    font-size: 0.28rem;
+    float: left;
+    height: 0.84rem;
+    background: #fff;
+    width: 50%;
+    text-align: center;
+    line-height: 0.84rem;
+	border-right: 1px solid #eee;
+}
+nav ul li a{
+	color:#2d2d2d;
+    display: block;  
+    width: 1.5rem;
+    margin: 0 auto;
+	}
+nav ul li.active a{color:#dc4935;border-bottom: 2px solid #dc4935;}
+section{width:92%;background:#fff; margin:4%; text-align:center;borde:2px solid #999; border-radius:5px;}
+section .touxiang {
+       margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+	    width: 1.61rem;
+}
+h1 {
+    font-size: 0.34rem;
+    margin-bottom: 0.16rem;
+	    color: #2d2d2d;
+	}
+	
+p {
+    font-size: 0.24rem;
+	color:#989898;
+	margin-bottom:0.3rem;
+	}
+hr {
+    width: 90%;
+    margin-left: 0.3rem;
+	margin-top:0;
+	margin-bottom:0;
+}
+section ul {
+    width: 100%;
+     height:1.8rem;
+    padding-left: 0.3rem;
+	margin-bottom:0.3rem;
+	margin-top: 0.3rem;
+}
+section ul li {
+    width: 30%;
+    float: left;
+    margin-right: 0.16rem;
+}
+section ul li img{width:100%;}
+.fensi {
+    width: 100%;
+	    height: 1rem;
+}
+.left {
+    float: left;
+	font-size:0.24rem;
+	color:#989898;
+	margin-top:0.33rem;
+	margin-bottom:0.33rem;
+}
+.left a{
+    color:#989898;
+}
+.right{
+	float:right; 
+	margin-top:0.24rem;
+ }
+.fensi .left img {
+    width:0.38rem;
+    margin-right: 0.12rem;
+}
+span.zb {
+    margin-right: 0.6rem;
+	margin-left:0.3rem;
+}
+
+span.zj {
+    margin-right: 0.6rem;
+}
+
+.fensi .right img {
+    width: 0.46rem;
+    margin-right: 0.3rem;
+}
+.wrap-up-more{
+    clear:both;
+    padding:.18rem 0 .38rem;
+    font-size:.28rem;
+    color:#989898;
+    text-align:center;
+}
+.wrap-up-more .up-more{
+    padding-left:.4rem;
+    display:inline-block;
+    font-style:normal;
+    background:url(../../images/icon_shangla_h@2x.png) no-repeat left center;
+    background-size:.26rem .3rem;
+}
+.wrap-operate-overflow{
+    position:absolute;
+    left:0;
+    top:1.96rem;
+    overflow-y:auto;
+    z-index: 8;
+}
+.dialog-feedback{
+    display:none;
+    position:fixed;
+    left:50%;
+    top:0;
+    width: 4rem;
+    height:.98rem;
+    z-index: 100;
+    color:#fff;
+    text-align:center;
+    line-height:.98rem;
+    background-color:rgba(0,0,0,0.6);
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    border-radius: .1rem;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}

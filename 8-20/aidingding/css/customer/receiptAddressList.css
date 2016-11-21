@@ -1,0 +1,39 @@
+﻿@media only screen and (min-width:750px),only screen and (min-device-width:750px){html{font-size:100px}}
+@media only screen and (min-width:540px),only screen and (min-device-width:540px){html{font-size:72px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){html{font-size:64px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){html{font-size:55px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){html{font-size:53px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){html{font-size:50px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){html{font-size:48px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){html{font-size:42px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){html{font-size:32px}}
+
+*{ padding:0; margin:0;}
+html{width:100%; height:100%;}
+body{padding:0; margin:0 auto; font-family:"Microsoft YaHei"; font-size:.28rem; line-height:1; color:#2D2D2D; background-color:#f2f2f2; }
+ul{list-style:none;}
+a{text-decoration:none; cursor:pointer;}
+a img{width: 100%; height: auto;}
+.clear:after{content:"200B";display:block;font-size:0;height:0;clear:both;}
+/*IE6/7*/
+.clear{*zoom:1;}
+
+.wrapper{ background-color:#f2f2f2; margin:0 auto;}
+header{ height:1rem; padding:.32rem 0; width:100%; background-color:#dc4935; font-size:.38rem; color:#fff; text-align:center; position:relative;}
+header a{ display:inline-block; width:.44rem; padding:.28rem 0; position:absolute; left:.30rem; top:0;}
+
+.main dt{ line-height:1; font-weight:normal; text-align:center; background:#fff; border-top:1px solid #E0E0E0; border-bottom:1px solid #E0E0E0; margin-top:.2rem;}
+.main dt a{ display:inline-block; padding:.38rem 0; }
+.main dd{ line-height:1; margin-top:.2rem;}
+.main dd span{ display:block;}
+.main dd .addAddress-cont-top{ height:1.6rem; background:#fff; border-top:1px solid #E0E0E0; border-bottom:1px solid #E0E0E0; position:relative; padding:.38rem .3rem;}
+.main dd .addAddress-cont-top .rec-phoneNumber{ position:absolute; right:.3rem; top:.38rem;}
+.main dd .addAddress-cont-top .rec-address{ margin-top:.3rem;}
+.main dd .addAddress-cont-bot{ background:#fff; border-bottom:1px solid #E0E0E0;padding-left:.3rem;position:relative;}
+.main dd a{display:inline-block; line-height:.36rem; text-align:center; vertical-align:middle; margin:.26rem 0; }
+.main dd .addAddress-cont-bot a i{ font-style:normal; display:inline-block; width:.36rem; height:.36rem; margin-right:.1rem;}
+.main dd .addAddress-cont-bot a i img{ width:100%; height:auto; vertical-align:middle;}
+.main dd .addAddress-cont-bot .default{margin-right:2.6rem; color:#DC4935;}
+.main dd .addAddress-cont-bot .setAddress{margin-right:2.62rem;}
+.main dd .addAddress-cont-bot .edit{ margin-right:.7rem;}
+.main dd .addAddress-cont-bot .delete{ position:absolute; right:.3rem; top:0; }

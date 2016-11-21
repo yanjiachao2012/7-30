@@ -1,0 +1,530 @@
+/* ==========================================================
+	
+	* Copyright (c) 2015, www.joinlinking.com All rights reserved.
+	* Date: 2015/5/9
+	* Name: Jinmy
+	
+	* 声明：此样式表为公共样式表，包含头部，脚部等公共部分。非授权的外包人员不能操作处理此样式表！！
+
+	* http://www.bootcss.com/ 此链接为bootstrap中文官网
+
+	* 每个模块的样式应给予适当的注释，例如：
+
+	/头部部分/
+	header{...}
+
+	/脚部部分/
+	footer{...}
+
+
+============================================================*/
+/* CONTENT START */
+body {
+    margin-bottom: 36px;
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin-bottom: 0;
+    }
+}
+
+a {
+    color: #666;
+}
+
+a:focus, a:hover {
+    color: #f60;
+    text-decoration: none;
+    outline: 0;
+}
+
+.overflow-responsive {
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 991px) {
+    .overflow-responsive {
+        width: 100%;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+}
+
+/* CONTENT END */
+
+/* HEADER START */
+.top-navigation {
+    background-color: #4676be;
+    color: #fff;
+    line-height: 36px;
+}
+
+.list-horizontal {
+    margin-bottom: 0;
+}
+
+.list-horizontal li {
+    float: left;
+}
+
+.list-horizontal a {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.list-horizontal a:hover {
+    color: #fff;
+}
+
+.modal-dialog {
+    margin-top: 50px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .modal-dialog {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 500px;
+    }
+}
+
+.modal-content {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.avatar {
+    position: relative;
+    z-index: 9999;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.avatar img {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    margin-left: -50px;
+    padding: 2px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group-addon {
+    background-color: #fff;
+}
+
+.btn-login {
+    background-image: none;
+    background-color: #3c74c7;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 0;
+}
+
+.turn-to-registion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.turn-to-registion a {
+    color: #fda03d;
+    font-weight: bold;
+}
+
+.turn-to-registion a:hover {
+    color: #fda03d;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+}
+
+.navbar-inverse {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-image: none;
+    background-color: #3a3a3a;
+}
+
+.navbar-toggle {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.navbar-brand {
+    width: 175px;
+    text-indent: -9999px;
+    background: url(../images/logo_zhonglian_xs.png) no-repeat scroll center center transparent;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), /* Attention Special */
+only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+    .navbar-brand {
+        background-image: url(../images/logo_zhonglian_xs@2x.png);
+        background-size: 140px auto;
+    }
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+.navbar-form {
+    position: relative;
+}
+
+.navbar-form .form-control {
+    height: 26px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 25px;
+    color: #ddd;
+    background-color: #2b2b2b;
+    border: 0;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: inset 1px 1px 5px #000;
+    -moz-box-shadow: inset 1px 1px 5px #000;
+    box-shadow: inset 1px 1px 5px #000;
+}
+
+.btn-submit {
+    position: absolute;
+    right: 18px;
+    top: 13px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-brand {
+        width: 230px;
+        height: 80px;
+        background: url(../images/logo_zhonglian_sm.png) no-repeat scroll center center transparent;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), /* Attention Special */
+    only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+        .navbar-brand {
+            background-image: url(../images/logo_zhonglian_sm@2x.png);
+            background-size: 190px auto;
+        }
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        width: 90px;
+        height: 80px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .navbar-form {
+        margin-top: 27px;
+    }
+
+    .navbar-form .form-control {
+        width: 200px;
+
+    }
+
+    .btn-submit {
+        top: 3px;
+    }
+}
+
+/* HEADER END */
+
+/* FOOTER START */
+.footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #27292d;
+    color: #fff;
+}
+
+.footer-links {
+    border-bottom: 1px solid #1b1d1f;
+}
+
+.footer-links dt {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.footer a {
+    white-space: nowrap;
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer-nav {
+    border-top: 1px solid #323438;
+    padding-top: 20px;
+}
+
+.ml-5 {
+    margin-left: -5px;
+}
+
+.address {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.address p {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .address-right {
+        text-align: right;
+    }
+}
+
+.navbar.navbar-fixed-bottom {
+    min-height: 36px;
+    color: #fff;
+    line-height: 36px;
+    background-color: #4676be;
+}
+
+.navbar-fixed-bottom .list-horizontal {
+    text-align: center;
+}
+
+.navbar-fixed-bottom .list-horizontal li {
+    float: none;
+    display: inline-block;
+}
+
+/* FOOTER END */
+
+/* SIDERBAR MENU START */
+.templatemo-sidebar {
+    padding: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.templatemo-sidebar .templatemo-sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.templatemo-sidebar .templatemo-sidebar-menu > li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ddd;
+
+}
+
+@media screen and (min-width: 768px) {
+    .templatemo-sidebar .templatemo-sidebar-menu > li {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+}
+
+.templatemo-sidebar .templatemo-sidebar-menu > li > a {
+    display: block;
+    position: relative;
+    margin: 0;
+    border: 0px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.templatemo-sidebar-menu a {
+    color: black;
+}
+
+.templatemo-sidebar-menu > li.active {
+    border: 0;
+}
+
+.templatemo-sidebar-menu > li.active > a {
+    color: white;
+}
+
+.templatemo-sidebar-menu a:hover {
+    text-decoration: none;
+}
+
+.templatemo-sidebar-menu li.sub .templatemo-submenu {
+    display: none;
+}
+
+.templatemo-sidebar-menu li.sub.open .templatemo-submenu {
+    display: block;
+}
+
+.templatemo-submenu {
+    padding-left: 0;
+}
+
+.templatemo-submenu li {
+    border-top: 1px solid #ddd;
+    list-style: none;
+}
+
+.templatemo-submenu li a {
+    display: block;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.templatemo-submenu .glyphicon {
+    color: #999;
+}
+
+.templatemo-sidebar-menu > li.sub.open > a {
+}
+
+.templatemo-sidebar .templatemo-sidebar-menu > li.active {
+    background-color: rgb(43, 119, 217);
+    color: #fff;
+}
+
+.templatemo-submenu li > a:hover {
+    background-color: rgb(43, 119, 217);
+    color: #fff;
+}
+
+.templatemo-submenu li > a:hover .glyphicon {
+    color: #fff;
+}
+
+.templatemo-sidebar .templatemo-sidebar-menu > li > a > i {
+    font-size: 16px;
+    top: 2px;
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
+}
+
+.templatemo-sidebar .highlight-anchor {
+    background-color: rgb(43, 119, 217);
+    color: #fff;
+}
+
+.templatemo-sidebar .highlight-anchor:hover {
+    color: #fff;
+}
+
+/* SIDERBAR MENU END */
+
+/*---媒体查询，处理自适应---------------------------------------------------------------*/
+@media only screen and (max-width: 320px) {
+.footer-links{ display: none;}
+}
+
+@media only screen and (max-width: 360px) and (min-width: 320px) {
+.footer-links{ display: none;}
+}
+
+@media only screen and (max-width: 480px) and (min-width: 360px) {
+.footer-links{ display: none;}
+}
+
+@media only screen and (max-width: 560px) and (min-width: 480px) {
+.footer-links{ display: none;}
+}
+
+@media only screen and (max-width: 640px) and (min-width: 560px) {
+.footer-links{ display: none;}
+}
+
+@media only screen and (max-width: 720px) and (min-width: 640px) {
+.footer-links{ display: none;}
+}
+
+@media only screen and (min-width: 720px) {
+    /*.container{ width:720px;}*/
+
+}
+
+/* 提示框 */
+.toast-tips{
+    display:none;
+    position:fixed;
+    left:50%;
+    bottom:10%;
+    width: 200px;
+    font-size:16px;
+    padding:12px 0;
+    line-height:1.6;
+    z-index: 100;
+    color:#fff;
+    text-align:center;
+    background-color:rgba(0,0,0,0.6);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
