@@ -1,0 +1,32 @@
+@charset "utf-8";
+body{
+    margin:0 auto;
+    min-width:320px;
+    max-width:720px;
+    font-size:0.16rem;
+}
+.house-address-header{
+    position:relative;
+    padding:0.2rem 0.25rem;
+    color:#eef0f2;
+    background-color:#0EA1FF;
+
+}
+.house-address-header .back{
+    position: absolute;
+    padding-left:0.25rem;
+    font-size:0.28rem;
+    vertical-align: middle;
+    background:url(../images/member_pic_back.png) no-repeat left center;
+    background-size:0.18rem 0.31rem;
+}
+.house-address-header .back .icon{
+    display:inline-block;
+    width:0.18rem;
+    height:0.31rem;
+
+}
+.house-address-header h1{
+    font-size:0.32rem;
+    text-align: center;
+}

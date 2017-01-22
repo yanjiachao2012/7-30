@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <title>房子成员</title>
+    <!--bootstrap样式-->
+    <link href="http://page.joinlinking.com/myxg/manager_auxiliary/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!--基本样式-->
+    <link href="http://page.joinlinking.com/myxg/page/style/css/common/style.css" rel="stylesheet" media="screen">
+
+    <!--公共样式-->
+    <link href="http://page.joinlinking.com/myxg/page/style/css/common/zlwx-app.css" rel="stylesheet" media="screen">
+
+    <link rel="stylesheet" href="css/house.css" media="screen"/>
+</head>
+<body>
+<div class="house-member-header">
+    <a href="" class="back"><i class="back-icon"></i><span>返回</span></a>
+    <h1>房屋成员</h1>
+    <a href="" class="house-toggle">房屋切换</a>
+</div>
+<div class="member-lists">
+   <div class="member-address">
+       <a href="javascript:void(0);" class="add-member" id="addMember">+</a>
+       <h2><i class="address-icon"></i>广东省深圳市南山区高新区中区科苑路15号科兴科学园18楼A1单元 </h2>
+   </div>
+    <ul class="member-ul"  id="member-ul">
+        <li class="member-item item-owner">
+            <h3>
+                <img src="images/member_owner.png" alt="主人"/>
+                <span>主人</span>
+            </h3>
+            <div class="wrap-info">
+                <div class="info-left">
+                    <span class="name">王小二</span>
+                    <span>18682026189</span>
+                </div>
+                <div class="info-right">
+                    <i class="jiankong-item"></i>
+                    <i class="baojing-item"></i>
+                    <a href="" class="remove">删除</a>
+                </div>
+            </div>
+        </li>
+        <li class="member-item item-zuke">
+            <h3>
+                <img src="images/member_zuke.png"  alt="租客"/>
+                <span>租客</span>
+            </h3>
+            <div class="wrap-info">
+                <div class="info-left">
+                    <span class="name">王小二</span>
+                    <span>18682026189</span>
+                </div>
+                <div class="info-right">
+                    <i class="jiankong-item"></i>
+                    <i class="baojing-item"></i>
+                    <a href="" class="remove">删除</a>
+                </div>
+            </div>
+        </li>
+        <li class="member-item item-family">
+            <h3>
+                <img src="images/member_family.png" alt="家人" />
+                <span>家人</span>
+            </h3>
+            <div class="wrap-info">
+                <div class="info-left">
+                    <span class="name">王小二</span>
+                    <span>18682026189</span>
+                </div>
+                <div class="info-right">
+                    <i class="jiankong-item"></i>
+                    <i class="baojing-item"></i>
+                    <a href="" class="remove">删除</a>
+                </div>
+            </div>
+        </li>
+        <li class="member-item item-visitor">
+            <h3>
+                <img src="images/member_visitor.png" alt="owner"  />
+                <span>访客</span>
+            </h3>
+            <div class="wrap-info">
+                <div class="info-left">
+                    <span class="name">王小二</span>
+                    <span>18682026189</span>
+                </div>
+                <div class="info-right">
+                    <i class="jiankong-item jiankong"></i>
+                    <i class="baojing-item baojing"></i>
+                    <a href="" class="remove">删除</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <!--操作删除按钮-->
+    <div class="dimmer"></div>
+    <div class="add-member-modal">
+        <form action="">
+        <div class="member-content">
+            <h5>添加成员</h5>
+            <i class="add-close"></i>
+            <div class="add-tel">
+                <label for="tel">手机号:</label><input type="tel" id="tel"/>
+            </div>
+            <div class="add-type">
+                <dl class="type-dl">
+                    <dd><i class="no-select"></i><span>家人</span></dd>
+                    <dd><i class="no-select"></i><span>访客</span></dd>
+                    <dd><i></i><span>租客</span></dd>
+                </dl>
+            </div>
+            <div class="add-submit"><input type="submit" value="确定"></div>
+        </div>
+        </form>
+    </div>
+</div>
+<script src=" http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/house.js"></script>
+<script>
+    $(function(){
+        var timer,
+             delayTime=1000,//删除按钮延迟时间
+             _memberUl=$('#member-ul'),
+             _wrapInfo=_memberUl.find('.wrap-info'),
+             _jiankongItem=_memberUl.find('i.jiankong-item'),
+             _baojingItem=_memberUl.find('i.baojing-item'),
+        _remove=_memberUl.find('.remove');
+        _wrapInfo.on('touchstart',function(e){
+
+            e.stopPropagation();
+            var _this=$(this);
+            timer=setTimeout(function(){
+                _this.find('.remove').css({'right':0});
+            },delayTime);
+            //e.preventDefault();
+        });
+        _wrapInfo.on('touchend',function(e){
+            clearInterval(timer);
+        });
+        _remove.on('click',function(){
+            $(this).parents('li').remove();
+        });
+        //掩藏删除按钮
+        $(document).on('click',function(e){
+            e.preventDefault();
+            $('.remove').css('right','-1rem');
+        });
+        /*添加成员弹框*/
+        var _addMemberModal=$('.add-member-modal');
+        $('#addMember').on('click',function(){
+            _addMemberModal.css('display','block');
+        });
+        $('.add-close').on('click',function(){
+            _addMemberModal.css('display','none');
+        });
+        $('.member-content').on('click',function(event){
+            event.stopPropagation();//阻止弹框消失；
+        });
+        _addMemberModal.on('click',function(){
+            $(this).css('display','none');
+        });
+        /*转换状态*/
+        _jiankongItem.on('touchstart',function(){
+               $(this).toggleClass('jiankong');
+        });
+        _baojingItem.on('touchstart',function(){
+            $(this).toggleClass('baojing');
+        })
+    })
+</script>
+</body>
+</html>

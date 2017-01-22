@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<title>报名</title>
+    <link rel="stylesheet" href="css/mobiscroll.css"/>
+    <link rel="stylesheet" href="css/dateRange.css"/>
+    <link rel="stylesheet" href="css/lanrenzhijia.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/wgfly-app.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/sport.css"/>
+    <style>
+      /*    body{
+              font-size: 30px;
+            }
+              .pickmeup{
+         background-color: #fff;
+              }
+              .pickmeup .pmu-instance .pmu-button{
+         color: #666;
+              }
+              .pickmeup .pmu-instance .pmu-selected{
+         margin-top: 5px;
+         background-color: #b6eee3;
+          color: #333;
+              }
+              .pickmeup .pmu-instance .pmu-not-in-month{
+         color: #BBB;
+            cursor: default;
+              }
+              .pickmeup .pmu-instance nav .pmu-prev{
+         background: url(../images/icon-dropUp.png) no-repeat center center;
+         -webkit-transform: rotate(180deg);
+         -moz-transform: rotate(180deg);
+         transform: rotate(180deg);
+              }
+      .pickmeup .pmu-instance nav .pmu-next{
+         float: right;
+         background: url(../images/icon-dropUp.png) no-repeat center center;
+      }
+              .pickmeup .pmu-instance .pmu-day-of-week *, .pickmeup .pmu-instance .pmu-days{
+         margin-top: 5px;
+              } */
+    </style>
+</head>
+
+<body style="background-color:#fff;position:relative;">
+<section class="public-product-main">
+     <div class="product-main-order product-common">
+         <ul>
+             <li class="item">
+                 <label>报名费</label>
+                 <input type="text" placeholder="填写目标金额">
+                 <span class="item-right">元</span>
+             </li>
+             <li class="item">
+                 <label>契约金</label>
+                 <input type="text" placeholder="填写契约金">
+                 <span class="item-right">元</span>
+             </li>
+             <li class="item">
+                 <label>每班人数</label>
+                 <input type="text" placeholder="输入每班人数">
+             </li>
+             <li class="item">
+                 <label>活动周期</label>
+                 <span class="wrap-radio" onclick="selectData(this)"><input type="radio" name="radio-date" class="radio-date"/>月</span>
+                 <span class="wrap-radio" onclick="selectData(this)"><input type="radio" name="radio-date" class="radio-date"/>半月</span>
+             </li>
+             <li class="item">
+                 <label for="product-end-time" style="width:180px;">最少报名周数</label>
+                 <input type="text"  class="signTime" readonly value="" placeholder="至少报一周" >
+                 <span class="item-right"><a href="javascript:" id="input_trigger1" class="turn-right"></a> </span>
+             </li>
+             <li class="item">
+                 <label for="product-start-time">报名开始</label>
+                 <input type="text" readonly value="2016/6/20" placeholder="请输入开始时间" id="sex">
+                 <span class="item-right">共计<i class="total">8</i>天</span>
+             </li>
+             <li class="item">
+                 <label>开始时间</label>
+                 <input type="text" placeholder="活动班第一个开始时间">
+             </li>
+         </ul>
+     </div>
+     <div class="product-common sport-class">
+     	<div id="signTime">添加班</div>
+     </div>
+     <div class="product-main-details  product-common">
+         <div class="wrap-input">
+             <input type="text" id="details-input" placeholder="请输入你要发起啥活动(标题)">
+         </div>
+         <div class="wrap-textarea">
+             <textarea id="wrapTextArea" maxlength="500" rows="10" placeholder="请在此处详细描述你的活动内容"></textarea>
+         </div>
+
+     </div>
+</section>
+    <div class="wrap-success-box" id="wrap-success-box" style="display:none">
+        <div class="sure-time-operate"><a href="javascript:" class="time-cancel">取消</a><a href="javascript:signInBox();" class="time-sure">确定</a></div>
+    </div>
+<div class="wrap-signIn-box wrap-success-box" id="signInBox" style="display:none;border-width: ">
+	<div class="signIn-box">
+		<h5 class="title">签到</h5>
+		<div class="signIn-operate">
+			<a href="" class="sure">确定</a>
+			<a href="javascript:signInBox();">取消</a>
+		</div>
+	</div>
+</div>
+    <style>
+     .sure-time-operate{
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+     }
+     .sure-time-operate a{
+        padding: 10px 30px;
+           margin: 0 30px;
+           color: #fff;
+           font-size: 30px;
+     }
+        .sure-time-operate .time-sure{
+           
+           background-color: #2aab93;
+        }
+        .sure-time-operate .time-cancel{
+            background-color: red;
+
+        }
+    </style>
+<ul id="sex-list" style="display: none">  
+    <li>先生</li>  
+    <li>女士</li>  
+</ul>  
+<script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/dateRange.js"></script>
+    <script src="js/jquery.pickmeup.js"></script>
+    <!-- <script src="js/mobiscroll_date.js"></script> -->
+    <script src="js/mobiscroll.2.13.2.js"></script>
+    <script>
+    $(function(){
+          /*var currYear = (new Date()).getFullYear();  
+            var opt={};
+            opt.date = {preset : 'date'};
+            opt.datetime = {preset : 'datetime'};
+            opt.time = {preset : 'time'};
+            opt.default = {
+                theme: 'android-ics light', //皮肤样式
+                display: 'modal', //显示方式 
+                mode: 'scroller', //日期选择模式
+                dateFormat: 'yyyy-mm-dd',
+                lang: 'zh',
+                showNow: false,
+                nowText: "今天",
+                startYear: currYear - 3, //开始年份
+                endYear: currYear //结束年份
+            };
+                $("#start-time").mobiscroll($.extend(opt['date'], opt['default']));*/
+
+        $("#sex").click(function () {  
+            var that = this;  
+            $("#sex-list").mobiscroll().treelist({  
+                theme: "android-ics",  
+                lang: "zh",  
+                display: 'bottom',  
+                inputClass: 'tmp',  
+                headerText: '请您选择',  
+                onSelect: function (valueText) {  
+                    var m = $(this).find("li").eq(valueText).html();  
+                    /*$.post("inc/person.org.php", {apart: "resume_base", sex: m}, function (result) { 
+                        if (result == 'ok') { 
+                            $(that).find(".mbase-menu-txt").html(m); 
+                        } 
+                        else { 
+                            error('网络繁忙，请您稍后再试'); 
+                        } 
+                    });*/后端入库部分  
+                }  
+            });  
+            $("input[id^=sex-list]").focus();  
+        });  
+    })
+
+
+        function signInBox(){
+            $(".pickmeup").fadeOut();
+            $("#wrap-success-box").fadeOut();
+            $(".pmu-days").find(".pmu-selected").removeClass('pmu-selected')
+        }
+
+        function selectData(obj){
+            $(obj).addClass("active-radio").siblings('.wrap-radio').removeClass('active-radio');
+        }
+
+
+       /* var dateRange1 = new pickerDateRange('signTime', {
+                isTodayValid : true,
+                //stopToday:false,
+                //startDate : '2016-12-12',
+                //endDate : '2017-04-21',
+                needCompare : false,
+                defaultText : ' 至 ',
+                autoSubmit : false,
+                inputTrigger : 'input_trigger1',
+                theme : 'ta',
+                calendars : 1,
+                noCalendar : false,
+                 stopToday : false,
+                success : function(obj) {
+                    alert($('.dateRangeDateTable .first').text())
+                    var len=$('.dateRangeDateTable').find('.ta_dateRangeSelected');
+                    for(var i=0;i<len.length;i++){
+                        alert('12月'+len[i].innerHTML+'日')
+                    }
+                    alert($('.dateRangeDateTable .last').text())
+                    
+                    $("#dCon2").html('开始时间 : ' + obj.startDate + '<br/>结束时间 : ' + obj.endDate);
+                }
+            });*/
+        var signTime = $('#signTime');
+            signTime.pickmeup({
+                position: 'bottom',
+                mode: 'multiple',
+                class_name:'gg',
+                /*before_show: function() {
+                    input.pickmeup('set_date', input.val(), true);
+                },*/
+                change: function(formated) {
+                    alert(formated)
+                }
+            });
+            signTime.on("click",function(){
+                $("#wrap-success-box").fadeIn();
+            })
+    </script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<title>报名</title>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/wgfly-app.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/sport.css"/>
+</head>
+
+<body>
+<div class="wrap-absolute">
+  <!--头部-->
+  <header class="sport-header">
+  	<div class="header-up">
+  		<div class="wrap-pic">
+  			<img src="images/List3.jpg"/>
+  		</div>
+  		<div class="up-right">
+  			<div class="right-title"><span class="name">70后跑班</span><span class="money">￥100/周</span></div>
+  			<div class="right-details"><span>5km</span><span>5天</span><span>20元</span><span>1周</span><i class="more"></i></div>
+  		</div>
+  	</div>
+  	<div class="header-down">
+  		<div class="header-time running-time">
+  			<div class="header-icon">
+  				<i class="running-icon" style="left:52px;"></i>
+  			</div>
+  			<div class="wrap-time-slot"><span class="slot-item active-item"></span><span class="slot-item active-item"></span><span class="slot-item"></span><span class="slot-item"></span><span class="slot-item"></span><span class="slot-item"></span><span class="slot-item"></span></div>
+  			<div class="show-time"><span class="start">11.24</span><span>可插班加入</span><span class="end">11.30</span></div>
+  		</div>
+  		<div class="header-time signUp-time">
+  			<div class="header-icon">
+  				<i class="running-icon"></i>
+  			</div>
+  			<div class="wrap-time-slot"></div>
+  			<div class="show-time"><span class="start">12.1</span><span>可下周报名</span><span class="end">12.7</span></div>
+  		</div>
+  	</div>
+  </header>
+  <div class="wrap-signUp-solution">
+	  <div class="signUp-people">
+		  <div class="activity-details">
+		  		<span class="people">已有20人参与</span>
+		  		<span class="details">6天后平分2000元</span>
+		  </div>
+	  	<div class="people-number">
+	  		<img src="images/List3.jpg"/>
+	  		<img src="images/List3.jpg"/>
+	  		<img src="images/List3.jpg"/>
+	  		<img src="images/List3.jpg"/>
+	  		<img src="images/List3.jpg"/>
+	  		<img src="images/List3.jpg"/>
+	  		<img src="images/List3.jpg"/>
+	  		<img src="images/List3.jpg"/>
+	  	</div>
+	  	<i class="read-more"></i>
+	  </div>
+	  <div class="signUp-solution">
+	  	<ul>
+	  		<li class="item">
+	  			<span>1019</span>
+	  			<span>累计报名</span>
+	  		</li>
+	  		<li class="item">
+	  			<span>1019</span>
+	  			<span>总里程数</span>
+	  		</li>
+	  		<li class="item">
+	  			<span>1019</span>
+	  			<span>历史累计奖金</span>
+	  		</li>
+	  	</ul>
+	  </div>
+	</div>
+	<div class="sport-rule">
+	  <div class="rule-title">
+	  	契约规则
+	  </div>
+	  <div class="rule-content">
+	  	<p>1.跑友选择自己的跑步计划并报名加入适合的班级，交纳一笔契约金（如计划跑步30天/周*10天=30元/周）</p>
+	  	<p>2.坚持跑步，用跑步app记录跑步数据，在当日23:55前提交截图</p>
+	  	<p>3.一周后，跑友入味完成计划，则扣除评分奖金</p>
+	  	<p>奖金来自当周出局跑友契约金,[不跑就出局]平台不收取任何费用</p>
+	  </div>
+	</div>
+</div>	
+	<!--底部-->
+<div style="height:85px;"></div>
+<div class="wrap-bottom-nav">
+	<div class="bottom-nav span2">管理</div>
+	<div class="bottom-nav span2" onclick="signUp('1');">自费报名</div>
+	<div class="bottom-nav span2">签到</div>
+	<div class="bottom-nav span1" onclick="signUp('4');">分享</div>
+</div>
+
+	<!--报名成功弹框-->
+	<div class="wrap-success-box" style="display:none;" id="successBox" >
+		<div class="success-box">
+			<i class="close-btn" onclick="hiddenSuccess(this);"></i>
+			<span class="success-icon"></span>
+			<h6>报名成功</h6>
+		</div>
+	</div>
+<!--报名列表-->
+	<div class="wrap-sport-signUp" id="sportSignup1" onclick="hiddenBox(this)">
+		<div class="sport-signUp">
+			<div class="sport-sort">
+				<div class="sort-item" onclick="showDropDown(this,event)">
+					<span class="show-select">所有人</span>
+					<i class="dropdown-icon"></i>
+					<ul class="dropdown-ul">
+						<li class="dropdown-item" onclick="obtainValue(this,event)">已签到</li>
+						<li class="dropdown-item" onclick="obtainValue(this,event)">所有人</li>
+						<li class="dropdown-item" onclick="obtainValue(this,event)">未签到</li>
+					</ul>
+				</div>
+				<div class="sort-item" onclick="showDropDown(this,event)">
+					<span class="show-select">班次</span>
+					<i class="dropdown-icon"></i>
+					<ul class="dropdown-ul">
+						<li class="dropdown-item" onclick="obtainValue(this,event)">班次1</li>
+						<li class="dropdown-item" onclick="obtainValue(this,event)">班次2</li>
+						<li class="dropdown-item" onclick="obtainValue(this,event)">班次3</li>
+					</ul>
+				</div>
+			</div>
+			<div class="signUp-list">
+				<div class="signUp-item">
+				  <div class="name">张三</div>
+					<div class="wrap-item-middle">
+						<div class="wrap-item">
+							<span class="item empty-item">
+							</span>
+							<span class="item green-item">
+	                11-10
+							</span>
+							<span class="item green-item">
+	                 11-10
+							</span>
+							<span class="item red-item">
+	                  11-10
+							</span>
+							<span class="item green-item">
+	                11-10
+							</span>
+							<span class="item green-item">
+	                 11-10
+							</span>
+							<span class="item red-item">
+	                  11-10
+							</span>
+							<span class="item green-item">
+	                11-10
+							</span>
+							<span class="item green-item">
+	                 11-10
+							</span>
+							<span class="item red-item">
+	                  11-10
+							</span>
+						</div>
+					</div>
+					<div class="signUp" onclick="signUpName();">报名</div>
+				</div>
+				<div class="signUp-item">
+				  <div class="name">张三</div>
+					<div class="wrap-item-middle">
+						<div class="wrap-item">
+							<span class="item empty-item">
+							</span>
+						
+
+							<span class="item green-item">
+	                 11-10
+							</span>
+							<span class="item red-item">
+	                  11-10
+							</span>
+						</div>
+					</div>
+					<div class="signUp" onclick="signUpName();">报名</div>
+				</div>
+				<div class="signUp-item">
+				  <div class="name">张三</div>
+					<div class="wrap-item-middle">
+						<div class="wrap-item">
+							<span class="item empty-item">
+							</span>
+							<span class="item green-item">
+	                11-10
+							</span>
+							<span class="item green-item">
+	                 11-10
+							</span>
+							<span class="item green-item">
+	                11-10
+							</span>
+							<span class="item green-item">
+	                 11-10
+							</span>
+							<span class="item red-item">
+	                  11-10
+							</span>
+						</div>
+					</div>
+					<div class="signUp" onclick="signUpName();">报名</div>
+				</div>
+				<div class="signUp-item">
+				  <div class="name">张三</div>
+					<div class="wrap-item-middle">
+						<div class="wrap-item">
+							<span class="item empty-item">
+							</span>
+							<span class="item green-item">
+	                11-10
+							</span>
+							<span class="item green-item">
+	                 11-10
+							</span>
+							<span class="item red-item">
+	                  11-10
+							</span>
+							<span class="item green-item">
+	                11-10
+							</span>
+							<span class="item green-item">
+	                 11-10
+							</span>
+							<span class="item red-item">
+	                  11-10
+							</span>
+						
+						</div>
+					</div>
+					<div class="signUp" onclick="signUpName();">报名</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--分享-->
+	<div class="wrap-success-box share-box" id="sportSignup4"  onclick="hiddenBox(this)">
+		<img src="images/share.png" class="share-pic" />
+	</div>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script>
+	$(function(){
+		$(".wrap-item-middle").find('.wrap-item').each(function(){
+			//var _width=$(this).find('.item').eq(0).outerWidth(true);
+			$(this).css("width",(90*$(this).find('.item').length))
+		})
+	})
+   //隐藏报名成功的框
+	 function hiddenSuccess(obj){
+    $(obj).parents('.wrap-success-box').fadeOut('fast');
+	 }
+	 //隐藏报名的框
+	 function hiddenBox(obj){
+    $(obj).fadeOut('fast');
+	 }
+	 //出现报名的框
+   function signUp(index){
+   	$("#sportSignup"+index).fadeIn();
+   }
+   //出现成功的框
+   function signUpName(){
+    $("#successBox").fadeIn();
+   }
+   //出现下拉框
+   function showDropDown(obj,event){
+   	event.stopPropagation();
+     $(obj).find('.dropdown-ul').slideToggle();
+     $(obj).toggleClass('active-item');
+   }
+   //获取选择的值
+   function obtainValue(obj,event){
+   	  event.stopPropagation();
+   		$(obj).addClass('select-item').siblings().removeClass('select-item');
+   		$(obj).parent().siblings('.show-select').text($(obj).text())
+   		$(obj).parents('.sort-item').removeClass('active-item');
+   		$(obj).parent().fadeOut();
+   }
+	</script>
+</body>
+</html>

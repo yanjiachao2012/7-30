@@ -1,0 +1,332 @@
+@media only screen and (min-width:750px),only screen and (min-device-width:750px){html{font-size:100px}}
+@media only screen and (min-width:540px),only screen and (min-device-width:540px){html{font-size:72px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){html{font-size:64px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){html{font-size:55px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){html{font-size:53px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){html{font-size:50px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){html{font-size:48px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){html{font-size:42px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){html{font-size:32px}}
+
+@mixin border{
+    border-bottom:1px solid #e5e5e5;
+}
+html{
+    width:100%;height:100%;
+}
+body{
+    width:100%;
+    height:100%;
+    padding: 0;
+    margin:0 auto;
+    font-family: "Microsoft YaHei" !important;
+    font-size:.28rem;
+    line-height:1.2;
+    background-color:#e6e6e6;
+}
+.erpHeader {
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index:99;
+    height: .94rem;
+    text-align: center;
+    font-size: .36rem;
+    color: #fff;
+    line-height: .94rem;
+    background-color: #00d0fc;
+    border-bottom: 1px solid #c8c8c8;
+    .icon-back {
+		    position: absolute;
+		    left: .3rem;
+		    top: .28rem;
+		    display: inline-block;
+		    width: .22rem;
+		    height: .36rem;
+		    background: url(../images/Back-icon.png) no-repeat center center;
+		    background-size: .2rem .34rem;
+		}
+		.new-sure{
+			  position: absolute;
+		    right: .3rem;
+		    top: 0rem;
+		    color:#fff;
+		    font-size:.28rem;
+		}
+}
+.record-print-modal{
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    padding-top:.94rem;
+    z-index:99;
+    background-color:rgba(0,0,0,0.4);
+}
+.wrap-print-content{
+    position:relative;
+    height:100%;
+}
+.record-print-content{
+    position:absolute;
+    left:0;
+    width:100%;
+    overflow:auto;
+    height:100%;
+    background-color:#fff;
+    .record-print-title{
+        padding:.19rem .42rem .09rem;
+        @include border;
+        .pic{
+            width:1.4rem;
+            height:.59rem;
+
+        }
+        .print-time{
+            float:right;
+            margin-top:.3rem;
+            font-size:.24rem;
+            color:#000;
+            vertical-align:bottom;
+        }
+    }
+    .hospital-name{
+        padding:.2rem 0;
+        margin:0;
+        text-align:center;
+        font-size:.36rem;
+        color:#000000;
+        @include border;
+    }
+    .record-user-info{
+        padding:0 .3rem 0 .37rem;
+        h4{
+            padding:.15rem 0 .15rem .6rem;
+            font-size:.32rem;
+            color:#1e1e1e;
+            @include border;
+            .doctor-name{
+                margin-top: .05rem;
+                float:right;
+                color:#5b5b5b;
+                font-size:.28rem;
+            }
+        }
+        .info-item{
+            display: -moz-box;
+            display: -webkit-box;
+            display: box;
+            display: -webkit-flex;
+            display: flex;
+            padding:.15rem 0;
+            @include border;
+            &:last-child{
+                border:none;
+            }
+            .item-left{
+            -webkit-box-flex: 4;
+                -moz-box-flex: 4;
+                -ms-flex: 4;
+                -webkit-flex: 4;
+                flex: 4;
+            }
+            .item-right{
+            -webkit-box-flex: 3;
+                -moz-box-flex: 3;
+                -ms-flex: 3;
+                -webkit-flex: 3;
+                flex: 3;
+            }
+            .item-label{
+                padding-right:.15rem;
+                color:#5b5b5b;
+            }
+            .item-details{
+                color:#000;
+            }
+            .item-sex{
+                margin-right:.08rem;
+                padding-left:.4rem;
+                background:url(../images/icon-radio-noSelect.png) no-repeat left center;
+                background-size:.28rem .28rem;
+            }
+            .active-sex{
+                background:url(../images/icon-radio-selected.png) no-repeat left center;
+                background-size:.28rem .28rem;
+            }
+        }
+        .item-diff{
+            .item-label{
+                float:left;
+            }
+            .diff-right{
+                overflow:hidden;
+            }
+            .diff-item{
+                padding:0.05rem 0 .1rem 0;
+                color:#010101;
+                span{
+                    padding-bottom:.1rem;
+                    display:inline-block;
+                    width:2.5rem;
+                    @include border;
+                }
+                strong{
+                    font-weight: normal;
+                    color:#a9a9a9;
+                }
+                b{
+                    float:right;
+                    font-weight:normal;
+                    color:#5B5B5B;
+                }
+            }
+        }
+    }
+    .user-info-first{
+         @include border;
+        h4{
+            background:url(../images/per.png) no-repeat left center;
+            background-size:.36rem .36rem;
+        }
+    }
+    .user-info-second{
+        h4{
+            background:url(../images/case.png) no-repeat left center;
+            background-size:.26rem .36rem;
+        }
+        .info-item{
+            border-bottom:1px solid #e5e5e5!important;
+             .item-details{
+            color:#5b5b5b;
+        }
+        }
+       
+    }
+    .record-drugs-info{
+        padding:0 .35rem 0 0.37rem;
+        h4{
+            position:relative;
+            padding:.24rem 0;
+            color:#5b5b5b;
+            font-size:.3rem;
+            @include border;
+            &:before{
+                content:'';
+                position:absolute;
+                top:.25rem;
+                left:-.15rem;
+                width:1px;
+                height:.3rem;
+                background-color:#00b7f3;
+            }
+        }
+        .drugs-info-item{
+            display: -moz-box;
+            display: -webkit-box;
+            display: box;
+            display: -webkit-flex;
+            display: flex;
+            @include border;
+            .drugs-left{
+                 padding-top:.2rem;
+                margin-right:.6rem;
+                color:#5b5b5b;
+            }
+            .drugs-right{
+              -webkit-box-flex: 1;
+                -moz-box-flex: 1;
+                -ms-flex: 1;
+                -webkit-flex: 1;
+                flex: 1;
+            }
+            .right-item{
+                padding:.2rem 0;
+                @include border;
+                &:last-child{
+                    border:none;
+                }
+            }
+            .drugs-name{
+                color:#1e1e1e;
+            }
+            .number{
+                color:#000;
+                float:right;
+            }
+            .drugs-use{
+                float:left;
+                margin-right:.2rem;
+                color:#5b5b5b;
+            }
+            .use-right{
+                overflow:hidden;
+                color:#1e1e1e;
+                p{
+                    padding-bottom:.2rem;
+                    &:last-child{
+                        padding-bottom:0;
+                    }
+                }
+                .use-detail{
+                    margin-right:.6rem;
+                }
+            }
+            .wrap-drugs-name{
+                padding-bottom:.2rem;
+                @include border;
+            }
+            .wrap-drugs-use{
+                padding-top:.2rem;
+            }
+        }
+
+    }
+    .doctor-say{
+            padding:0 .35rem 0 0.37rem;
+            h4{
+                padding:.2rem 0;
+                font-size:.3rem;
+                @include border;
+            }
+            .say-content{
+                position:relative;
+                padding: 0 .3rem 0 1rem;
+                @include border;
+                .icon-say{
+                    display:inline-block;
+                    position:absolute;
+                    right:.3rem;
+                    top:.2rem;
+                    width:.4rem;
+                    height:.65rem;
+                    background:url(../images/radio.png) no-repeat center center;
+                    background-size:.36rem .63rem;
+                }
+            }
+            textarea{
+                width:100%;
+                padding:.2rem;
+                height:1.8rem;
+                overflow:hidden;
+                border:none;
+                resize:none;
+                outline:none;
+            }
+        }
+    .record-print-btn{
+        padding:.75rem;
+        button{
+            width:100%;
+            height:.9rem;
+            line-height:.9rem;
+            text-align:center;
+            border:none;
+            outline: none;
+            color:#fff;
+            background-color:#00b7f3;
+        }
+    }
+}

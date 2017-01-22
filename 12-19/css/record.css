@@ -1,0 +1,426 @@
+/* @media only screen and (min-width: 750px), only screen and (min-device-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 540px), only screen and (min-device-width: 540px) {
+  html {
+    font-size: 72px;
+  }
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  html {
+    font-size: 64px;
+  }
+}
+@media only screen and (max-width: 414px), only screen and (max-device-width: 414px) {
+  html {
+    font-size: 55px;
+  }
+}
+@media only screen and (max-width: 400px), only screen and (max-device-width: 400px) {
+  html {
+    font-size: 53px;
+  }
+}
+@media only screen and (max-width: 375px), only screen and (max-device-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 360px), only screen and (max-device-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
+  html {
+    font-size: 42px;
+  }
+}
+@media only screen and (max-width: 240px), only screen and (max-device-width: 240px) {
+  html {
+    font-size: 32px;
+  }
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Microsoft YaHei" !important;
+  font-size: 14px;
+  line-height: 1.2;
+  background-color: #e6e6e6;
+}
+
+.erpHeader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  height: .94rem;
+  text-align: center;
+  font-size: .36rem;
+  color: #fff;
+  line-height: .94rem;
+  background-color: #00d0fc;
+  border-bottom: 1px solid #c8c8c8;
+}
+.erpHeader .icon-back {
+  position: absolute;
+  left: .3rem;
+  top: .28rem;
+  display: inline-block;
+  width: .22rem;
+  height: .36rem;
+  background: url(../images/Back-icon.png) no-repeat center center;
+  background-size: .2rem .34rem;
+}
+.erpHeader .new-sure {
+  position: absolute;
+  right: .3rem;
+  top: 0rem;
+  color: #fff;
+  font-size: .28rem;
+}
+
+.record-print-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: .94rem;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.wrap-print-content {
+  position: relative;
+  height: 100%;
+}
+
+.record-print-content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  background-color: #fff;
+}
+.record-print-content .record-print-title {
+  padding: .19rem .42rem .09rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.record-print-content .record-print-title .pic {
+  width: 1.4rem;
+  height: .59rem;
+}
+.record-print-content .record-print-title .print-time {
+  float: right;
+  margin-top: .3rem;
+  font-size: .24rem;
+  color: #000;
+  vertical-align: bottom;
+}
+.record-print-content .hospital-name {
+  padding: .2rem 0;
+  margin: 0;
+  text-align: center;
+  font-size: .36rem;
+  color: #000000;
+  border-bottom: 1px solid #e5e5e5;
+}
+.record-print-content .record-user-info {
+  padding: 0 .3rem 0 .37rem;
+}
+.record-print-content .record-user-info h4 {
+  padding: .15rem 0 .15rem .6rem;
+  font-size: .32rem;
+  color: #1e1e1e;
+  border-bottom: 1px solid #e5e5e5;
+}
+.record-print-content .record-user-info h4 .doctor-name {
+  margin-top: .05rem;
+  float: right;
+  color: #5b5b5b;
+  font-size: .28rem;
+}
+.record-print-content .record-user-info .info-item {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  display: -webkit-flex;
+  display: flex;
+  padding: .15rem 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.record-print-content .record-user-info .info-item:last-child {
+  border: none;
+}
+.record-print-content .record-user-info .info-item .item-left {
+  -webkit-box-flex: 4;
+  -moz-box-flex: 4;
+  -ms-flex: 4;
+  -webkit-flex: 4;
+  flex: 4;
+}
+.record-print-content .record-user-info .info-item .item-right {
+  -webkit-box-flex: 3;
+  -moz-box-flex: 3;
+  -ms-flex: 3;
+  -webkit-flex: 3;
+  flex: 3;
+}
+.record-print-content .record-user-info .info-item .item-label {
+  padding-right: .15rem;
+  color: #5b5b5b;
+}
+.record-print-content .record-user-info .info-item .item-details {
+  color: #000;
+}
+.record-print-content .record-user-info .info-item .item-sex {
+  margin-right: .08rem;
+  padding-left: .4rem;
+  background: url(../images/icon-radio-noSelect.png) no-repeat left center;
+  background-size: .28rem .28rem;
+}
+.record-print-content .record-user-info .info-item .active-sex {
+  background: url(../images/icon-radio-selected.png) no-repeat left center;
+  background-size: .28rem .28rem;
+}
+.record-print-content .record-user-info .item-diff .item-label {
+  float: left;
+}
+.record-print-content .record-user-info .item-diff .diff-right {
+  overflow: hidden;
+}
+.record-print-content .record-user-info .item-diff .diff-item {
+  padding: 0.05rem 0 .1rem 0;
+  color: #010101;
+}
+.record-print-content .record-user-info .item-diff .diff-item span {
+  padding-bottom: .1rem;
+  display: inline-block;
+  width: 2.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.record-print-content .record-user-info .item-diff .diff-item strong {
+  font-weight: normal;
+  color: #a9a9a9;
+}
+.record-print-content .record-user-info .item-diff .diff-item b {
+  float: right;
+  font-weight: normal;
+  color: #5B5B5B;
+}
+.record-print-content .user-info-first {
+  border-bottom: 1px solid #e5e5e5;
+}
+.record-print-content .user-info-first h4 {
+  background: url(../images/per.png) no-repeat left center;
+  background-size: .36rem .36rem;
+}
+.record-print-content .user-info-second h4 {
+  background: url(../images/case.png) no-repeat left center;
+  background-size: .26rem .36rem;
+}
+.record-print-content .user-info-second .info-item {
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+.record-print-content .user-info-second .info-item .item-details {
+  color: #5b5b5b;
+}
+.record-print-content .record-drugs-info {
+  padding: 0 .35rem 0 0.37rem;
+}
+.record-print-content .record-drugs-info h4 {
+  position: relative;
+  padding: .24rem 0;
+  color: #5b5b5b;
+  font-size: .3rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.record-print-content .record-drugs-info h4:before {
+  content: '';
+  position: absolute;
+  top: .25rem;
+  left: -.15rem;
+  width: 1px;
+  height: .3rem;
+  background-color: #00b7f3;
+}
+.record-print-content .record-drugs-info .drugs-info-item {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+}
+.record-print-content .record-drugs-info .drugs-info-item .drugs-left {
+  padding-top: .2rem;
+  margin-right: .6rem;
+  color: #5b5b5b;
+}
+.record-print-content .record-drugs-info .drugs-info-item .drugs-right {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.record-print-content .record-drugs-info .drugs-info-item .right-item {
+  padding: .2rem 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.record-print-content .record-drugs-info .drugs-info-item .right-item:last-child {
+  border: none;
+}
+.record-print-content .record-drugs-info .drugs-info-item .drugs-name {
+  color: #1e1e1e;
+}
+.record-print-content .record-drugs-info .drugs-info-item .number {
+  color: #000;
+  float: right;
+}
+.record-print-content .record-drugs-info .drugs-info-item .drugs-use {
+  float: left;
+  margin-right: .2rem;
+  color: #5b5b5b;
+}
+.record-print-content .record-drugs-info .drugs-info-item .use-right {
+  overflow: hidden;
+  color: #1e1e1e;
+}
+.record-print-content .record-drugs-info .drugs-info-item .use-right p {
+  padding-bottom: .2rem;
+}
+.record-print-content .record-drugs-info .drugs-info-item .use-right p:last-child {
+  padding-bottom: 0;
+}
+.record-print-content .record-drugs-info .drugs-info-item .use-right .use-detail {
+  margin-right: .6rem;
+}
+.record-print-content .record-drugs-info .drugs-info-item .wrap-drugs-name {
+  padding-bottom: .2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.record-print-content .record-drugs-info .drugs-info-item .wrap-drugs-use {
+  padding-top: .2rem;
+}
+.record-print-content .doctor-say {
+  padding: 0 .35rem 0 0.37rem;
+}
+.record-print-content .doctor-say h4 {
+  padding: .2rem 0;
+  font-size: .3rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.record-print-content .doctor-say .say-content {
+  position: relative;
+  padding: 0 .3rem 0 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.record-print-content .doctor-say .say-content .icon-say {
+  display: inline-block;
+  position: absolute;
+  right: .3rem;
+  top: .2rem;
+  width: .4rem;
+  height: .65rem;
+  background: url(../images/radio.png) no-repeat center center;
+  background-size: .36rem .63rem;
+}
+.record-print-content .doctor-say textarea {
+  width: 100%;
+  padding: .2rem;
+  height: 1.8rem;
+  overflow: hidden;
+  border: none;
+  resize: none;
+  outline: none;
+}
+.record-print-content .record-print-btn {
+  padding: .75rem;
+}
+.record-print-content .record-print-btn button {
+  width: 100%;
+  height: .9rem;
+  line-height: .9rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #00b7f3;
+}
+
+# sourceMappingURL=record.css.map
+ */
+ html { /* width: 100%; height: 100%; */ }
+
+body {/*  width: 100%; height: 100%;  */padding: 0; margin: 0 auto; font-family: "Microsoft YaHei" !important; font-size: 14px; line-height: 1.2; background-color: #e6e6e6; }
+
+.record-print-modal { position: fixed; left: 0; top: 0; right: 0; bottom: 0; padding-top: 44px; z-index: 99; line-height: normal;background-color:rgba(0,0,0,0.5)}
+
+.wrap-print-content { position: relative; height: 100%; font-size:14px;}
+.header-btn-left{position: absolute;left: 12px;}
+.header-btn-left img{margin-top:-4px;width:10px;height:17px;}
+.record-print-content { position: absolute; left: 0; width: 100%; overflow: auto; height: 100%; background-color: #fff; }
+.record-print-content .record-print-title { padding: 12px 20px 5px; border-bottom: 1px solid #e5e5e5; text-align: left;}
+.record-print-content .record-print-title .pic { width: 70px; }
+.record-print-content .record-print-title .print-time { float: right; margin-top: 15px; font-size: 12px; color: #000; vertical-align: bottom; }
+.record-print-content .hospital-name { padding: 10px 0; margin: 0; text-align: center; font-size: 18px; color: #000000; border-bottom: 1px solid #e5e5e5; }
+.record-print-content .record-user-info { padding: 0 12px 0 18px;text-align:left; }
+.record-print-content .record-user-info h4 { margin:0;padding: 8px 0 8px 0px; font-size:16px; color: #1e1e1e; border-bottom: 1px solid #e5e5e5; }
+.record-print-content .record-user-info h4 .doctor-name { margin-top: 2px; float: right; color: #5b5b5b; font-size:14px}
+.record-print-content .record-user-info .info-item { display: -moz-box; display: -webkit-box; display: box; display: -webkit-flex; display: flex; padding: 8px 0; border-bottom: 1px solid #e5e5e5; }
+.record-print-content .record-user-info .info-item:last-child { border: none; }
+.record-print-content .record-user-info .info-item .item-left { -webkit-box-flex: 4; -moz-box-flex: 4; -ms-flex: 4; -webkit-flex: 4; flex: 4; }
+.record-print-content .record-user-info .info-item .item-right { -webkit-box-flex: 3; -moz-box-flex: 3; -ms-flex: 3; -webkit-flex: 3; flex: 3; }
+.record-print-content .record-user-info .info-item .item-label { padding-right: 6px; color: #5b5b5b; }
+.record-print-content .record-user-info .info-item .item-details { color: #000; }
+.record-print-content .record-user-info .info-item .item-sex {position: relative; margin-right: 4px; }
+.record-print-content .record-user-info .info-item .item-sex img{margin-right:5px;width:13px;height:13px;vertical-align: -2px;}
+.record-print-content .record-user-info .item-diff .item-label { float: left; }
+.record-print-content .record-user-info .item-diff .diff-right { overflow: hidden; }
+.record-print-content .record-user-info .item-diff .diff-item { padding: 0 0 5px 0; color: #010101; }
+.record-print-content .record-user-info .item-diff .diff-item span { padding-bottom: 4px; display: inline-block; width: 140px; border-bottom: 1px solid #e5e5e5; }
+.record-print-content .record-user-info .item-diff .diff-item strong { font-weight: normal; color: #a9a9a9; }
+.record-print-content .record-user-info .item-diff .diff-item b { float: right; font-weight: normal; color: #5B5B5B; }
+.record-print-content .user-info-first { border-bottom: 1px solid #e5e5e5; }
+.record-print-content .user-info-first h4 img { width:18px;height:18px; margin-right: 10px; vertical-align: -3px;}
+.record-print-content .user-info-second h4 img{ width:14px;height:16px; margin-right:10px; vertical-align: -2px;}
+.record-print-content .user-info-second .info-item { border-bottom: 1px solid #e5e5e5 !important; }
+.record-print-content .user-info-second .info-item .item-details { color: #5b5b5b; }
+.record-print-content .record-drugs-info { padding: 0 12px 0 18px; }
+.record-print-content .record-drugs-info h4 { position: relative;margin:0; padding: 12px 0; color: #5b5b5b; font-size: 16px; border-bottom: 1px solid #e5e5e5;text-align: left;overflow-x:visible }
+.record-print-content .record-drugs-info h4:before { content: ''; position: absolute; top: 14px; left: -10px; width: 1px; height: 14px; background-color: #00b7f3; }
+.record-print-content .record-drugs-info .drugs-info-item { display: -moz-box; display: -webkit-box; display: box; display: -webkit-flex; display: flex;padding:10px 0; border-bottom: 1px solid #e5e5e5;text-align:left; }
+.record-print-content .record-drugs-info .drugs-info-item .drugs-left { margin-right:28px; color: #5b5b5b; }
+.record-print-content .record-drugs-info .drugs-info-item .drugs-right { -webkit-box-flex: 1; -moz-box-flex: 1; -ms-flex: 1; -webkit-flex: 1; flex: 1; }
+.record-print-content .record-drugs-info .drugs-info-item .right-item {padding:10px 0; border-top: 1px solid #e5e5e5; }
+.record-print-content .record-drugs-info .drugs-info-item .right-item:first-child { border: none;padding-top:0; }
+.record-print-content .record-drugs-info .drugs-info-item .drugs-name { color: #1e1e1e; }
+.record-print-content .record-drugs-info .drugs-info-item .number { color: #000; float: right; }
+.record-print-content .record-drugs-info .drugs-info-item .drugs-use { float: left; margin-right: 10px; color: #5b5b5b; }
+.record-print-content .record-drugs-info .drugs-info-item .use-right { overflow: hidden; color: #1e1e1e; }
+.record-print-content .record-drugs-info .drugs-info-item .use-right p { margin:0;padding-bottom: 10px; }
+.record-print-content .record-drugs-info .drugs-info-item .use-right p:last-child { padding-bottom: 0; }
+.record-print-content .record-drugs-info .drugs-info-item .use-right .use-detail { margin-right: 20px; }
+.record-print-content .record-drugs-info .drugs-info-item .wrap-drugs-name { padding-bottom: 8px; border-bottom: 1px solid #e5e5e5;text-align: left;}
+.record-print-content .record-drugs-info .drugs-info-item .wrap-drugs-use { padding-top: 8px; }
+.record-print-content .doctor-say { padding: 0 12px 0 18px;}
+.record-print-content .doctor-say h4 {margin:0; padding: 10px 0; font-size: 15px;color:#1e1e1e; border-bottom: 1px solid #e5e5e5; }
+.record-print-content .doctor-say .say-content { position: relative; padding:0 15px 0 55px;height: 100px; border-bottom: 1px solid #e5e5e5; }
+.record-print-content .doctor-say .say-content .icon-say { display: inline-block; position: absolute; right: 15px; top: 10px; width: 18px; height: 32px; }
+.record-print-content .doctor-say textarea { width: 100%; padding: 10px 18px 10px 10px; height: 90px; overflow-y: auto; border: none; resize: none; outline: none; }
+.record-print-content .record-print-btn { padding: 35px; }
+.record-print-content .record-print-btn button { width: 100%; height: 45px; line-height: 45px; text-align: center; border: none; outline: none; color: #fff; background-color: #00b7f3; }

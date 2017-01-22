@@ -1,0 +1,23 @@
+{
+  "name": "weima",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanjiachao2012/weima.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanjiachao2012/weima/issues"
+  },
+  "homepage": "https://github.com/yanjiachao2012/weima#readme"
+}

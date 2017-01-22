@@ -1,0 +1,375 @@
+@charset "utf-8";
+body{
+    margin:0 auto;
+    min-width:320px;
+    font-family: "FZLTHJW";
+    font-size:0.16rem;
+    background-color:#f1f1f1;
+}
+.house-address-header{
+    position:relative;
+    padding:0 0.25rem;
+    height:0.88rem;
+    line-height:0.88rem;
+    background-color:#0EA1FF;
+
+}
+.house-address-header .back{
+    height:100%;
+    position: absolute;
+}
+.house-address-header .back .back-icon{
+    display:inline-block;
+    width:0.18rem;
+    height:0.28rem;
+    vertical-align: middle;
+    background:url(../images/member_pic_back.png) no-repeat left center;
+    background-size:0.18rem 0.28rem;
+
+}
+.house-address-header .back span{
+    margin-left:0.08rem;
+    vertical-align: middle;
+    font-size:0.28rem;
+    color:#eef0f2;
+}
+.house-address-header h1{
+    font-size:0.36rem;
+    text-align: center;
+    color:#eef0f2;
+    line-height:0.88rem;
+}
+.house-address-lists .house-address-ul .house-address-li{
+    position:relative;
+    padding:0.2rem 0.25rem;
+    border-bottom:1px solid #d8d8d8;
+}
+.house-address-ul .house-address-li .icon{
+    position:absolute;
+    right:0.25rem;
+    top:0.35rem;
+    display:inline-block;
+    width:0.44rem;
+    height:0.44rem;
+    background: url(../images/house_select.png) no-repeat center center;
+    background-size:0.43rem 0.44rem;
+}
+.house-address-ul .house-address-li .no-sure{
+    background: url(../images/house_add_no.png) no-repeat center center;
+    background-size:0.40rem 0.44rem;
+}
+.house-address-ul .house-address-li .house-address-name{
+    margin-right:1.4rem;
+    font-size:0.28rem;
+    line-height:1.3;
+}
+/*房屋成员*/
+body{
+    margin:0 auto;
+    min-width:320px;
+    font-family: "FZLTHJW";
+    font-size:0.16rem;
+    line-height:1.4;
+    background-color:#f1f1f1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a:hover{text-decoration: none;}
+.house-member-header{
+    position:relative;
+    height:0.88rem;
+    line-height:0.88rem;
+    padding:0 0.25rem;
+    background-color:#0EA1FF;
+
+}
+.house-member-header .back{
+    display:inline-block;
+    height:100%;
+    line-height:0.88rem;
+    position: absolute;
+}
+.house-member-header .back .back-icon{
+    display:inline-block;
+    width:0.18rem;
+    height:0.28rem;
+    vertical-align: middle;
+    background:url(../images/member_pic_back.png) no-repeat left center;
+    background-size:0.18rem 0.28rem;
+
+}
+.house-member-header .back span{
+    margin-left:0.08rem;
+    vertical-align: middle;
+    font-size:0.28rem;
+    color:#eef0f2;
+}
+.house-member-header h1{
+    font-size:0.36rem;
+    text-align: center;
+    line-height:0.88rem;
+    color:#eef0f2;
+}
+.house-member-header .house-toggle{
+    position:absolute;
+    right:0.25rem;
+    top:0;
+    font-size:0.28rem;
+    color:#eef0f2;
+}
+/*成员列表*/
+.member-lists{
+    background-color:#f1f1f1;
+}
+.member-lists .member-address{
+    padding:.3rem .5rem .3rem .35rem;
+    overflow:hidden;
+}
+.member-lists .member-address h2{
+    font-size:.28rem;
+    color:#151515;
+    line-height:1.3;
+}
+.member-address h2 .address-icon{
+    display:inline-block;
+    padding-right:.1rem;
+    vertical-align: top;
+    width:.23rem;
+    height:.31rem;
+    background:url(../images/member_pic_address.png) no-repeat;
+    background-size:.23rem .31rem;
+}
+
+.member-lists .member-address .add-member{
+    float:right;
+    display:inline-block;
+    margin-left:0.4rem;
+    width:0.46rem;
+    height:0.46rem;
+    font-size:0.44rem;
+    text-align:center;
+    line-height:0.46rem;
+    color:#eef0f2;
+    background-color: #0EA1FF;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.member-ul .member-item{
+    margin-bottom:0.1rem;
+    background-color:white;
+}
+.member-ul .member-item h3{
+    padding:0.2rem 0.35rem;
+    font-size:0.28rem;
+    line-height:1.4;
+    border-bottom:1px solid #ededed;
+}
+.member-item h3 span{
+    color:#282828;
+    vertical-align: middle;
+}
+.member-item h3 img{
+    margin-right:0.1rem;
+    vertical-align: middle;
+}
+/*控制人员图片的大小*/
+.item-owner h3 img{
+    width:0.41rem;
+    height:0.41rem;
+}
+.item-zuke h3 img{
+    width:0.35rem;height:0.31rem;
+}
+.item-family h3 img{
+   width:0.42rem;height:0.32rem;
+}
+.item-visitor h3 img{
+   width:0.31rem; height:0.36rem;
+}
+.member-ul .member-item .wrap-info{
+    position:relative;
+    padding:0 0.35rem 0 0.9rem;
+    height:0.8rem;
+    line-height:0.8rem;
+    font-size:.26rem;
+    overflow:hidden;
+}
+.member-item .wrap-info .info-left{
+    float:left;
+    color:#464646;
+}
+.member-item .wrap-info span{
+    display:inline-block;
+}
+.member-item .wrap-info .name{
+    padding-right:0.2rem;
+}
+.member-item .wrap-info .info-right{
+    float:right;
+}
+.wrap-info .info-right i:first-child{
+    margin-right:0.3rem;
+    background: url(../images/member_jiankong_no.png) no-repeat;
+}
+.wrap-info .info-right i:nth-child(2){
+    background: url(../images/member_baojing_no.png) no-repeat;
+}
+.wrap-info .info-right i.jiankong{
+    background: url(../images/member_jiankong.png) no-repeat;
+}
+.wrap-info .info-right i.baojing{
+    background: url(../images/member_baojing.png) no-repeat;
+}
+.wrap-info .info-right i{
+    display:inline-block;
+    margin-top:-0.02rem;
+    width:0.49rem;
+    height:0.49rem;
+    vertical-align: middle;
+    background-size:0.47rem 0.47rem!important;
+}
+
+.wrap-info .info-right .remove{
+    display: inline-block;
+    position:absolute;
+    right:-1rem;
+    top:0;
+    z-index: 8;
+    height:0.81rem;
+    width:1rem;
+    text-align:center;
+    line-height:0.81rem;
+    color:#eef0f2;
+    background-color:#f42525;
+    -webkit-transition: all 0.5s ease ;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease ;
+}
+.dimmer{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:7;
+}
+/*添加成员弹框*/
+.add-member-modal{
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:9999;
+}
+.add-member-modal .member-content{
+    position:relative;
+    margin:3.77rem auto 0 auto;
+    padding:0.18rem;
+    width:6.20rem;
+    height:4.42rem;
+    background-color:#ffffff;
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    border-radius: 0.2rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.add-member-modal .member-content h5{
+    font-size:0.3rem;
+    line-height:0.3rem;
+    text-align:center;
+    color:#151515;
+}
+.add-member-modal .member-content .add-close{
+    position:absolute;
+    right:0.1rem;
+    top:0.1rem;
+    display:inline-block;
+    height:0.38rem;
+    width:0.38rem;
+    background:url(../images/member_close.png) no-repeat;
+    background-size:0.37rem 0.37rem;
+}
+.add-member-modal .member-content .add-tel{
+    padding:0.65rem 0;
+    text-align:center;
+}
+.member-content .add-tel label{
+    margin:0;
+    display: inline-block;
+    font-size:0.32rem;
+    color:#1f1f1f;
+    line-height:0.28rem;
+    vertical-align: middle;
+}
+.member-content .add-tel input{
+    display:inline-block;
+    margin:0;
+    padding:0;
+    width:3.13rem;
+    height:0.44rem;
+    line-height:0.44rem;
+    border:1px solid #bfbfbf;
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    border-radius: 0.05rem;
+    -webkit-appearance: none;
+    appearance: none;
+    outline:none;
+}
+.member-content .add-type .type-dl{
+    text-align:center;
+    padding-bottom:0.8rem;
+}
+.type-dl dd{
+    display:inline-block;
+    padding-right:0.4rem;
+}
+.type-dl dd:last-child{
+    padding-right:0;
+}
+.type-dl dd .no-select{
+    background:url(../images/member_type_no.png) no-repeat;
+    background-size:0.29rem 0.29rem;
+}
+.type-dl dd i{
+    display:inline-block;
+    padding-right:0.15rem;
+    height:0.3rem;
+    width:0.3rem;
+    background:url(../images/member_type_select.png) no-repeat;
+    background-size:0.29rem 0.29rem;
+    vertical-align: middle;
+}
+.type-dl dd span{
+    display:inline-block;
+    font-size:0.26rem;
+    line-height:0.26rem;
+    vertical-align: middle;
+    color:#3a3a3a;
+}
+.member-content .add-submit{
+    text-align:center;
+}
+.member-content .add-submit input[type="submit"]{
+    display:inline-block;
+    width:1.54rem;
+    height:0.58rem;
+    line-height: 0.58rem;
+    font-size:0.28rem;
+    color:#ffffff;
+    letter-spacing: 0.05rem;
+    font-family: "FZLTHJW";
+    background-color:#fa9819;
+    -webkit-border-radius: 0.19rem;
+    -moz-border-radius: 0.19rem;
+    border-radius: 0.19rem;
+}
+
+

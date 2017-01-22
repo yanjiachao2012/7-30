@@ -1,0 +1,132 @@
+
+@media only screen and (min-width:540px),only screen and (min-device-width:540px){html{font-size:100px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){html{font-size:64px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){html{font-size:55px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){html{font-size:53px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){html{font-size:50px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){html{font-size:48px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){html{font-size:42px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){html{font-size:32px}}
+body{
+    margin:0 auto;
+    font-family: "Microsoft YaHei" !important;
+    font-size:.28rem;
+    line-height:1.2;
+    background-color:#f1f1f1;
+}
+a:hover{
+    text-decoration: none;
+}
+.public-header{
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 10;
+    width:100%;
+    height:.8rem;
+    line-height:.8rem;
+    background-color:#1b1b20;
+
+}
+.public-header .back{
+    position: absolute;
+    left:.25rem;
+    padding-left:.28rem;
+    height:100%;
+    font-size:.28rem;
+    color:#ffffff;
+
+}
+.public-header .back:before{
+    content: '';
+    position:absolute;
+    left:0;
+    top:0.25rem;
+    display:inline-block;
+    width:.18rem;
+    height:.32rem;
+    background:url(../images/order_back.png) no-repeat left center;
+    background-size:.18rem .31rem;
+    vertical-align: middle;
+
+}
+.public-header h1{
+    font-size:.3rem;
+    text-align: center;
+    color:#eef0f2;
+    line-height:.8rem;
+}
+.public-header .header-more{
+    display:inline-block;
+    line-height:.1rem;
+    position:absolute;
+    right:.2rem;
+
+    top:.27rem;
+    color:#fff;
+    font-size:.4rem;
+}
+/*****/
+.public-list-main{
+    padding-top:.8rem;
+    background-color:#f1f1f1;
+}
+.public-list-main .list-ul{
+    background-color:#fff;
+}
+.public-list-main .list-ul .list-item{
+    padding:.2rem .15rem;
+    overflow:hidden;
+    border-bottom:1px solid #dddddd;
+}
+.public-list-main .list-ul .item-left{
+    float:left;
+    width:1.08rem;
+    height:1.08rem;
+    margin-right:.1rem;
+    line-height:1.08rem;
+    vertical-align: middle;
+    text-align:center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+}
+.list-ul .item-left img{
+    width:.51rem;
+    vertical-align: middle;
+}
+.public-list-main .list-ul .item-xiaoshou{
+    background-color:#daede9;
+}
+.public-list-main .list-ul .item-xiaoshou .wrap-img{
+    background-color:#3ac9ae;
+}
+.public-list-main .list-ul .item-gongyi{
+    background-color:#ffeded;
+}
+.public-list-main .list-ul .item-gongyi .wrap-img{
+    background-color:#ff7e7c;
+}
+.public-list-main .list-ul .item-activity{
+    background-color:#e3f6fe;
+}
+.public-list-main .list-ul .item-activity .wrap-img{
+    background-color:#3cbffa;
+}
+.public-list-main .list-ul .item-active{
+    background-color:#f9f8f8;
+}
+ .list-ul .list-item .item-right{
+     overflow:hidden;
+ }
+.list-ul .list-item .item-right h4{
+    color:#333;
+    font-size:.3rem;
+    line-height:1.6;
+}
+.list-ul .list-item .item-right .details{
+    padding-top:.2rem;
+    color:#999;
+    font-size:.26rem;
+}

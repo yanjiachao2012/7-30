@@ -1,0 +1,433 @@
+@media only screen and (min-width:540px),only screen and (min-device-width:540px){html{  font-size: 100px !important;}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){html{font-size:64px !important}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){html{font-size:55px !important}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){html{font-size:53px !important}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){html{font-size:50px !important}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){html{font-size:48px!important}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){html{font-size:42px!important}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){html{font-size:32px!important}}
+body{
+    margin:0 auto;
+    font-family: "Microsoft YaHei" !important;
+    font-size:.28rem;
+    line-height:1.6;
+    background-color:#f4f5f9;
+}
+a:hover{
+    text-decoration: none;
+}
+.insurance-header{
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 10;
+    width:100%;
+    height:.88rem;
+    line-height:.88rem;
+    background-color:#019fe8;
+
+}
+.insurance-header .back{
+    position: absolute;
+    left:.25rem;
+    padding-left:.28rem;
+    height:100%;
+    font-size:.28rem;
+    color:#eef0f2;
+
+}
+.insurance-header .back:before{
+    content: '';
+    position:absolute;
+    left:0;
+    top:0.27rem;
+    display:inline-block;
+    width:.18rem;
+    height:.32rem;
+    background:url(../images/order_back.png) no-repeat left center;
+    background-size:.18rem .31rem;
+    vertical-align: middle;
+
+}
+.insurance-header h1{
+    font-size:.34rem;
+    text-align: center;
+    color:#eef0f2;
+    line-height:.88rem;
+}
+.myInsurance-main{
+   padding-top:.88rem;
+}
+.myInsurance-main .sort-lists{
+    overflow:hidden;
+    background-color: #fff;
+}
+.myInsurance-main .sort-lists .sort-item{
+    float:left;
+    width:33%;
+
+    font-size:0.28rem;
+    text-align:center;
+}
+.myInsurance-main .sort-lists .center{
+    position:relative;
+}
+.myInsurance-main .sort-lists .center:after{
+    content: '';
+    position:absolute;
+    right:0;
+    top:.18rem;
+    width:1px;
+    height:.34rem;
+    background-color:#c8c7cc;
+}
+.myInsurance-main .sort-lists .center:before{
+    content: '';
+    position:absolute;
+    left:0;
+    top:.18rem;
+    width:1px;
+    height:.34rem;
+    background-color:#c8c7cc;
+}
+.sort-lists .sort-item a{
+    display:inline-block;
+    width:90%;
+    line-height:0.68rem;
+    color:#232323;
+    border-bottom:.03rem solid transparent;
+}
+.sort-lists li.active a{
+    color:#019fe8;
+    border-bottom-color: #019fe8;
+}
+.myInsurance-content{;border-top:1px solid #c8c7cc;}
+.myContinue-content h2{
+    padding:.3rem .3rem .3rem;
+    font-size:.3rem;
+    color:#232323;
+    line-height:.3rem;
+    border-bottom:1px solid #c8c7cc;
+    background-color:white;
+}
+.myContinue-content h2 .select{
+    float:right;
+    display:inline-block;
+    height:.3rem;
+    width:.16rem;
+    background:url(../images/select.png) no-repeat center center;
+    background-size:.14rem .26rem;
+}
+.myContinue-content .input-lists{
+    padding-left:.3rem;
+    background-color:white;
+    border-bottom:1px solid #c8c7cc;
+}
+.myContinue-content .input-lists .input-item{
+    position: relative;
+    padding:.3rem 0.1rem .24rem 2rem;
+    border-bottom:1px solid #c8c7cc;
+    line-height:.3rem;
+    overflow:hidden;
+}
+.myContinue-content .input-lists .input-item:last-child{
+    border-bottom:none;
+}
+.input-lists .input-item label{
+    position:absolute;
+    top:0.3rem;
+    left:0;
+    margin:0;
+    font-size:.28rem;
+    line-height:.28rem;
+    color:#666666;
+}
+.input-lists .input-item input{
+    width:100%;
+    margin-top:-.05rem;
+    margin-bottom:0;
+    height:.34rem;
+    line-height:.34rem;
+    padding:0;
+    font-size:.28rem;
+    outline:none;
+    border:none;
+    color:#232323;
+    box-shadow: none;
+    overflow:hidden;
+}
+.myContinue-content .submit{
+    padding:.8rem .3rem;
+    text-align:center;
+    background-color:#f4f5f9;
+}
+.myContinue-content .submit button[type="submit"]{
+    width:100%;
+    padding:.2rem 0;
+    font-size:.34rem;
+    line-height:.34rem;
+    color:rgba(255,255,255,0.7);
+    border:none;
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    border-radius: .1rem;
+    background-color:#019fe8;
+}
+.dimmer{
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:8;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.3);
+}
+.wrap-people{display:none;position:relative;z-index: 9;}
+.wrap-people .continue-people .insurance-finish{
+     padding:.23rem .3rem .23rem 0;
+    text-align:right;
+    background-color:white;
+
+}
+.continue-people .insurance-finish a{
+    display:inline-block;
+    line-height:.34rem;
+    color:#019fe8;
+    font-size:.34rem;
+}
+.continue-people .people-lists{
+    height:4.5rem;
+    overflow-y:scroll;
+    background-color:#f4f5f9;
+}
+.people-item{
+    padding:.3rem 0 .3rem 1.2rem;
+    border-bottom:1px solid #c8c7cc;
+}
+.people-lists .people-item p{
+    font-size:.26rem;
+    line-height:.26rem;
+    padding-bottom:.2rem;
+    opacity: 0.6;
+}
+.people-lists .active p{
+    opacity:1;
+}
+.people-lists .people-item p:last-child{
+    padding-bottom:0;
+}
+/*ȫ��*/
+.myInsurance-all{
+    background-color:#fff;
+}
+.all-lists .all-item{
+    border-bottom:.2rem solid #f4f5f9;
+}
+.all-lists .all-item .item-info{
+    padding:.21rem .2rem;
+    font-size:.2rem;
+    color:#464646;
+    line-height:.28rem;
+    border-bottom:1px solid #c8c7cc;
+
+}
+.all-item .item-info .myInsurance-member{
+    padding-left:.05rem;
+}
+.item-info .myInsurance-member em{
+    padding-left:.1rem;
+}
+.all-item .item-info .logo-pic{
+    float:right;
+    width:.87rem;
+    height:.28rem;
+}
+.wrap-content{
+    padding:.3rem .2rem .2rem;
+    overflow:hidden;
+}
+.wrap-content .content-left{
+    float:left;
+    height:1.2rem;
+    width:1.2rem;
+    margin-right:.3rem;
+}
+.wrap-content .content-right{
+    padding-top:.05rem;
+    height:1.2rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wrap-content .content-left img{
+    width:1.2rem;
+    height:1.2rem;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    vertical-align: middle;
+}
+.wrap-content .content-right h4{
+    padding-bottom: .2rem;
+    color:#232323;
+    font-size:.3rem;
+    line-height:.3rem;
+}
+.content-right h4 span{
+    float:right;
+    display:inline-block;
+    line-height:.3rem;
+    font-size:.2rem;
+    color:#019fe8;
+}
+.content-right .suit-people{
+    padding: 0 0 0.1rem;
+
+    line-height:.26rem;
+    color:#97979c;
+}
+.content-right .suit-people span{
+    display:inline-block;
+    font-size:.24rem;
+    line-height:.24rem;
+}
+.content-right .suit-people span:first-child{
+    padding-right:.2rem;
+}
+.content-right .money{
+    display:inline-block;
+    line-height:.24rem;
+    color:#ff991d;
+    font-size:.24rem;
+}
+.all-item .myInsurance-operate{
+    padding:.2rem 0;
+    border-top:1px solid #c8c7cc;
+    background-color:#fff;
+    text-align:right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.all-item .myInsurance-operate a{
+    display:inline-block;
+    margin-right:.2rem;
+    width:1.6rem;
+    padding:.11rem 0;
+    text-align:center;
+    font-size:.26rem;
+    line-height:.26rem;
+    -webkit-border-radius: 0.04rem;
+    -moz-border-radius: 0.04rem;
+    border-radius: 0.04rem;
+}
+.all-item .myInsurance-operate .insurance-apply,.all-item .myInsurance-operate .insurance-details{
+    border:1px solid #c8c7cc;
+    color:#232323;
+}
+.all-item .myInsurance-operate .insurance-continue{
+    border:1px solid #ff991d;
+    color:#ff991d;
+}
+.myInsurance-all-modal{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:9;
+    left:0;
+    top:0;
+    background-color:rgba(0,0,0,0.3);
+}
+.myInsurance-all-modal .myInsurance-apply{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:5.62rem;
+    height:2.62rem;
+    -webkit-border-radius: 0.15rem;
+    -moz-border-radius: 0.15rem;
+    border-radius: 0.15rem;
+    background-color:white;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.myInsurance-all-modal .myInsurance-apply h5{
+    padding:0.4rem 0 .2rem 0;
+    font-size:.3rem;
+    line-height:.3rem;
+    color:#232323;
+    text-align:center;
+}
+.myInsurance-all-modal .myInsurance-apply .tip{
+    padding:0 .4rem .3rem;
+    font-size:.24rem;
+    line-height:1.4;
+    color:#868686;
+}
+.myInsurance-all-modal .myInsurance-apply .wrap-sure{
+    height:.76rem;
+    overflow:hidden;
+    border-top:1px solid #e5e5e5;
+    text-align:center;
+}
+.myInsurance-apply .wrap-sure a{
+    float:left;
+    line-height:.76rem;
+    display:inline-block;
+    width:50%;
+    font-size:.3rem;
+    color:#232323;
+}
+.myInsurance-apply .wrap-sure a:first-child{
+    color:#232323;
+}
+.myInsurance-apply .wrap-sure .sure{
+    position:relative;
+    color:#019fe8;
+}
+.myInsurance-apply .wrap-sure .sure:before{
+    position:absolute;
+    content: '';
+    left:0;
+    top:0;
+    width:1px;
+    height:100%;
+    background-color:#e5e5e5;
+}
+/*ɳ©*/
+.myInsurance-hourglass{
+    background-color:white;
+}
+.myInsurance-hourglass .myInsurance-operate span{
+    display:inline-block;
+    padding:.12rem 0;
+    color:#232323;
+    font-size:.26rem;
+    line-height:.26rem;
+}
+.myInsurance-hourglass .myInsurance-operate .time{
+    padding-left:.26rem;
+}
+.myInsurance-operate .time em{
+    padding:0 0.2rem;
+    color:#ff991d;
+}
+.myInsurance-hourglass .wrap-content{
+    position:relative;
+}
+.myInsurance-hourglass .wrap-content .content-right{
+    padding-right:.5rem;
+}
+.myInsurance-hourglass .wrap-content .states-pic{
+    position:absolute;
+    right:0.2rem;
+    top:0.3rem;
+    width:.5rem;
+    height:1rem;
+}

@@ -1,0 +1,158 @@
+@media only screen and (min-width:540px),only screen and (min-device-width:540px){html{font-size:100px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){html{font-size:64px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){html{font-size:55px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){html{font-size:53px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){html{font-size:50px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){html{font-size:48px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){html{font-size:42px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){html{font-size:32px}}
+body{
+    margin:0 auto;
+    font-family: "Microsoft YaHei" !important;
+    font-size:.28rem;
+    line-height:1.6;
+    background-color:#ffffff;
+}
+a:hover{
+    text-decoration: none;
+}
+.insurance-header{
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 10;
+    width:100%;
+    height:.88rem;
+    line-height:.88rem;
+    background-color:#019fe8;
+
+}
+.insurance-header .back{
+    position: absolute;
+    left:.25rem;
+    padding-left:.28rem;
+    height:100%;
+    font-size:.28rem;
+    color:#eef0f2;
+
+}
+.insurance-header .back:before{
+    content: '';
+    position:absolute;
+    left:0;
+    top:0.27rem;
+    display:inline-block;
+    width:.18rem;
+    height:.32rem;
+    background:url(../images/order_back.png) no-repeat left center;
+    background-size:.18rem .31rem;
+    vertical-align: middle;
+
+}
+.insurance-header h1{
+    font-size:.34rem;
+    text-align: center;
+    color:#eef0f2;
+    line-height:.88rem;
+}
+.insurance-details-content{
+    padding:0.88rem 0 .9rem;
+}
+.insurance-details-content .content-tip{
+    padding:0 1.1rem;
+
+    background-color:#019fe8;
+}
+.insurance-details-content .content-tip h4{
+    display:inline-block;
+    font-size:.34rem;
+    color:#f4f5f9;
+    line-height:1.2;
+}
+.insurance-details-content .content-tip .wrap-tip{
+    padding:.56rem 0;
+    background:url(../images/myInsurance.png) no-repeat center right;
+    background-size:1.94rem 1.74rem;
+}
+.insurance-details-content .content-tip .used-time{
+   line-height:1.6;
+    color:#f4f5f9;
+}
+.details-lists{
+    padding-left:.3rem;
+}
+.details-lists .item{
+    padding:.2rem 0.3rem .4rem 0;
+    border-bottom:1px solid #c8c7cc;
+}
+.details-lists .item:last-child{
+    border-bottom:none;
+}
+.details-lists .item h5{
+    margin-bottom:.4rem;
+    font-size:.3rem;
+    color:#232323;
+    line-height:.4rem;
+}
+.details-lists .item .insurance-logo{
+    float:right;
+    width:1.12rem;
+    height:.35rem;
+}
+.details-lists .item p{
+    line-height:.24rem;
+    padding-bottom:.2rem;
+    font-size:.24rem;
+    color:#646464;
+}
+.details-lists .item p:last-child{
+    padding-bottom:0
+}
+.item p em{
+    padding-right:0.2rem;
+}
+.details-lists .item h6{
+    font-size:.28rem;
+    line-height:.28rem;
+    color:#232323;
+    padding-bottom:.2rem;
+}
+.details-lists .sub-item{
+    padding:.3rem 0 .2rem 0;
+}
+.details-lists .shouyi-item{
+    padding-bottom:.6rem;
+}
+.insurance-details-footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:.2rem 0;
+    border-top:1px solid #c8c7cc;
+    background-color:#fff;
+    text-align:right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.insurance-details-footer a{
+    display:inline-block;
+    margin-right:.2rem;
+    width:1.6rem;
+    padding:.11rem 0;
+    text-align:center;
+    font-size:.26rem;
+    line-height:.26rem;
+    -webkit-border-radius: 0.04rem;
+    -moz-border-radius: 0.04rem;
+    border-radius: 0.04rem;
+}
+.insurance-details-footer .insurance-apply{
+    border:1px solid #c8c7cc;
+    color:#232323;
+}
+.insurance-details-footer .insurance-continue{
+    border:1px solid #ff991d;
+    color:#ff991d;
+}

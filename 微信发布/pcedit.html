@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <title>发布项目</title>
+    <!--bootstrap样式-->
+    <link href="http://page.joinlinking.com/sunCrowdfunding/page/stylepc/dist/css/bootstrap.css" rel="stylesheet"
+          media="screen">
+    <!--公共样式-->
+    <link href="http://page.joinlinking.com/sunCrowdfunding/page/stylepc/css/wgfly.css" rel="stylesheet" media="screen">
+    <!--基本样式-->
+    <link href="http://page.joinlinking.com/sunCrowdfunding/page/stylepc/css/style.css" rel="stylesheet" media="screen">
+    <link href="css/wangEditor.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="css/pcedit.css"/>
+</head>
+<div class="wrap-benefit-header">
+    <div class="benefit-header">
+        <div class="header-left">
+            <div class="wrap-logo">
+                <a href="">
+                    <img src="images/benefit_head_logo.png"/>
+                </a>
+            </div>
+            <ul class="left-ul">
+                <li class="left-item"><a href="">浏览项目</a></li>
+                <li class="left-item"><a href="">发布项目</a></li>
+                <li class="left-item"><a href="">帮助中心</a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <a href="" class="public-item">发布项目</a>
+            <img class="userPic" src="images/public_user.png"/>
+            <a href="" class="drop"></a>
+        </div>
+    </div>
+</div>
+
+    <div class="benefit-main">
+        <h1>发布产品销售</h1>
+
+        <div class="benefit-edit-content">
+            <h2>基本信息</h2>
+
+            <div class="benefit-edit-input">
+                <div class="edit-item">
+                    <label class="edit-left">筹款金额</label>
+
+                    <div class="edit-right">
+                        <input type="text" placeholder="填写筹款目标金额"/>
+                        <span class="tip">元</span>
+                        <p class="input-error">筹款金额不能为空</p>
+                    </div>
+
+                </div>
+                <div class="edit-item add-time">
+                    <label class="edit-left">开始日期</label>
+
+                    <div class="edit-right">
+                        <p>2016-06-19&nbsp;&nbsp;&nbsp;14:22 <span class="total-time">共<i
+                                class="time-number">8</i></span>天
+                        </p>
+                    </div>
+
+                </div>
+                <div class="edit-item">
+                    <label class="edit-left">截止日期</label>
+
+                    <div class="edit-right">
+                        <input type="text" class="form_date" data-link-format="yyyy-mm-dd" readonly
+                               placeholder="2016-00-00"/>
+                        <span class="date-icon"></span>
+                        <p class="input-error">截止日期不能为空</p>
+                    </div>
+
+                </div>
+                <div class="edit-item">
+                    <div class="item-choose item-selected">
+                        <label class="choose-label" for="needAddress">需要支持者的收件地址</label>
+                        <input type="checkbox" checked="checked" id="needAddress"/>
+                    </div>
+                    <div class="item-choose">
+                        <label class="choose-label" for="setOwner">设为隐私项目
+                            <span class="label-tip">(开启后不会被站内搜索到)</span></label>
+                        <input type="checkbox" id="setOwner"/>
+                    </div>
+                </div>
+                <div class="edit-item">
+                    <label class="edit-left">发货时间</label>
+
+                    <div class="edit-right">
+                        <input type="text" class="input-append form_date" id="form-date" readonly
+                               placeholder="2016-00-00"/>
+                        <span class="date-icon add-on"></span>
+                        <p class="input-error">发货时间不能为空</p>
+                    </div>
+
+                </div>
+                <div class="edit-item item-title">
+                    <label class="edit-left">项目标题</label>
+
+                    <div class="edit-right">
+                        <input type="text" placeholder="填写项目标题"/>
+                        <p class="input-error">项目标题不能为空</p>
+                    </div>
+                </div>
+                <div class="edit-item wrap-editor">
+                    <div id="editor-container">
+                        <div id="editor-trigger" style="height:400px;">
+                        </div>
+                    </div>
+                    <div class="edit-number">
+                        <span class="number">0</span>/500
+                    </div>
+                </div>
+                <div class="edit-item">
+                    <ul class="pic-ul" data-status="0">
+                        <li class="pic-li" id="pcedit1"><img src="images/public_xiaoshou2.png" alt=""></li>
+                        <li class="pic-li" id="pcedit2"><img src="images/wc_public_1.png" alt=""></li>
+                        <li class="pic-li" id="pcedit3"><img src="" alt=""></li>
+                        <li class="pic-li" id="pcedit4"><img src="" alt=""></li>
+                        <li class="pic-li" id="pcedit5"><img src="" alt=""></li>
+                        <li class="pic-li" id="pcedit6"><img src="" alt=""></li>
+                        <li class="pic-li" id="pcedit7"><img src="" alt=""></li>
+                        <li class="pic-li" id="pcedit8"><img src="" alt=""></li>
+                    </ul>
+                    <div class="wrap-photo-item">
+                        <form method="post" id="pcedit_form" enctype="multipart/form-data"
+                              action="http://dev.joinlinking.com/sunCrowdfunding/upload.up">
+                                <label class="add-photo-btn">
+                                    <input type="file" id="pcedit_add" value="" onchange="subimtBtn();">
+                                    <input name="packgeName" value="img" type="hidden"/>
+                                    <input name="serviceName" value="compress" type="hidden"/>
+                                </label>
+                        </form>
+                        <div class="add-photo-details">
+                            <p class="details-first">上传图片（最多8张）</p>
+
+                            <p>请上传清晰的产品图片，建议图片尺寸大于750x400px</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+       <div class="benefit-main-add">
+            <h2>回报设置</h2>
+            <ul class="obtain-list">
+                <li class="item">
+                    <a href="" class="turn-right"></a>
+
+                    <div class="wrap-img">
+                        <img src="images/public_xiaoshou2.png"/>
+                    </div>
+                    <div class="obtain-details">
+                        <h5>支持10元</h5>
+                        <span>刚刚有十块零钱</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="continue-add">
+                <a href="" class="add-btn">
+                    继续添加
+                </a>
+            </div>
+        </div>
+        <div class="benefit-finish-public">
+            <button type="submit" class="finish-btn">发布项目</button>
+            <p class="agree-item">已阅读并同意<a href="">&lt;&lt;公益善款发布条款&gt;&gt;</a> </p>
+        </div>
+    </div>
+
+<script type="text/javascript" src="http://page.joinlinking.com/sunCrowdfunding/breeze/lib/js/jquery.js"></script>
+<script type="text/javascript" src="js/wangEditor.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="js/jquery.form.js"></script>
+<script>
+    $(function () {
+        //时间插件
+
+        $('.form_date').datetimepicker({
+            language: 'zh-CN',
+            minView: "month",
+            format: "yyyy-mm-dd",
+
+            todayHighlight: true,
+            showMeridian: true,
+            autoclose: true
+        });
+        /*触发时间插件**/
+        $(".edit-right .date-icon").click(function () {
+            $(this).prev().focus()
+        });
+        // 富文本编辑
+        var editor = new wangEditor('editor-trigger');
+        editor.config.menus = [
+            'bold',
+            'underline',
+            'italic',
+            'forecolor',
+            'fontsize',
+            'head',
+            'unorderlist',
+            'orderlist',
+            'alignleft',
+            'aligncenter',
+            'alignright',
+            'link',
+            'unlink',
+            'table',
+            'img',
+            'undo',
+            'redo',
+            'fullscreen'
+        ];
+        editor.create();
+        editor.onchange = function () {
+            var txt = editor.$txt.formatText();
+            $(".edit-number span").text(txt.length);
+        };
+        editor.$txt.html('<p>请输入内容...</p>');
+        $("#editor-trigger").focus(function () {
+            var txt = editor.$txt.formatText();
+            if (txt == "请输入内容...") {
+                editor.$txt.html('<p><br></p>');
+            }
+            $(".edit-count span").text(txt.length);
+            $(".edit-number").show()
+        })
+        $("#editor-trigger").blur(function () {
+            var txt = editor.$txt.formatText();
+            if (txt == "") {
+                editor.$txt.html('<p>请输入内容...</p>');
+                $(".edit-number").hide()
+            }
+
+        });
+        $(".choose-label").click(function () {
+            if ($(this).parent().hasClass("item-selected")) {
+                $(this).parent().removeClass("item-selected");
+                $(this).next().prop("checked", false);
+                $(this).next().attr("checked", false);
+            }
+            else {
+                $(this).parent().addClass("item-selected");
+                $(this).next().prop("checked", true);
+                $(this).next().attr("checked", true);
+
+            }
+        });
+
+
+    });
+    function subimtBtn() {
+        var form = $("#pcedit_form");
+        var options  = {
+            url:'http://dev.joinlinking.com/sunCrowdfunding/upload.up',
+            type:'post',
+            success:function(data)
+            {
+                var jsondata = eval("("+data+")");
+                if(jsondata.error == "0"){
+                    var url = jsondata.url;
+                    alert(url)
+                    $("#img").attr("src",url);
+                }else{
+                    var message = jsondata.message;
+                    alert(message);
+                }
+            }
+        };
+        form.ajaxSubmit(options);
+        //$("#fileForm").submit();
+    }
+</script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

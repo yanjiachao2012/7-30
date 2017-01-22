@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <title>首页</title>
+    <!--公共样式-->
+    <link href="http://page.joinlinking.com/wkdev/page/stylepc/css/wgfly-app.css" rel="stylesheet" media="screen">
+    <!--bootstrap样式-->
+    <link href="http://page.joinlinking.com/wkdev/page/stylepc/dist/css/bootstrap.min.css" rel="stylesheet"
+          media="screen">
+
+    <!--基本样式-->
+    <link href="http://page.joinlinking.com/wkdev/page/stylepc/css/style.css" rel="stylesheet" media="screen">
+    <style>
+        *{padding:0;margin:0;}
+        body{
+            font-size:14px;
+            font-family:"Microsoft YaHei",Helvetica,Verdana,Arial,Tahoma;
+           background:#d4d5d7 url("images/bg_pay.png")
+        }
+        .wc-pay-header{
+            height:66px;
+            background-color:#303030;
+        }
+        .wc-pay-header h1{
+            padding-top:20px;
+            margin:0;
+            text-align:center;
+        }
+        .wc-pay-header h1 .wrap-logo{
+            display:inline-block;
+            width:120px;
+            height:34px;
+
+        }
+        .wc-pay-header h1 .wrap-logo img{
+            width:100%;
+            height:100%;
+            vertical-align: top;
+        }
+        .pay-content{
+            padding-top:7px;
+            padding-bottom:60px;
+        }
+        .pay-content .wrapper{
+            position:relative;
+            margin:0 auto;
+            width:920px;
+            background:#fff url(images/bg_mail_box_hd1518d5.png) repeat-x 0 -60px;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.35);
+            -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.35);
+            -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.35);
+        }
+        .pay-content .wrapper .wrapper-box-content{
+            position:relative;
+            bottom:-10px;
+            overflow:hidden;
+            padding:60px 170px 100px;
+            background:transparent url(images/bg_mail_box_ft1518d5.png)
+            repeat-x bottom left;
+        }
+        .pay-content .wrapper .pay-box-corner {
+
+            position: absolute;
+            top: 0;
+            width: 6px;
+            height: 30px;
+            background: transparent url(images/bg_mail_box_hd1518d5.png) no-repeat 0 0;
+        }
+        .pay-content .wrapper .pay-box-corner.left{
+            background-position:0 0;
+            left:-5px;
+        }
+        .pay-content .wrapper .pay-box-corner.right{
+            background-position:0 -30px;
+            right:-5px;
+        }
+        .pay-content .wrapper .area{
+            text-align:center;
+        }
+        .pay-content .wrap-qrcode{
+            display:block;
+            position:relative;
+            height:306px;
+            width: 301px;
+            margin: 0 auto;
+        }
+       /* .pay-content .wrap-qrcode:hover .guide{
+            opacity:1;
+            left:280px;
+        }*/
+        .pay-content .wrap-qrcode .qrcode{
+            width:301px;
+            height:301px;
+        }
+        .pay-content .wrap-qrcode .guide{
+            position:absolute;
+            opacity:0;
+            filter: alpha(opacity=0);
+            top:0;
+            left:0;
+        }
+        .pay-content .common-tip{
+            width:258px;
+            display:inline-block;
+            padding:12px 0;
+            text-align:center;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            letter-spacing: 6px;
+            color:#fff;
+        }
+        .pay-content .common-tip .icon-tip{
+            display:inline-block;
+            margin-left:-16px;
+            width:60px;
+            height:60px;
+            vertical-align: middle;
+            background: url(images/icon60_qr15b813.png) no-repeat ;
+            background-position:0 -60px;
+        }
+        .pay-content .qrcode-tip{
+
+            border:1px solid #2b4d69;
+            background-color:#445f85;
+
+        }
+
+        .pay-content .common-tip p{
+            display:inline-block;
+            vertical-align: middle;
+            letter-spacing: normal;
+            text-align: left;
+            font-size:16px;
+            line-height:1.6;
+            margin-bottom:0;
+        }
+        .pay-content .qrcode-success-tip{
+
+            border:1px solid #259483;
+            background-color:#4ca698;
+
+        }
+
+        .data-middle .pay-info .pay-hd{
+            border-bottom:3px solid #e0e0e0;
+            padding-bottom:4px;
+            height:60px;
+        }
+        .data-middle .pay-info .icon-wrap{
+            position:relative;
+            display:inline-block;
+            top:30px;
+            padding-left:12px;
+            padding-right:14px;
+            background-color:#fff;
+        }
+        .pay-info .icon-wrap .icon-list{
+            display:inline-block;
+            width:60px;
+            height:60px;
+            vertical-align: middle;
+            background:url(images/icon60_pay15b813.png) no-repeat 0 0;
+        }
+        .data-middle .pay-info .pay-money{
+            padding-top:50px;
+            padding-bottom:20px;
+            font-size:60px;
+            color:#585858;
+            font-weight:400;
+            border-bottom:1px solid #d0d8e4;
+            line-height:68px;
+        }
+        .data-middle .pay-info .pay-money span{
+            margin-right:-20px;
+        }
+        .data-middle .pay-info .pay-list{
+            padding:18px 0 40px;
+        }
+        .pay-info .pay-list dl{
+            border-bottom:1px solid #e5e7ea;
+        }
+        .pay-info .pay-list dl dt{
+            font-weight:normal;
+            color:#4a4a4a;
+            font-size:20px;
+            line-height:24px;
+        }
+        .pay-info .pay-list dl dd{
+            padding-top:4px;
+            padding-bottom:16px;
+            color:#666;
+        }
+        .pay-info .pay-list .pay-bill-info{
+            padding-top:10px;
+            line-height:26px;
+        }
+        .pay-list .pay-bill-info p{
+            margin-bottom:0;
+            overflow:hidden;
+
+        }
+        .pay-list .pay-bill-info p label{
+            float:left;
+            margin-bottom:0;
+            font-weight:normal;
+            font-size:14px;
+            color:#8e8e8e;
+        }
+        .pay-list .pay-bill-info p .pay-bill-value{
+            float:right;
+        }
+        .data-footer{
+            margin-top:14px;
+            padding-top:20px;
+            border-top:3px solid #e0e3eb;
+        }
+        .data-footer .footer-help{
+            overflow:hidden;
+        }
+        .footer-help .wrap-icon{
+            float:left;
+            padding-top:7px;
+            margin-right:5px;
+        }
+        .footer-help .wrap-icon .help-icon{
+            display:inline-block;
+            width:30px;
+            height:30px;
+            vertical-align: middle;
+            background:url(images/icon30_add_on1518d5.png) no-repeat 0 0;
+        }
+        .footer-help .help-right{
+            overflow:hidden;
+        }
+        .footer-help .help-right strong{
+            color:#6c6c6c;
+            font-size:12px;
+            font-weight:400;
+        }
+        .footer-help .help-right p{
+            margin-top:-4px;
+            font-size:14px;
+            margin-bottom:0;
+        }
+        .footer-pay{
+            padding-top:20px;
+            padding-bottom:60px;
+            text-align:center;
+            background-color:#f1f1f1;
+            border-top:1px solid #c1c1c1;
+            color:#8b8e98;
+            font-size:12px;
+        }
+        .footer-pay .linkList a{
+            padding:0 2px;
+        }
+        .footer-pay .copyright{
+            padding-top:4px;
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+<div class="wc-pay-header">
+    <h1>
+        <a href="/" class="wrap-logo"><img src="images/logo_pay.png"/></a>
+    </h1>
+</div>
+<div class="pay-content">
+    <div class="wrapper">
+        <div class="wrapper-box-content">
+            <div class="area data-up">
+                <div class="wrap-type">
+                    <div class="area-hd" style="display:none;">
+                        <h2>支付结果</h2>
+                    </div>
+                    <div class="pay-succ area_bd" id="pay_succ" style="display:none">
+                        <i class="icon110_msg pngFix"></i>
+                        <h3 class="pay_msg_t">购买成功</h3>
+                        <div id="payMsgDetail" class="vh">
+                            <p class="pay_msg_desc"><span id="userName">&lt;用户&gt;</span>，你使用<strong id="bankCard">&lt;银行卡&gt;</strong>银行卡完成了本次交易。</p>
+                            <p class="pay_tip"><span id="redirectTimer">5</span>秒后返回商户网页，你也可以点击 <a href="javascript:;" target="_blank" id="resultLink">这里</a> 立即返回。</p>
+                        </div>
+                    </div>
+
+                    <div class="area-hd" id="wrap-qrCode">
+                        <span class="wrap-qrcode"  id="qrCode">
+                            <img class="qrcode" src="images/getpayqrcode.jpg" alt=""/>
+                            <img class="guide" id="guide-pic" src="images/webpay_guide.png"/>
+                        </span>
+                        <div class="common-tip qrcode-tip">
+                            <i class="icon-tip"></i>
+                            <p>
+                                请使用微信扫描<br />
+                                二维码以完成支付
+                            </p>
+                        </div>
+                        <div class="common-tip qrcode-success-tip" style="display:none;">
+                            <i class="icon-tip"></i>
+                            <p>
+                                扫描成功<br />
+                                请确认在手机支付
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area data-middle">
+                 <div class="pay-info">
+                     <div class="pay-hd">
+                         <h2 style="display:none;">支付清单</h2>
+                         <span class="icon-wrap">
+                             <i class="icon-list"></i>
+                         </span>
+                     </div>
+                     <div class="pay-hd2">
+                         <h3 class="pay-money">
+                             <span>￥</span>
+                             789.50
+                         </h3>
+                         <div class="pay-list">
+                             <dl>
+                                 <dt>当当网</dt>
+                                 <dd>当当商品</dd>
+                             </dl>
+                             <div class="pay-bill-info">
+                                 <p>
+                                     <label>交易单号</label>
+                                     <span class="pay-bill-value">
+                                         1217409901201605100917798546
+                                     </span>
+                                 </p>
+                                 <p>
+                                     <label>创建时间</label>
+                                     <span class="pay-bill-value">
+                                         1217409901201605100917798546
+                                     </span>
+                                 </p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+            <div class="data-footer">
+                <div class="footer-help">
+                    <div class="wrap-icon">
+                        <i class="help-icon"></i>
+                    </div>
+                    <div class="help-right">
+                        <strong>客服</strong>
+                        <p>4006-007-005</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="pay-box-corner left"></span>
+        <span class="pay-box-corner right"></span>
+    </div>
+</div>
+<div class="footer-pay">
+   <div class="linkList">
+       <a href="">关于掌心宝</a>
+       <a href="">法律声明</a>
+       <a href="">联系我们</a>
+   </div>
+    <p class="copyright">&copy; All Rights Reserved 粤ICP备12071318号-3</p>
+</div>
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script>
+    $(function(){
+        var qrCode=$("#qrCode");
+        qrCode.on("mouseover",function(e){
+           $("#guide-pic").animate({"filter":"alpha\(opacity=100\)","opacity":"1","left":"280px"},500);
+            e.stopPropagation();
+        });
+        $("#wrap-qrCode").on("mouseover",function(e){
+            e.stopPropagation();
+        });
+        $(document).on("mouseover",function(){
+            $("#guide-pic").animate({"filter":"alpha\(opacity=0\)","opacity":"0","left":"0px"})
+
+        })
+    })
+</script>
+</body>
+</html>
