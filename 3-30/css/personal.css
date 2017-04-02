@@ -1,0 +1,88 @@
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body { color: #333; font-size: 14px; background-color: #f6f6f6; }
+
+ul { padding: 0; margin: 0; }
+
+.personal-list { margin-top: 50px; }
+.personal-list .personal-left { padding: 0; }
+.personal-list .personal-right { padding-right: 0; }
+.personal-list .operate-guide { position: fixed; right: 10px; top: 100px; padding: 8px 15px; font-size: 16px; color: #03a3fc; background-color: #fff; }
+.personal-list .operate-guide:hover { background-color: #03a3fc; color: #fff; }
+
+.personal-search { overflow: hidden; }
+.personal-search .wrap-input { position: relative; width: 87%; float: left; }
+.personal-search .wrap-input .icon-search { display: inline-block; position: absolute; left: 10px; top: 12px; width: 20px; height: 20px; z-index: 2; background: url(../images/icon-search.png) no-repeat left center; background-size: 20px 20px; }
+.personal-search .wrap-button { overflow: hidden; }
+.personal-search .personal-input { padding-top: 12px; padding-bottom: 12px; padding-left: 35px; height: auto; border: 1px solid #e0e0e0; border-radius: 0; }
+.personal-search .personal-input:focus { color: #333; border-color: #0290df; }
+.personal-search .search-btn { height: 46px; width: 100%; font-size: 18px; -webkit-border-radius: 0 2px 2px 0; -moz-border-radius: 0 2px 2px 0; border-radius: 0 2px 2px 0; background-color: #03a3fc; border: none; }
+.personal-search .search-btn:hover { background-color: #0290df; }
+
+.personal-filter { margin-top: 20px; padding: 10px 20px; background-color: #fff; }
+.personal-filter .filter-item { overflow: hidden; margin: 10px 0; }
+.personal-filter .filter-item a { color: #666; }
+.personal-filter .filter-item .filter-title { float: left; width: 75px; margin-right: 20px; font-weight: 600; font-size: 16px; text-align: right; }
+.personal-filter .filter-item .filter-right { font-size: 14px; overflow: hidden; }
+.personal-filter .filter-item .item-name { display: inline-block; padding: 0 6px; margin: 0 15px 10px 0; line-height: 22px; }
+.personal-filter .filter-item .item-name:hover a { color: #03a3fc; }
+.personal-filter .filter-item .active { background-color: #03a3fc; }
+.personal-filter .filter-item .active a { color: #fff; }
+.personal-filter .filter-item .active a:hover { color: #fff; }
+
+.person-list { padding-top: 40px; }
+.person-list .person-item { padding: 25px; margin-bottom: 20px; overflow: hidden; background-color: #fff; }
+.person-list .item-left { float: left; padding-right: 30px; width: 75%; border-right: 1px solid #f4f4f4; }
+.person-list .item-left dl { position: relative; margin-bottom: 20px; overflow: hidden; }
+.person-list .item-left dd { float: left; height: 46px; line-height: 46px; color: #333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.person-list .item-left .name { padding-right: 10px; width: 37%; }
+.person-list .item-left .job { padding-left: 18px; padding-right: 10px; max-width: 40%; background: url(../images/icon-job.png) no-repeat left center; background-size: 17px 17px; }
+.person-list .item-left .date { float: right; padding-left: 18px; width: 60px; background: url(../images/icon-date.png) no-repeat left center; background-size: 12px 12px; }
+.person-list .item-left .pic { float: right; }
+.person-list .item-left .pic img { width: 46px; height: 46px; -webkit-border-radius: 999px; -moz-border-radius: 999px; border-radius: 999px; }
+.person-list .item-left h5 { margin-top: 0; margin-bottom: 30px; text-indent: 6px; line-height: 1; color: #666; border-left: 5px solid #34c99d; }
+.person-list .item-left .personal-intro { line-height: 30px; max-height: 180px; overflow: hidden; color: #666; }
+.person-list .item-right { padding-top: 10px; padding-left: 30px; overflow: hidden; }
+.person-list .item-right dd { margin-bottom: 10px; border: 1px solid #eee; overflow: hidden; text-align: center; }
+.person-list .item-right dd span { position: relative; padding: 8px 3px; float: left; width: 50%; }
+.person-list .item-right dd span:first-child:after { position: absolute; right: 0; top: 0; content: ''; width: 1px; height: 100%; background-color: #eee; }
+.person-list .item-right .person-join { margin-top: 10px; width: 100%; padding: 10px 12px; border: 1px solid #03a3fc; color: #03a3fc; background-color: #fff; transition: background-color .2s; }
+.person-list .item-right .person-join:hover { background-color: #03a3fc; color: #fff; }
+
+.wrap-pagination { text-align: center; }
+.wrap-pagination .pagination a { padding: 8px 16px; }
+.wrap-pagination .pagination a:hover { border-color: #03a3fc; color: #fff; background-color: #03a3fc; }
+.wrap-pagination .pagination .active a { border-color: #03a3fc; color: #fff; background-color: #03a3fc; }
+
+.personal-right .build { padding: 30px 10px; margin-bottom: 20px; background-color: #fff; text-align: center; }
+.personal-right .build .build-intro { padding: 15px 10px 30px; font-size: 16px; line-height: 30px; color: #666; }
+.personal-right .build .btn { display: inline-block; padding: 10px 20px; color: #fff; }
+.personal-right .build-team .btn { background-color: #35c99d; }
+.personal-right .build-team .btn:hover { background-color: #2cb68d; }
+.personal-right .quick-task .btn { background-color: #03a3fc; }
+.personal-right .quick-task .btn:hover { background-color: #0290df; }
+
+@media screen and (max-width: 600px) { .personal-search { padding: 0 10px; }
+  .personal-search .wrap-input { width: 80%; }
+  .personal-search .wrap-input input { padding: 10px 10px 10px 35px; }
+  .personal-search .wrap-button .search-btn { height: 42px; font-size: 14px; }
+  .personal-filter { padding: 10px; }
+  .personal-filter .filter-item .filter-title { width: 65px; font-size: 14px; }
+  .personal-filter .filter-item .filter-right { overflow-y: hidden; overflow-x: auto; white-space: nowrap; }
+  .personal-list { padding: 0; }
+  .personal-list .person-list { padding-top: 10px; }
+  .personal-list .person-item { padding: 10px; }
+  .personal-list .person-item .item-left { float: none; padding-right: 0; width: auto; border-right: none; }
+  .personal-list .person-item .item-left dl { height: 55px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .personal-list .person-item .item-left dl dd { position: absolute; width: auto; }
+  .personal-list .person-item .item-left h5 { margin-bottom: 10px; }
+  .personal-list .person-item .item-left .personal-intro { line-height: 22px; }
+  .personal-list .person-item .item-left .pic { left: 0; }
+  .personal-list .person-item .item-left .pic img { width: 32px; height: 32px; }
+  .personal-list .person-item .item-left .name { top: 0; left: 45px; height: 22px; line-height: 22px; }
+  .personal-list .person-item .item-left .job { top: 25px; left: 45px; padding-right: 40px; height: 22px; width: auto; line-height: 22px; }
+  .personal-list .person-item .item-left .date { right: 10px; height: auto; width: auto; line-height: 22px; bottom: 5px; }
+  .personal-list .item-right { margin: 20px auto 0; width: 60%; overflow: visible; padding-left: 0; }
+  .personal-right { padding-left: 0; } }
+
+/*# sourceMappingURL=personal.css.map */
